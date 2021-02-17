@@ -44,8 +44,9 @@ class GameCollector:
             home_team, away_team = teams_token[1].text, teams_token[3].text
 
             try:
-                odds_token = driver.find_element_by_class_name('odd')
-                print(odds_token.get_attribute('outerHTML'))
+                odds_token = driver.find_element_by_id('tab-prematch-odds').text
+                print(odds_token)
+
             except Exception:
                 home_odd, draw_odd, away_odd = '-', '-', '-'
 
