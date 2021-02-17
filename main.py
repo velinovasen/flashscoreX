@@ -20,7 +20,14 @@ class GameCollector:
     GAME_WAIT_XPATH = '/html/body/iframe    '
     TEAMS_A_LINKS_CLASS = 'participant-imglink'
     ODDS_CLASS = 'odds value'
-    HOME_ODD_CLASS, DRAW_ODD_CLASS, AWAY_ODD_CLASS = 'kx o_1', 'kx o_0', 'kx o_2'
+    COUNTRY_TOURNAMENT_DIV_XPATH = '/html/body/div[2]/div[1]/div[2]/div[1]/span[2]'
+    H2H_ID = 'a-match-head-2-head'
+    HOME_GAMES_XPATH = '/html/body/div[2]/div[1]/div[4]/div[12]/div[2]/div[4]/div[1]/table/tbody/tr'
+    AWAY_GAMES_XPATH = '/html/body/div[2]/div[1]/div[4]/div[12]/div[2]/div[4]/div[2]/table/tbody/tr'
+    H2H_GAMES_XPATH = '/html/body/div[2]/div[1]/div[4]/div[12]/div[2]/div[4]/div[3]/table/tbody/tr'
+    HOME_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[1]/table/tbody/tr'
+    AWAY_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[2]/table/tbody/tr'
+    H2H_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[3]/table/tbody/tr'
 
     def main(self):
         driver = self.driver_chrome()
@@ -43,14 +50,56 @@ class GameCollector:
 
             home_team, away_team = teams_token[1].text, teams_token[3].text
 
+            date_time_token = driver.find_element_by_id('utime').text.split(' ')
+            date, time = date_time_token[0], date_time_token[1]
+
+            county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH).text.split(': ')
+            country, league = county_league_token
+
             try:
-                odds_token = driver.find_element_by_id('tab-prematch-odds').text
-                print(odds_token)
+                odds_token = driver.find_element_by_id('tab-prematch-odds').text.split('\n')
+
+                home_odd, draw_odd, away_odd = odds_token[1], odds_token[3], odds_token[5]
 
             except Exception:
                 home_odd, draw_odd, away_odd = '-', '-', '-'
 
-            print(home_team, away_team)
+            self.get_h2h(driver)
+
+            print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
+
+    def get_h2h(self, driver):
+        try:
+            driver.find_element_by_id(self.H2H_ID).click()
+            sleep(1)
+        except Exception:
+            print('No h2h button')
+
+        try:
+            home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
+            if len(home_team_games) >= 5:
+                home_team_games = home_team_games[:-1]
+            away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH)
+            if len(away_team_games) >= 5:
+                away_team_games = away_team_games[:-1]
+            h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH)
+            if len(h2h_games) >= 5:
+                h2h_games = h2h_games[:-1]
+
+            if len(home_team_games) == 0:
+                home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH_2)
+                if len(home_team_games) >= 5:
+                    home_team_games = home_team_games[:-1]
+                away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH_2)
+                if len(away_team_games) >= 5:
+                    away_team_games = away_team_games[:-1]
+                h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH_2)
+                if len(h2h_games) >= 5:
+                    h2h_games = h2h_games[:-1]
+            print(len(home_team_games), len(away_team_games), len(h2h_games))
+
+        except Exception:
+            print('Click more button error')
 
 
     def gather_games(self, driver):
@@ -71,13 +120,8 @@ class GameCollector:
 
         return all_games
 
-    def driver_chrome(self):
-        """
-        Open and set the settings for the browser
-        :param link:
-        :param token:
-        :return driver:
-        """
+    @staticmethod
+    def driver_chrome():
         CHROME_PATH = '/usr/bin/google-chrome'
         CHROMEDRIVER_PATH = '/home/velinov/Desktop/scrp-drivers/chromedriver'
 
