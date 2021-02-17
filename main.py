@@ -68,10 +68,21 @@ class GameCollector:
 
             print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
 
+    def click_show_more_buttons(self, driver):
+        while True:
+            try:
+                buttons = driver.find_elements_by_xpath('//*[@class="show_more"]/div[3]/table/tbody/tr/td/a') # TO FINISH
+                print(str(len(buttons)) + ' show more buttons')
+                buttons.click()
+                sleep(1)
+            except Exception:
+                break
+
     def get_h2h(self, driver):
         try:
             driver.find_element_by_id(self.H2H_ID).click()
             sleep(1)
+            self.click_show_more_buttons(driver)
         except Exception:
             print('No h2h button')
 
@@ -98,9 +109,23 @@ class GameCollector:
                     h2h_games = h2h_games[:-1]
             print(len(home_team_games), len(away_team_games), len(h2h_games))
 
+            self.clean_h2h_data(home_team_games, away_team_games, h2h_games)
+
         except Exception:
             print('Click more button error')
 
+    def clean_h2h_data(self, home_team_games, away_team_games, h2h_games):
+        all_home_finished_games = []
+        all_away_finished_games = []
+        h2h_finished_games = []
+        for old_home_game in home_team_games:
+            date = old_home_game.find_element_by_class_name('date').text
+            result = old_home_game.find_element_by_tag_name('a').get_attribute('title')
+            score = old_home_game.find_element_by_class_name('score').text
+            teams_token = old_home_game.find_elements_by_class_name('name')
+            home_team, away_team = teams_token[0].text, teams_token[1].text
+
+            print(date, home_team, away_team, result, score)
 
     def gather_games(self, driver):
         # sleep(3)
