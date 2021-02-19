@@ -77,33 +77,35 @@ class GameCollector:
         except Exception:
             print('No h2h button')
 
-        try:
-            home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
+        # try:
+        home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
+        if len(home_team_games) >= 5:
+            home_team_games = home_team_games[:-1]
+        away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH)
+        if len(away_team_games) >= 5:
+            away_team_games = away_team_games[:-1]
+        h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH)
+        if len(h2h_games) >= 5:
+            h2h_games = h2h_games[:-1]
+
+        if len(home_team_games) == 0:
+            home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH_2)
             if len(home_team_games) >= 5:
                 home_team_games = home_team_games[:-1]
-            away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH)
+            away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH_2)
             if len(away_team_games) >= 5:
                 away_team_games = away_team_games[:-1]
-            h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH)
+            h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH_2)
             if len(h2h_games) >= 5:
                 h2h_games = h2h_games[:-1]
+        print(len(home_team_games), len(away_team_games), len(h2h_games))
 
-            if len(home_team_games) == 0:
-                home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH_2)
-                if len(home_team_games) >= 5:
-                    home_team_games = home_team_games[:-1]
-                away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH_2)
-                if len(away_team_games) >= 5:
-                    away_team_games = away_team_games[:-1]
-                h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH_2)
-                if len(h2h_games) >= 5:
-                    h2h_games = h2h_games[:-1]
-            print(len(home_team_games), len(away_team_games), len(h2h_games))
+        self.clean_h2h_data(driver, home_team_games, away_team_games, h2h_games)
 
-            self.clean_h2h_data(home_team_games, away_team_games, h2h_games)
+        self.get_home_home_away_away(driver)
 
-        except Exception:
-            print('Click more button error')
+        # except Exception:
+        #     print('Click more button error')
 
         try:
             driver.find_element_by_id('h2h-home').click()
@@ -127,11 +129,74 @@ class GameCollector:
         except Exception:
             pass
 
-    def clean_h2h_data(self, home_team_games, away_team_games, h2h_games):
+    def get_home_home_away_away(self, driver):
+        driver.find_element_by_id('h2h-home').click()
+        sleep(1)
+        self.click_show_more_buttons(driver)
+
+        home_home_games = []
+        away_away_games = []
+
+        try:
+            home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
+            if len(home_team_games) >= 5:
+                home_team_games = home_team_games[:-1]
+
+            if len(home_team_games) == 0:
+                home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH_2)
+                if len(home_team_games) >= 5:
+                    home_team_games = home_team_games[:-1]
+
+            for home_game in home_team_games:
+                date = home_game.find_element_by_class_name('date').text
+                result = home_game.find_element_by_tag_name('a').get_attribute('title')
+                score = home_game.find_element_by_class_name('score').text
+                teams_token = home_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].text, teams_token[1].text
+                home_home_games.append([date, home_team, away_team, result, score])
+
+                print('||||||||||||||||')
+                print(date, home_team, away_team, result, score)
+
+        except Exception:
+            print('home_home_games_problem')
+
+        driver.find_element_by_id('h2h-away').click()
+        sleep(1)
+        self.click_show_more_buttons(driver)
+
+        try:
+            away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH)
+            if len(away_team_games) >= 5:
+                away_team_games = away_team_games[:-1]
+
+            if len(away_team_games) == 0:
+                away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH_2)
+                if len(away_team_games) >= 5:
+                    away_team_games = away_team_games[:-1]
+
+            for away_game in away_team_games:
+                date = away_game.find_element_by_class_name('date').text
+                result = away_game.find_element_by_tag_name('a').get_attribute('title')
+                score = away_game.find_element_by_class_name('score').text
+                teams_token = away_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].text, teams_token[1].text
+                away_away_games.append([date, home_team, away_team, result, score])
+
+                print("-------------")
+                print(date, home_team, away_team, result, score)
+
+        except Exception:
+            print('problem_away_away_games')
+
+
+
+    def clean_h2h_data(self, driver, home_team_games, away_team_games, h2h_games):
         all_home_finished_games = []
         all_away_finished_games = []
         h2h_finished_games = []
         for old_home_game in home_team_games:
+
             date = old_home_game.find_element_by_class_name('date').text
             result = old_home_game.find_element_by_tag_name('a').get_attribute('title')
             score = old_home_game.find_element_by_class_name('score').text
@@ -151,16 +216,17 @@ class GameCollector:
 
             print(date, home_team, away_team, result, score)
 
-        for old_h2h_game in h2h_games:
-            date = old_h2h_game.find_element_by_class_name('date').text
-            result = old_h2h_game.find_element_by_tag_name('a').get_attribute('title')
-            score = old_h2h_game.find_element_by_class_name('score').text
-            teams_token = old_h2h_game.find_elements_by_class_name('name')
-            home_team, away_team = teams_token[0].text, teams_token[1].text
-            h2h_finished_games.append([date, home_team, away_team, result, score])
+        try:
+            for old_h2h_game in h2h_games:
+                date = old_h2h_game.find_element_by_class_name('date').text
+                score = old_h2h_game.find_element_by_class_name('score').text
+                teams_token = old_h2h_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].text, teams_token[1].text
+                h2h_finished_games.append([date, home_team, away_team, result, score])
 
-            print(date, home_team, away_team, result, score)
-
+                print(date, home_team, away_team, result, score)
+        except Exception:
+            print('h2h_h2h error')
         return all_home_finished_games, all_away_finished_games, h2h_finished_games
 
     def gather_games(self, driver):
