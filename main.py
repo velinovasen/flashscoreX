@@ -93,7 +93,10 @@ class GameCollector:
             average_percent_draws = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
                                      h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
                                      awayaway_games_stats['draws_percent']) / 5
-            valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
+            try:
+                valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
+            except:
+                valuebet_percent = 0
             valuebet_abs = False
             if valuebet_percent > 0:
                 valuebet_abs = True
@@ -109,7 +112,10 @@ class GameCollector:
             stats['total_games'] += 1
             if game[3] == 'Draw':
                 stats['draws'] += 1
-        stats['draws_percent'] = (stats['draws'] / stats['total_games']) * 100
+        try:
+            stats['draws_percent'] = (stats['draws'] / stats['total_games']) * 100
+        except:
+            stats['draws_percent'] = 0
         return stats
 
     def get_h2h(self, driver):
@@ -167,67 +173,67 @@ class GameCollector:
         home_home_games = []
         away_away_games = []
 
-        # try:
-        home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH)
-        if len(home_team_games) >= 5:
-            home_team_games = home_team_games[:-1]
-
-        if len(home_team_games) == 0:
-            home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH_2)
+        try:
+            home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH)
             if len(home_team_games) >= 5:
                 home_team_games = home_team_games[:-1]
 
-        for home_game in home_team_games:
-            # print(type(home_game))
-            # print(home_game.get_attribute('outerHTML'))
-            all_tds = home_game.find_elements_by_tag_name('td')
-            # print(len(all_tds))
+            if len(home_team_games) == 0:
+                home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH_2)
+                if len(home_team_games) >= 5:
+                    home_team_games = home_team_games[:-1]
 
-            date = all_tds[0].get_attribute('innerText')
-            result = home_game.find_element_by_tag_name('a').get_attribute('title')
-            score = all_tds[4].get_attribute('innerText')
-            teams_token = home_game.find_elements_by_class_name('name')
-            home_team = teams_token[0].get_attribute('innerText')
-            away_team = teams_token[1].get_attribute('innerText')
-            home_home_games.append([date, home_team, away_team, result, score])
+            for home_game in home_team_games:
+                # print(type(home_game))
+                # print(home_game.get_attribute('outerHTML'))
+                all_tds = home_game.find_elements_by_tag_name('td')
+                # print(len(all_tds))
 
-            # print('||||||||||||||||')
-            # print(len(date), len(home_team), len(away_team), len(result), len(score))
-            # print(date, home_team, away_team, result, score)
+                date = all_tds[0].get_attribute('innerText')
+                result = home_game.find_element_by_tag_name('a').get_attribute('title')
+                score = all_tds[4].get_attribute('innerText')
+                teams_token = home_game.find_elements_by_class_name('name')
+                home_team = teams_token[0].get_attribute('innerText')
+                away_team = teams_token[1].get_attribute('innerText')
+                home_home_games.append([date, home_team, away_team, result, score])
 
-        # except Exception:
-        #     print('home_home_games_problem')
+                # print('||||||||||||||||')
+                # print(len(date), len(home_team), len(away_team), len(result), len(score))
+                # print(date, home_team, away_team, result, score)
+
+        except Exception:
+            print('home_home_games_problem')
 
         driver.find_element_by_id('h2h-away').click()
         sleep(1)
         self.click_show_more_buttons(driver)
 
-        # try:
-        away_team_games = driver.find_elements_by_xpath(self.AWAY_AWAY_XPATH)
-        if len(away_team_games) >= 5:
-            away_team_games = away_team_games[:-1]
-
-        if len(away_team_games) == 0:
-            away_team_games = driver.find_elements_by_xpath(self.AWAY_AWAY_XPATH_2)
+        try:
+            away_team_games = driver.find_elements_by_xpath(self.AWAY_AWAY_XPATH)
             if len(away_team_games) >= 5:
                 away_team_games = away_team_games[:-1]
 
-        for away_game in away_team_games:
-            # print(away_game.get_attribute('outerHTML'))
-            all_tds = away_game.find_elements_by_tag_name('td')
-            date = all_tds[0].get_attribute('innerText')
-            result = away_game.find_element_by_tag_name('a').get_attribute('title')
-            score = all_tds[4].get_attribute('innerText')
-            teams_token = away_game.find_elements_by_class_name('name')
-            home_team, away_team = teams_token[0].get_attribute('innerText'), teams_token[1].get_attribute('innerText')
-            away_away_games.append([date, home_team, away_team, result, score])
+            if len(away_team_games) == 0:
+                away_team_games = driver.find_elements_by_xpath(self.AWAY_AWAY_XPATH_2)
+                if len(away_team_games) >= 5:
+                    away_team_games = away_team_games[:-1]
 
-            # print("-------------")
-            # print(date, home_team, away_team, result, score)
+            for away_game in away_team_games:
+                # print(away_game.get_attribute('outerHTML'))
+                all_tds = away_game.find_elements_by_tag_name('td')
+                date = all_tds[0].get_attribute('innerText')
+                result = away_game.find_element_by_tag_name('a').get_attribute('title')
+                score = all_tds[4].get_attribute('innerText')
+                teams_token = away_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].get_attribute('innerText'), teams_token[1].get_attribute('innerText')
+                away_away_games.append([date, home_team, away_team, result, score])
 
-        return home_home_games, away_away_games
-        # except Exception:
-        #     print('problem_away_away_games')
+                # print("-------------")
+                # print(date, home_team, away_team, result, score)
+
+            return home_home_games, away_away_games
+        except Exception:
+            print('problem_away_away_games')
 
     def clean_h2h_data(self, driver, home_team_games, away_team_games, h2h_games):
         all_home_finished_games = []
@@ -253,22 +259,22 @@ class GameCollector:
 
             # print(date, home_team, away_team, result, score)
 
-        # try:
-        for old_h2h_game in h2h_games:
-            # LOSS ON RESULT IS NOT ACCURATE, I COUNT ONLY THE DRAWS !!! IT NOT ACCURATE ONLY ON THIS H2H GAMES
-            date = old_h2h_game.find_element_by_class_name('date').text
-            score = old_h2h_game.find_element_by_class_name('score').text
-            teams_token = old_h2h_game.find_elements_by_class_name('name')
-            home_team, away_team = teams_token[0].text, teams_token[1].text
-            result = 'Loss'
-            home_goals, away_goals = score.split(' : ')[0], score.split(' : ')[1]
-            if home_goals == away_goals:
-                result = 'Draw'
-            h2h_finished_games.append([date, home_team, away_team, result, score])
+        try:
+            for old_h2h_game in h2h_games:
+                # LOSS ON RESULT IS NOT ACCURATE, I COUNT ONLY THE DRAWS !!! IT NOT ACCURATE ONLY ON THIS H2H GAMES
+                date = old_h2h_game.find_element_by_class_name('date').text
+                score = old_h2h_game.find_element_by_class_name('score').text
+                teams_token = old_h2h_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].text, teams_token[1].text
+                result = 'Loss'
+                home_goals, away_goals = score.split(' : ')[0], score.split(' : ')[1]
+                if home_goals == away_goals:
+                    result = 'Draw'
+                h2h_finished_games.append([date, home_team, away_team, result, score])
 
             # print(date, home_team, away_team, result, score)
-        # except Exception:
-        #     print('h2h_h2h error')
+        except Exception:
+            print('h2h_h2h error')
         return all_home_finished_games, all_away_finished_games, h2h_finished_games
 
     def gather_games(self, driver):
