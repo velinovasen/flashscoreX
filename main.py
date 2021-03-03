@@ -76,10 +76,9 @@ class GameCollector:
             except Exception:
                 home_odd, draw_odd, away_odd = '-', '-', '-'
 
-            self.get_h2h(driver)
+            home_team_games, away_team_games, h2h_games, homehome_games, awayaway_games = self.get_h2h(driver)
 
             print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
-
 
     def get_h2h(self, driver):
         try:
@@ -112,9 +111,9 @@ class GameCollector:
                 h2h_games = h2h_games[:-1]
         print(len(home_team_games), len(away_team_games), len(h2h_games))
 
-        self.clean_h2h_data(driver, home_team_games, away_team_games, h2h_games)
+        home_team_games, away_team_games, h2h_games = self.clean_h2h_data(driver, home_team_games, away_team_games, h2h_games)
 
-        self.get_home_home_away_away(driver)
+        home_home_games, away_away_games = self.get_home_home_away_away(driver)
 
         # except Exception:
         #     print('Click more button error')
@@ -125,21 +124,7 @@ class GameCollector:
         except Exception:
             print('No h2h home button.')
 
-    @staticmethod
-    def click_show_more_buttons(driver):
-        try:
-            buttons = driver.find_elements_by_class_name('show_more')
-            for button in buttons:
-                if 'Show more matches' in button.text:
-                    while True:
-                        try:
-                            button.click()
-                        except Exception:
-                            break
-            buttons.click()
-            sleep(1)
-        except Exception:
-            pass
+        return home_team_games, away_team_games, h2h_games, home_home_games, away_away_games
 
     def get_home_home_away_away(self, driver):
         driver.find_element_by_id('h2h-home').click()
@@ -158,6 +143,7 @@ class GameCollector:
             home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH_2)
             if len(home_team_games) >= 5:
                 home_team_games = home_team_games[:-1]
+
 
         for home_game in home_team_games:
             # print(type(home_game))
@@ -207,9 +193,9 @@ class GameCollector:
             print("-------------")
             print(date, home_team, away_team, result, score)
 
+        return home_home_games, away_away_games
         # except Exception:
         #     print('problem_away_away_games')
-
 
     def clean_h2h_data(self, driver, home_team_games, away_team_games, h2h_games):
         all_home_finished_games = []
@@ -236,17 +222,22 @@ class GameCollector:
 
             print(date, home_team, away_team, result, score)
 
-        try:
-            for old_h2h_game in h2h_games:
-                date = old_h2h_game.find_element_by_class_name('date').text
-                score = old_h2h_game.find_element_by_class_name('score').text
-                teams_token = old_h2h_game.find_elements_by_class_name('name')
-                home_team, away_team = teams_token[0].text, teams_token[1].text
-                h2h_finished_games.append([date, home_team, away_team, score])
+        # try:
+        for old_h2h_game in h2h_games:
+            # LOSS ON RESULT IS NOT ACCURATE, I COUNT ONLY THE DRAWS !!! IT NOT ACCURATE ONLY ON THIS H2H GAMES
+            date = old_h2h_game.find_element_by_class_name('date').text
+            score = old_h2h_game.find_element_by_class_name('score').text
+            teams_token = old_h2h_game.find_elements_by_class_name('name')
+            home_team, away_team = teams_token[0].text, teams_token[1].text
+            result = 'Loss'
+            home_goals, away_goals = score.split(' : ')[0], score.split(' : ')[1]
+            if home_goals == away_goals:
+                result = 'Draw'
+            h2h_finished_games.append([date, home_team, away_team, result, score])
 
-                print(date, home_team, away_team, score)
-        except Exception:
-            print('h2h_h2h error')
+            print(date, home_team, away_team, result, score)
+        # except Exception:
+        #     print('h2h_h2h error')
         return all_home_finished_games, all_away_finished_games, h2h_finished_games
 
     def gather_games(self, driver):
@@ -269,6 +260,22 @@ class GameCollector:
             [txt_file.write(game + '\n') for game in all_games]
         txt_file.close()
         return all_games
+
+    @staticmethod
+    def click_show_more_buttons(driver):
+        try:
+            buttons = driver.find_elements_by_class_name('show_more')
+            for button in buttons:
+                if 'Show more matches' in button.text:
+                    while True:
+                        try:
+                            button.click()
+                        except Exception:
+                            break
+            buttons.click()
+            sleep(1)
+        except Exception:
+            pass
 
     @staticmethod
     def driver_chrome():
