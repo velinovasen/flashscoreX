@@ -14,7 +14,7 @@ from selenium.webdriver import ChromeOptions, Chrome, ActionChains
 
 
 class GameCollector:
-    GAME_DIV_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[2]/div/div/div'
+    GAME_DIV_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/div[2]/div/div/div'
     HEADER_WAIT_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div[4]/div[2]/div[2]/div/div/div[1]'
     COOKIE_BUTTON_XPATH = '/html/body/div[10]/div[3]/div/div/div[2]/div/button[1]'
     GAME_WAIT_XPATH = '/html/body/iframe    '
@@ -28,13 +28,21 @@ class GameCollector:
     HOME_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[1]/table/tbody/tr'
     AWAY_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[2]/table/tbody/tr'
     H2H_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[3]/table/tbody/tr'
+    HOME_HOME_XPATH = '/html/body/div[2]/div[1]/div[4]/div[12]/div[2]/div[5]/div[1]/table/tbody/tr'
+    AWAY_AWAY_XPATH = '/html/body/div[2]/div[1]/div[4]/div[12]/div[2]/div[6]/div[1]/table/tbody/tr'
+    HOME_HOME_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[5]/div[1]/table/tbody/tr'
+    AWAY_AWAY_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[6]/div[1]/table/tbody/tr'
 
     def main(self):
         driver = self.driver_chrome()
 
         driver.get('https://www.flashscore.com/')
 
-        all_games = self.gather_games(driver)
+        # all_games = self.gather_games(driver)
+        all_games = []
+        with open('today_games.txt', 'r') as file:
+            for line in file.readlines():
+                all_games.append(line)
 
         self.scan_each_game(driver, all_games)
 
@@ -44,6 +52,10 @@ class GameCollector:
             BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
             driver.get(BASE_URL)
             sleep(3)
+            try:
+                driver.find_element_by_id('onetrust-accept-btn-handler').click()
+            except:
+                pass
             # WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.XPATH, self.GAME_WAIT_XPATH)))
 
             teams_token = driver.find_elements_by_class_name(self.TEAMS_A_LINKS_CLASS)
@@ -137,58 +149,66 @@ class GameCollector:
         home_home_games = []
         away_away_games = []
 
-        try:
-            home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
+        # try:
+        home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH)
+        if len(home_team_games) >= 5:
+            home_team_games = home_team_games[:-1]
+
+        if len(home_team_games) == 0:
+            home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH_2)
             if len(home_team_games) >= 5:
                 home_team_games = home_team_games[:-1]
 
-            if len(home_team_games) == 0:
-                home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH_2)
-                if len(home_team_games) >= 5:
-                    home_team_games = home_team_games[:-1]
+        for home_game in home_team_games:
+            # print(type(home_game))
+            # print(home_game.get_attribute('outerHTML'))
+            all_tds = home_game.find_elements_by_tag_name('td')
+            # print(len(all_tds))
 
-            for home_game in home_team_games:
-                date = home_game.find_element_by_class_name('date').text
-                result = home_game.find_element_by_tag_name('a').get_attribute('title')
-                score = home_game.find_element_by_class_name('score').text
-                teams_token = home_game.find_elements_by_class_name('name')
-                home_team, away_team = teams_token[0].text, teams_token[1].text
-                home_home_games.append([date, home_team, away_team, result, score])
+            date = all_tds[0].get_attribute('innerText')
+            result = home_game.find_element_by_tag_name('a').get_attribute('title')
+            score = all_tds[4].get_attribute('innerText')
+            teams_token = home_game.find_elements_by_class_name('name')
+            home_team = teams_token[0].get_attribute('innerText')
+            away_team = teams_token[1].get_attribute('innerText')
+            home_home_games.append([date, home_team, away_team, result, score])
 
-                print('||||||||||||||||')
-                print(date, home_team, away_team, result, score)
+            print('||||||||||||||||')
+            # print(len(date), len(home_team), len(away_team), len(result), len(score))
+            print(date, home_team, away_team, result, score)
 
-        except Exception:
-            print('home_home_games_problem')
+        # except Exception:
+        #     print('home_home_games_problem')
 
         driver.find_element_by_id('h2h-away').click()
         sleep(1)
         self.click_show_more_buttons(driver)
 
-        try:
-            away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH)
+        # try:
+        away_team_games = driver.find_elements_by_xpath(self.AWAY_AWAY_XPATH)
+        if len(away_team_games) >= 5:
+            away_team_games = away_team_games[:-1]
+
+        if len(away_team_games) == 0:
+            away_team_games = driver.find_elements_by_xpath(self.AWAY_AWAY_XPATH_2)
             if len(away_team_games) >= 5:
                 away_team_games = away_team_games[:-1]
 
-            if len(away_team_games) == 0:
-                away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH_2)
-                if len(away_team_games) >= 5:
-                    away_team_games = away_team_games[:-1]
+        for away_game in away_team_games:
+            # print(away_game.get_attribute('outerHTML'))
+            all_tds = away_game.find_elements_by_tag_name('td')
+            date = all_tds[0].get_attribute('innerText')
+            result = away_game.find_element_by_tag_name('a').get_attribute('title')
+            score = all_tds[4].get_attribute('innerText')
+            teams_token = away_game.find_elements_by_class_name('name')
+            home_team, away_team = teams_token[0].get_attribute('innerText'), teams_token[1].get_attribute('innerText')
+            away_away_games.append([date, home_team, away_team, result, score])
 
-            for away_game in away_team_games:
-                date = away_game.find_element_by_class_name('date').text
-                result = away_game.find_element_by_tag_name('a').get_attribute('title')
-                score = away_game.find_element_by_class_name('score').text
-                teams_token = away_game.find_elements_by_class_name('name')
-                home_team, away_team = teams_token[0].text, teams_token[1].text
-                away_away_games.append([date, home_team, away_team, result, score])
+            print("-------------")
+            print(date, home_team, away_team, result, score)
 
-                print("-------------")
-                print(date, home_team, away_team, result, score)
-
-        except Exception:
-            print('problem_away_away_games')
-
+        # except Exception:
+        #     print('problem_away_away_games')
 
 
     def clean_h2h_data(self, driver, home_team_games, away_team_games, h2h_games):
@@ -222,9 +242,9 @@ class GameCollector:
                 score = old_h2h_game.find_element_by_class_name('score').text
                 teams_token = old_h2h_game.find_elements_by_class_name('name')
                 home_team, away_team = teams_token[0].text, teams_token[1].text
-                h2h_finished_games.append([date, home_team, away_team, result, score])
+                h2h_finished_games.append([date, home_team, away_team, score])
 
-                print(date, home_team, away_team, result, score)
+                print(date, home_team, away_team, score)
         except Exception:
             print('h2h_h2h error')
         return all_home_finished_games, all_away_finished_games, h2h_finished_games
@@ -239,13 +259,13 @@ class GameCollector:
         all_games = []
 
         for div in all_divs_token:
-            div_stings = div.get_attribute('outerHTML')
+            div_strings = div.get_attribute('outerHTML')
 
-            if 'Click for match detail!' in div_stings:
+            if 'Click for match detail!' in div_strings:
                 print(div.get_attribute('id'))
                 all_games.append(div.get_attribute('id'))
 
-        with open('today_games', 'w') as txt_file:
+        with open('today_games.txt', 'w') as txt_file:
             [txt_file.write(game + '\n') for game in all_games]
         txt_file.close()
         return all_games
