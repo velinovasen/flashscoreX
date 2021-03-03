@@ -80,6 +80,31 @@ class GameCollector:
 
             print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
 
+            home_games_stats = self.get_stats(home_team_games, 'home_games')
+            print(home_games_stats)
+            away_games_stats = self.get_stats(away_team_games, 'away_games')
+            print(away_games_stats)
+            h2h_games_stats = self.get_stats(h2h_games, 'h2h_games')
+            print(h2h_games_stats)
+            homehome_games_stats = self.get_stats(homehome_games, 'homehome_games')
+            print(homehome_games_stats)
+            awayaway_games_stats = self.get_stats(awayaway_games, 'awayaway_games')
+            print(awayaway_games_stats)
+            average_percent_draws = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
+                                     h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
+                                     awayaway_games_stats['draws_percent']) / 5
+            print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}')
+
+
+    def get_stats(self, games, trigger):
+        stats = {'total_games': 0, 'draws': 0}
+        for game in games:
+            stats['total_games'] += 1
+            if game[3] == 'Draw':
+                stats['draws'] += 1
+        stats['draws_percent'] = (stats['draws'] / stats['total_games']) * 100
+        return stats
+
     def get_h2h(self, driver):
         try:
             driver.find_element_by_id(self.H2H_ID).click()
@@ -111,7 +136,8 @@ class GameCollector:
                 h2h_games = h2h_games[:-1]
         print(len(home_team_games), len(away_team_games), len(h2h_games))
 
-        home_team_games, away_team_games, h2h_games = self.clean_h2h_data(driver, home_team_games, away_team_games, h2h_games)
+        home_team_games, away_team_games, h2h_games = self.clean_h2h_data(driver, home_team_games, away_team_games,
+                                                                          h2h_games)
 
         home_home_games, away_away_games = self.get_home_home_away_away(driver)
 
@@ -143,7 +169,6 @@ class GameCollector:
             home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH_2)
             if len(home_team_games) >= 5:
                 home_team_games = home_team_games[:-1]
-
 
         for home_game in home_team_games:
             # print(type(home_game))
@@ -202,7 +227,6 @@ class GameCollector:
         all_away_finished_games = []
         h2h_finished_games = []
         for old_home_game in home_team_games:
-
             date = old_home_game.find_element_by_class_name('date').text
             result = old_home_game.find_element_by_tag_name('a').get_attribute('title')
             score = old_home_game.find_element_by_class_name('score').text
