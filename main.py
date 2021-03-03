@@ -93,8 +93,15 @@ class GameCollector:
             average_percent_draws = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
                                      h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
                                      awayaway_games_stats['draws_percent']) / 5
-            print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}')
-
+            valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
+            valuebet_abs = False
+            if valuebet_percent > 0:
+                valuebet_abs = True
+            print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
+            if valuebet_abs:
+                with open('valuebets.txt', 'a') as file:
+                    file.write(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} {valuebet_percent:.2f}\n')
+            print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} {valuebet_percent:.2f}')
 
     def get_stats(self, games, trigger):
         stats = {'total_games': 0, 'draws': 0}
@@ -134,7 +141,7 @@ class GameCollector:
             h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH_2)
             if len(h2h_games) >= 5:
                 h2h_games = h2h_games[:-1]
-        print(len(home_team_games), len(away_team_games), len(h2h_games))
+        # print(len(home_team_games), len(away_team_games), len(h2h_games))
 
         home_team_games, away_team_games, h2h_games = self.clean_h2h_data(driver, home_team_games, away_team_games,
                                                                           h2h_games)
@@ -184,9 +191,9 @@ class GameCollector:
             away_team = teams_token[1].get_attribute('innerText')
             home_home_games.append([date, home_team, away_team, result, score])
 
-            print('||||||||||||||||')
+            # print('||||||||||||||||')
             # print(len(date), len(home_team), len(away_team), len(result), len(score))
-            print(date, home_team, away_team, result, score)
+            # print(date, home_team, away_team, result, score)
 
         # except Exception:
         #     print('home_home_games_problem')
@@ -215,8 +222,8 @@ class GameCollector:
             home_team, away_team = teams_token[0].get_attribute('innerText'), teams_token[1].get_attribute('innerText')
             away_away_games.append([date, home_team, away_team, result, score])
 
-            print("-------------")
-            print(date, home_team, away_team, result, score)
+            # print("-------------")
+            # print(date, home_team, away_team, result, score)
 
         return home_home_games, away_away_games
         # except Exception:
@@ -234,7 +241,7 @@ class GameCollector:
             home_team, away_team = teams_token[0].text, teams_token[1].text
             all_home_finished_games.append([date, home_team, away_team, result, score])
 
-            print(date, home_team, away_team, result, score)
+            # print(date, home_team, away_team, result, score)
 
         for old_away_game in away_team_games:
             date = old_away_game.find_element_by_class_name('date').text
@@ -244,7 +251,7 @@ class GameCollector:
             home_team, away_team = teams_token[0].text, teams_token[1].text
             all_away_finished_games.append([date, home_team, away_team, result, score])
 
-            print(date, home_team, away_team, result, score)
+            # print(date, home_team, away_team, result, score)
 
         # try:
         for old_h2h_game in h2h_games:
@@ -259,7 +266,7 @@ class GameCollector:
                 result = 'Draw'
             h2h_finished_games.append([date, home_team, away_team, result, score])
 
-            print(date, home_team, away_team, result, score)
+            # print(date, home_team, away_team, result, score)
         # except Exception:
         #     print('h2h_h2h error')
         return all_home_finished_games, all_away_finished_games, h2h_finished_games
@@ -270,14 +277,14 @@ class GameCollector:
         driver.find_element_by_xpath(self.COOKIE_BUTTON_XPATH).click()
         sleep(1)
         all_divs_token = driver.find_elements_by_xpath(self.GAME_DIV_XPATH)
-        print(len(all_divs_token))
+        # print(len(all_divs_token))
         all_games = []
 
         for div in all_divs_token:
             div_strings = div.get_attribute('outerHTML')
 
             if 'Click for match detail!' in div_strings:
-                print(div.get_attribute('id'))
+                # print(div.get_attribute('id'))
                 all_games.append(div.get_attribute('id'))
 
         with open('today_games.txt', 'w') as txt_file:
@@ -308,7 +315,7 @@ class GameCollector:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"
