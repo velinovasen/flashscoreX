@@ -239,26 +239,28 @@ class GameCollector:
         all_home_finished_games = []
         all_away_finished_games = []
         h2h_finished_games = []
-        for old_home_game in home_team_games:
-            date = old_home_game.find_element_by_class_name('date').text
-            result = old_home_game.find_element_by_tag_name('a').get_attribute('title')
-            score = old_home_game.find_element_by_class_name('score').text
-            teams_token = old_home_game.find_elements_by_class_name('name')
-            home_team, away_team = teams_token[0].text, teams_token[1].text
-            all_home_finished_games.append([date, home_team, away_team, result, score])
+        try:
+            for old_home_game in home_team_games:
+                date = old_home_game.find_element_by_class_name('date').text
+                result = old_home_game.find_element_by_tag_name('a').get_attribute('title')
+                score = old_home_game.find_element_by_class_name('score').text
+                teams_token = old_home_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].text, teams_token[1].text
+                all_home_finished_games.append([date, home_team, away_team, result, score])
 
-            # print(date, home_team, away_team, result, score)
+                # print(date, home_team, away_team, result, score)
 
-        for old_away_game in away_team_games:
-            date = old_away_game.find_element_by_class_name('date').text
-            result = old_away_game.find_element_by_tag_name('a').get_attribute('title')
-            score = old_away_game.find_element_by_class_name('score').text
-            teams_token = old_away_game.find_elements_by_class_name('name')
-            home_team, away_team = teams_token[0].text, teams_token[1].text
-            all_away_finished_games.append([date, home_team, away_team, result, score])
+            for old_away_game in away_team_games:
+                date = old_away_game.find_element_by_class_name('date').text
+                result = old_away_game.find_element_by_tag_name('a').get_attribute('title')
+                score = old_away_game.find_element_by_class_name('score').text
+                teams_token = old_away_game.find_elements_by_class_name('name')
+                home_team, away_team = teams_token[0].text, teams_token[1].text
+                all_away_finished_games.append([date, home_team, away_team, result, score])
 
-            # print(date, home_team, away_team, result, score)
-
+                # print(date, home_team, away_team, result, score)
+        except:
+            pass
         try:
             for old_h2h_game in h2h_games:
                 # LOSS ON RESULT IS NOT ACCURATE, I COUNT ONLY THE DRAWS !!! IT NOT ACCURATE ONLY ON THIS H2H GAMES
