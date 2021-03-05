@@ -14,3 +14,15 @@ BRAZIL Campeonato Paulista - Round 2 03.03.2021 22:00 Santos Ferroviaria 2.37 3.
 BRAZIL Campeonato Pernambucano - Round 2 03.03.2021 21:00 Afogados da Ingazeira Retro 2.70 3.20 2.30 6.44 | +
 BRAZIL Campeonato Pernambucano - Round 2 03.03.2021 21:00 Central SC Santa Cruz 11.00 8.50 1.10 18.03 +
 BRAZIL Campeonato Piauiense - Round 5 03.03.2021 21:00 Parnahyba AE Altos 4.25 3.40 1.72 3.37 | +
+AUSTRIA 2. Liga - Round 17 05.03.2021 21:25 FC Juniors SK Rapid Vienna (Am) 2.10 3.40 3.10 8.33
+BELGIUM Super League Women - Round 15 05.03.2021 21:00 Charleroi W Gent W 17.50 9.75 1.05 6.96
+BELGIUM Super League Women - Round 15 05.03.2021 21:00 RSC Anderlecht W Club Brugge W 1.02 13.50 19.00 4.57
+BRAZIL Campeonato Catarinense - Round 3 05.03.2021 00:00 Criciuma Chapecoense-SC 3.50 3.30 1.90 4.31
+BRAZIL Campeonato Gaucho - First stage - Round 2 05.03.2021 01:00 EC Sao Jose SER Caxias 2.25 3.20 2.87 2.04
+BRAZIL Campeonato Matogrossense - Round 2 05.03.2021 23:00 Operario VG Uniao Rondonopolis 2.05 3.10 3.30 3.85
+DENMARK Elitedivisionen Women - Round 13 05.03.2021 20:30 Thisted FC W Aalborg W 1.13 6.50 12.50 16.18
+ALGERIA Ligue 1 - Round 16 05.03.2021 16:00 Tlemcen Magra 1.61 3.30 5.00 6.28
+ALGERIA Ligue 2 - Round 4 05.03.2021 16:00 MSP Batna CRB Ouled Djellal 1.90 3.00 4.00 10.89
+ALGERIA U21 League - Round 16 05.03.2021 11:00 Biskra U21 ES Setif U21 3.10 3.60 2.00 2.07
+ICELAND League Cup - Round 4 05.03.2021 22:00:00 Fjolnir Breidablik 17.00 11.00 1.06 -> Value: 11.40
+PORTUGAL Campeonato de Portugal - Round 19 05.03.2021 23:00:00 Felgueiras Tirsense 1.62 3.30 5.50 -> Value: 5.68
