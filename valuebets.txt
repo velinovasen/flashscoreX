@@ -26,3 +26,9 @@ ALGERIA Ligue 2 - Round 4 05.03.2021 16:00 MSP Batna CRB Ouled Djellal 1.90 3.00
 ALGERIA U21 League - Round 16 05.03.2021 11:00 Biskra U21 ES Setif U21 3.10 3.60 2.00 2.07
 ICELAND League Cup - Round 4 05.03.2021 22:00:00 Fjolnir Breidablik 17.00 11.00 1.06 -> Value: 11.40
 PORTUGAL Campeonato de Portugal - Round 19 05.03.2021 23:00:00 Felgueiras Tirsense 1.62 3.30 5.50 -> Value: 5.68
+ARGENTINA Copa de la Liga Profesional - Round 4 06.03.2021 02:30:00 Central Cordoba Banfield 3.10 3.20 2.10 -> Value: 12.47
+JAPAN J1 League - Round 2 06.03.2021 07:00:00 Vegalta Sendai Kawasaki Frontale 8.50 5.75 1.28 -> Value: 6.52
+JAPAN J1 League - Round 2 06.03.2021 08:00:00 Sagan Tosu Urawa Reds 2.60 3.40 2.60 -> Value: 1.34
+JAPAN J2 League - Round 2 06.03.2021 07:00:00 Iwata Machida 1.85 3.25 4.50 -> Value: 2.43
+JAPAN J2 League - Round 2 06.03.2021 07:00:00 Omiya Ardija Kofu 2.45 3.00 3.10 -> Value: 1.70
+SOUTH KOREA K League 1 - Round 2 06.03.2021 09:30:00 Incheon Daegu 3.80 3.30 2.00 -> Value: 5.77

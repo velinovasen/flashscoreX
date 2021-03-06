@@ -1,0 +1,9 @@
+ARGENTINA Copa de la Liga Profesional - Round 4 06.03.2021 02:30:00 Central Cordoba Banfield 3.10 3.20 2.10 -> Value: 13.67
+ENGLAND Premier League - Round 27 06.03.2021 22:00:00 Brighton Leicester 2.50 3.20 2.87 -> Value: 0.27
+ITALY Serie A - Round 26 06.03.2021 19:00:00 Udinese Sassuolo 2.40 3.40 2.87 -> Value: 1.02
+NETHERLANDS Eredivisie - Round 25 06.03.2021 17:30:00 Feyenoord Venlo 1.20 6.00 10.00 -> Value: 1.31
+NETHERLANDS Eredivisie - Round 25 06.03.2021 21:00:00 Heerenveen Den Haag 1.45 4.50 5.75 -> Value: 7.05
+NETHERLANDS Eredivisie - Round 25 06.03.2021 22:00:00 Waalwijk Utrecht 6.00 4.00 1.53 -> Value: 2.51
+AFRICA CAF Champions League 06.03.2021 21:00:00 Al Ahly (Egy) AS Vita Club (Drc) 1.25 5.50 9.00 -> Value: 2.08
+AFRICA CAF Champions League 06.03.2021 21:00:00 Wydad (Mar) Horoya (Gui) 1.25 4.75 10.00 -> Value: 12.04
+ALGERIA Ligue 2 - Round 4 06.03.2021 15:30:00 RC Kouba Harrach 1.80 3.00 4.50 -> Value: 5.69

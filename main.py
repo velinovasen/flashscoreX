@@ -15,6 +15,20 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import ChromeOptions, Chrome, ActionChains
 
 
+# all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
+#              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
+#              'g_1_EHZ0UYta', 'g_1_Msw9SCBB', 'g_1_rcRHQjtO', 'g_1_IkthWfCn', 'g_1_fXULPAeU',
+#              'g_1_h8Y4Thd5', 'g_1_WhpdVERh', 'g_1_nwrvqrcM', 'g_1_YoILfVf4', 'g_1_AaB2mq9r',
+#              'g_1_jNCQgkAA', 'g_1_feJHeBub', 'g_1_4zQ5n3Ol', 'g_1_UHFbDvwd', 'g_1_thJ2Cbh2',
+#              'g_1_Y9AyL2U2', 'g_1_COVIousG', 'g_1_8h0voSiO', 'g_1_Sn2Jmggn', 'g_1_zuOG3gTO',
+#              'g_1_0S0zn8xI', 'g_1_ncGb9cam', 'g_1_xdSgjJyM', 'g_1_GnRckwiS', 'g_1_MT3Qpcaq',
+#              'g_1_2q5ZEPPH', 'g_1_A98sD3fU', 'g_1_A98sD3fU', 'g_1_WI9wEquO', 'g_1_ngMMVCxd',
+#              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
+#
+# with open('checked_games2021-03-06.txt', 'a') as file:
+#     [file.write(game + '\n') for game in all_games]
+# file.close()
+
 class GameCollector:
     GAME_DIV_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/div[2]/div/div/div'
     HEADER_WAIT_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div[4]/div[2]/div[2]/div/div/div[1]'
@@ -40,23 +54,47 @@ class GameCollector:
 
         driver.get('https://www.flashscore.com/')
 
-        # all_games = self.gather_games(driver)
+        all_games = self.gather_games(driver)
 
-        # all_games = ['g_1_UahwWoai', 'g_1_8jisV5Ec']
+        # all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
+        #              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
+        #              'g_1_EHZ0UYta', 'g_1_Msw9SCBB', 'g_1_rcRHQjtO', 'g_1_IkthWfCn', 'g_1_fXULPAeU',
+        #              'g_1_h8Y4Thd5', 'g_1_WhpdVERh', 'g_1_nwrvqrcM', 'g_1_YoILfVf4', 'g_1_AaB2mq9r',
+        #              'g_1_jNCQgkAA', 'g_1_feJHeBub', 'g_1_4zQ5n3Ol', 'g_1_UHFbDvwd', 'g_1_thJ2Cbh2',
+        #              'g_1_Y9AyL2U2', 'g_1_COVIousG', 'g_1_8h0voSiO', 'g_1_Sn2Jmggn', 'g_1_zuOG3gTO',
+        #              'g_1_0S0zn8xI', 'g_1_ncGb9cam', 'g_1_xdSgjJyM', 'g_1_GnRckwiS', 'g_1_MT3Qpcaq',
+        #              'g_1_2q5ZEPPH', 'g_1_A98sD3fU', 'g_1_A98sD3fU', 'g_1_WI9wEquO', 'g_1_ngMMVCxd',
+        #              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
 
-        all_games = []
-        with open('today_games.txt', 'r') as file:
-            for line in file.readlines():
-                all_games.append(line)
+        # all_games = []
+        # with open('today_games.txt', 'r') as file:
+        #     for line in file.readlines():
+        #         all_games.append(line)
 
         self.scan_each_game(driver, all_games)
 
     def scan_each_game(self, driver, all_games):
+
+        tokens_list = str(datetime.datetime.now()).split(' ')
+        date_for_file = tokens_list[0]
+        # with open(f'checked_today{date_for_file}.txt', 'w') as file:
+        #     file.write('')
+        # file.close()
+        checked_today = []
+        with open(f'checked_today{date_for_file}.txt', 'r') as file:
+            [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
+        print(checked_today)
         for game in all_games:
+            if game in checked_today:
+                print('CHECKED')
+                continue
             try:
                 # print(game.split('g_1_')[1])
                 BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
                 driver.get(BASE_URL)
+                with open(f'checked_today{date_for_file}.txt', 'a') as file:
+                    file.write(f'{game}\n')
+                file.close()
                 sleep(3)
                 try:
                     driver.find_element_by_id('onetrust-accept-btn-handler').click()
@@ -76,9 +114,9 @@ class GameCollector:
                 print(datetime.datetime.now())
                 tokens_list = str(datetime.datetime.now()).split(' ')
                 curr_time = datetime.datetime.strptime(tokens_list[1].split('.')[0], '%H:%M:%S')
-                if my_datetime < curr_time:
-                    print(f'Finished - {home_team} {away_team}')
-                    continue
+                # if my_datetime < curr_time:
+                #     print(f'Finished - {home_team} {away_team}')
+                #     continue
 
                 county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH).text.split(': ')
                 country, league = county_league_token
@@ -117,9 +155,10 @@ class GameCollector:
                     valuebet_abs = True
                 print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
                 if valuebet_abs:
-                    with open('valuebets.txt', 'a') as file:
+                    with open(f'valuebets{date}.txt', 'a') as file:
                         file.write(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
                     file.close()
+
                 print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %')
             except:
                 pass
@@ -344,7 +383,7 @@ class GameCollector:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"
