@@ -1,9 +1,96 @@
-ARGENTINA Copa de la Liga Profesional - Round 4 06.03.2021 02:30:00 Central Cordoba Banfield 3.10 3.20 2.10 -> Value: 13.67
-ENGLAND Premier League - Round 27 06.03.2021 22:00:00 Brighton Leicester 2.50 3.20 2.87 -> Value: 0.27
-ITALY Serie A - Round 26 06.03.2021 19:00:00 Udinese Sassuolo 2.40 3.40 2.87 -> Value: 1.02
-NETHERLANDS Eredivisie - Round 25 06.03.2021 17:30:00 Feyenoord Venlo 1.20 6.00 10.00 -> Value: 1.31
-NETHERLANDS Eredivisie - Round 25 06.03.2021 21:00:00 Heerenveen Den Haag 1.45 4.50 5.75 -> Value: 7.05
-NETHERLANDS Eredivisie - Round 25 06.03.2021 22:00:00 Waalwijk Utrecht 6.00 4.00 1.53 -> Value: 2.51
-AFRICA CAF Champions League 06.03.2021 21:00:00 Al Ahly (Egy) AS Vita Club (Drc) 1.25 5.50 9.00 -> Value: 2.08
-AFRICA CAF Champions League 06.03.2021 21:00:00 Wydad (Mar) Horoya (Gui) 1.25 4.75 10.00 -> Value: 12.04
-ALGERIA Ligue 2 - Round 4 06.03.2021 15:30:00 RC Kouba Harrach 1.80 3.00 4.50 -> Value: 5.69
+ARGENTINA Copa de la Liga Profesional - Round 4 06.03.2021 02:30:00 Central Cordoba Banfield 3.10 3.20 2.10 -> Value: 13.67 | + 22
+ENGLAND Premier League - Round 27 06.03.2021 22:00:00 Brighton Leicester 2.50 3.20 2.87 -> Value: 0.27 | - 10
+ITALY Serie A - Round 26 06.03.2021 19:00:00 Udinese Sassuolo 2.40 3.40 2.87 -> Value: 1.02 | - 10
+NETHERLANDS Eredivisie - Round 25 06.03.2021 17:30:00 Feyenoord Venlo 1.20 6.00 10.00 -> Value: 1.31 | - 10
+NETHERLANDS Eredivisie - Round 25 06.03.2021 21:00:00 Heerenveen Den Haag 1.45 4.50 5.75 -> Value: 7.05 | - 10
+NETHERLANDS Eredivisie - Round 25 06.03.2021 22:00:00 Waalwijk Utrecht 6.00 4.00 1.53 -> Value: 2.51 | - 10
+AFRICA CAF Champions League 06.03.2021 21:00:00 Al Ahly (Egy) AS Vita Club (Drc) 1.25 5.50 9.00 -> Value: 2.08 | + 45.0
+AFRICA CAF Champions League 06.03.2021 21:00:00 Wydad (Mar) Horoya (Gui) 1.25 4.75 10.00 -> Value: 12.04 | - 10
+ALGERIA Ligue 2 - Round 4 06.03.2021 15:30:00 RC Kouba Harrach 1.80 3.00 4.50 -> Value: 5.69 | - 10
+ALGERIA U21 League - Round 16 06.03.2021 11:00:00 Paradou U21 USM Alger U21 1.50 4.25 5.00 -> Value: 9.67 | - 10
+ARGENTINA Primera B - Apertura - Round 1 06.03.2021 22:10:00 Defensores Unidos Acassuso 2.75 2.85 2.50 -> Value: 13.85 | + 18.5
+ARGENTINA Primera B - Apertura - Round 1 06.03.2021 22:10:00 Deportivo Armenio Flandria 2.40 2.85 2.90 -> Value: 5.75 | - 10
+ARGENTINA Primera B - Apertura - Round 1 06.03.2021 22:10:00 UAI Urquiza San Miguel 1.85 3.25 3.80 -> Value: 3.75 | - 10
+ARGENTINA Primera C - Apertura - Round 1 06.03.2021 22:10:00 Excursionistas Victoriano A. 2.00 3.20 3.40 -> Value: 4.40 | - 10
+AUSTRIA 2. Liga - Round 17 06.03.2021 15:30:00 A. Klagenfurt Dornbirn 1.53 4.20 6.50 -> Value: 15.17 | - 10
+BANGLADESH Premier League - Round 13 06.03.2021 12:00:00 Muktijoddha Sangsad Abahani Chittagong 5.00 3.90 1.53 -> Value: 0.19 | - 10
+BELGIUM Jupiler League - Round 29 06.03.2021 17:15:00 Eupen Leuven 1.83 3.75 4.00 -> Value: 1.43 | + 27.5
+BRAZIL Campeonato Carioca - Taca Guanabara - Round 2 06.03.2021 23:00:00 Macae Flamengo RJ 7.00 4.00 1.40 -> Value: 1.03 | - 10
+BRAZIL Campeonato Paulista A2 - Round 2 06.03.2021 20:00:00 Sao Bernardo RB Brasil 1.65 3.70 4.33 -> Value: 2.21 | + 27
+BRAZIL Campeonato Sergipano - Round 3 06.03.2021 21:00:00 Lagarto Frei Paulistano 1.50 4.25 4.75 -> Value: 6.29 | - 10
+BRAZIL Copa do Nordeste - Round 2 06.03.2021 21:00:00 Ceara Vitoria 1.85 3.00 4.25 -> Value: 1.56 | - 10
+BRAZIL Copa do Nordeste - Round 2 06.03.2021 23:15:00 Bahia Botafogo PB 1.40 4.10 6.75 -> Value: 3.16 | + 31
+CAMEROON Elite One - Round 1 06.03.2021 16:00:00 Colombe Lobo New Star 1.36 4.10 7.50 -> Value: 6.61 | POSTPONED
+CAMEROON Elite Two - Round 1 06.03.2021 16:00:00 Foncha OFTA 3.40 2.75 2.20 -> Value: 7.04 | + 17.5
+CAMEROON Elite Two - Round 1 06.03.2021 16:00:00 Leopard de Douala Bafang 2.90 2.75 2.50 -> Value: 19.33 | UNKNOWN
+CAMEROON Elite Two - Round 1 06.03.2021 16:00:00 Ngaoundere AS Fap 2.20 2.80 3.30 -> Value: 1.59 | - 10
+CYPRUS Division 2 - Round 22 06.03.2021 15:30:00 Othellos Athienou Ypsonas 1.25 6.25 7.25 -> Value: 0.55 | - 10
+CYPRUS Division 2 - Round 22 06.03.2021 15:30:00 Thoi Lakatamias Sotiras 6.00 4.40 1.42 -> Value: 15.67 | - 10
+CZECH REPUBLIC Division 2 - Round 13 06.03.2021 15:30:00 Lisen Hradec Kralove 3.20 2.90 2.25 -> Value: 7.97 | - 10
+ECUADOR Liga Pro - First stage - Round 3 06.03.2021 22:00:00 Orense Aucas 2.60 3.40 2.40 -> Value: 8.99 | + 24
+EGYPT Premier League - Round 15 06.03.2021 19:00:00 Aswan SC Pyramids 8.00 3.60 1.45 -> Value: 2.39 | - 10
+ENGLAND League One - Round 34 06.03.2021 17:00:00 Sunderland Rochdale 1.40 4.75 7.50 -> Value: 2.42 | - 10
+ENGLAND League Two - Round 34 06.03.2021 17:00:00 Stevenage Harrogate 3.10 3.10 2.45 -> Value: 3.65 | - 10
+ETHIOPIA Premier League - Round 15 06.03.2021 14:00:00 Jimma Aba Jifar Wolkite Kenema 3.10 3.20 2.10 -> Value: 0.69 | - 10
+FRANCE Coupe de France - 1/16-finals 06.03.2021 15:15:00 Ales Montpellier 7.50 5.50 1.28 -> Value: 0.58 | - 10
+FRANCE Coupe de France - 1/16-finals 06.03.2021 19:45:00 Lyon Sochaux 1.25 4.50 10.00 -> Value: 5.24 | - 10
+GAMBIA GFA League - Round 8 06.03.2021 18:00:00 Tallinding United Gambia Ports 4.75 2.50 2.00 -> Value: 6.42 | - 10
+GAMBIA GFA League - Round 8 06.03.2021 18:00:00 WAA Banjul Marimoo 1.91 2.80 4.33 -> Value: 22.84 | - 10
+GERMANY 3. Liga - Round 27 06.03.2021 15:00:00 Hansa Rostock Kaiserslautern 2.00 3.75 3.50 -> Value: 0.94 | - 10
+GERMANY 3. Liga - Round 27 06.03.2021 15:00:00 Magdeburg Mannheim 2.55 3.40 2.62 -> Value: 12.74 | + 24
+GERMANY Regionalliga West - Round 29 06.03.2021 15:00:00 Wegberg-Beeck Dortmund II 7.00 5.00 1.33 -> Value: 2.81 | - 10
+GERMANY Regionalliga West - Round 29 06.03.2021 15:00:00 Wiedenbruck Dusseldorf II 2.95 3.00 2.30 -> Value: 1.34 | - 10
+GERMANY Regionalliga Sudwest - Round 26 06.03.2021 15:00:00 Aalen Ulm 4.25 3.70 1.65 -> Value: 2.42 | - 10
+GERMANY Regionalliga Sudwest - Round 26 06.03.2021 15:00:00 FC 08 Homburg Kassel 1.50 4.00 5.25 -> Value: 3.89 | - 10
+GERMANY Regionalliga Sudwest - Round 26 06.03.2021 15:00:00 Offenbach Balingen 1.28 5.00 7.75 -> Value: 7.18 | - 10
+GHANA Premier League - Round 17 06.03.2021 17:00:00 King Faisal Liberty 1.72 3.30 4.40 -> Value: 1.27 | - 10
+GREECE Super League - Round 25 06.03.2021 15:00:00 OFI Crete AEL Larissa 1.70 3.40 4.75 -> Value: 0.72 | - 10
+GUATEMALA Liga Nacional - Clausura - Round 4 06.03.2021 19:00:00 Coban Imperial Sanarate 1.45 3.80 6.25 -> Value: 0.82 | - 10
+HUNGARY Merkantil Bank Liga - Round 28 06.03.2021 15:00:00 Debrecen Kaposvar 1.40 4.40 6.00 -> Value: 2.29 | - 10
+ICELAND League Cup - Round 4 06.03.2021 16:00:00 KR Reykjavik Kordrengir 1.08 11.00 15.00 -> Value: 1.83 | - 10
+ICELAND League Cup - Round 4 06.03.2021 17:00:00 Afturelding KA Akureyri 11.00 8.00 1.14 -> Value: 12.35 | - 10
+ICELAND League Cup - Round 4 06.03.2021 17:00:00 Hafnarfjordur Thor Akureyri 1.14 8.00 11.00 -> Value: 5.93 | - 10
+ITALY Serie B - Round 27 06.03.2021 15:00:00 Cremonese Salernitana 2.00 3.20 4.00 -> Value: 3.93 | - 10
+ITALY Serie B - Round 27 06.03.2021 19:00:00 Monza Pordenone 1.61 3.75 6.00 -> Value: 5.23 | - 10
+ITALY Primavera 1 - Round 13 06.03.2021 14:00:00 AS Roma U19 Sassuolo U19 1.33 5.25 6.00 -> Value: 5.81 | + 42.5
+MALAYSIA Super League - Round 1 06.03.2021 15:00:00 Selangor Pahang 1.85 3.50 3.50 -> Value: 0.67 | - 10
+MALTA Premier League - Round 23 06.03.2021 19:00:00 Mosta Senglea Athletics 1.16 6.75 10.50 -> Value: 3.39 | - 10
+MEXICO Liga MX Women - Clausura - Round 9 06.03.2021 18:00:00 Atlas W Cruz Azul W 1.45 4.00 5.75 -> Value: 8.02 | - 10
+POLAND III Liga - Group I - Round 17 06.03.2021 14:00:00 Legionowo Jagiellonia II 1.75 4.00 3.50 -> Value: 2.40 | - 10
+POLAND III Liga - Group II - Round 18 06.03.2021 14:00:00 Unia Swarzedz Jarocin 2.95 3.80 1.95 -> Value: 0.78 | - 10
+POLAND III Liga - Group III - Round 20 06.03.2021 14:00:00 Sleza Wroclaw Legnica 2 1.67 4.00 3.80 -> Value: 2.83 | - 10
+POLAND III Liga - Group III - Round 20 06.03.2021 15:00:00 Warta Gorzow Gornik Z. 2 2.45 4.00 2.20 -> Value: 0.90 | - 10
+POLAND III Liga - Group III - Round 20 06.03.2021 16:00:00 Bielsko-Biala ROW Rybnik 1.40 4.25 6.25 -> Value: 2.95 | + 32.5
+POLAND III Liga - Group III - Round 20 06.03.2021 18:00:00 Ruch Chorzow Polonia Swidnica 1.09 9.00 12.50 -> Value: 4.75 | - 10
+PORTUGAL Primeira Liga - Round 22 06.03.2021 22:30:00 Boavista Famalicao 2.37 3.10 3.25 -> Value: 1.75 | - 10
+PORTUGAL Campeonato de Portugal - Round 19 06.03.2021 12:45:00 Condeixa Carapinheirense 1.65 3.50 4.75 -> Value: 16.80 | - 10
+PORTUGAL Campeonato de Portugal - Round 19 06.03.2021 13:00:00 Torreense 1º Dezembro 1.18 5.75 12.50 -> Value: 13.49 | - 10
+ROMANIA Liga 2 - Round 18 06.03.2021 11:00:00 CSM Slatina F. Constanta 3.30 3.20 2.00 -> Value: 2.13 | + 22
+RUSSIA PFL - Group 1 - Round 17 06.03.2021 12:00:00 Biolog Legion Dynamo 4.20 3.60 1.70 -> Value: 0.05 | + 26
+RUSSIA Youth League - Round 15 06.03.2021 12:00:00 UOR U19 Konoplev Academy U19 1.44 3.75 7.00 -> Value: 1.25 | + 27.5
+SERBIA Prva Liga - Round 20 06.03.2021 15:00:00 Buducnost Dobanovci Loznica 2.20 2.95 3.25 -> Value: 8.69 | - 10
+SLOVAKIA 2. liga - Round 19 06.03.2021 15:00:00 FC Kosice Trebisov 1.48 4.20 5.00 -> Value: 7.03 | - 10
+SLOVAKIA 2. liga - Round 19 06.03.2021 15:00:00 Podbrezova Dubnica 1.30 5.00 7.25 -> Value: 2.39 | - 10
+SLOVENIA Prva liga - Round 25 06.03.2021 16:00:00 Mura Aluminij 1.57 3.80 6.50 -> Value: 0.30 | - 10
+SPAIN Segunda Division B - Group 1 - Round 16 06.03.2021 18:30:00 Leonesa Langreo 1.72 3.30 4.25 -> Value: 0.58 | - 10
+SPAIN Segunda Division B - Group 2 - Round 19 06.03.2021 17:30:00 Ath Bilbao B Laredo 1.45 3.70 6.25 -> Value: 9.24 | - 10
+SPAIN Tercera Division - Group 6 - Round 20 06.03.2021 19:00:00 Roda Recambios Colon 1.60 3.10 5.50 -> Value: 4.81 | + 21
+SPAIN Tercera Division - Group 10 - Round 18 06.03.2021 19:00:00 Pozoblanco Puente Genil 2.00 3.40 3.00 -> Value: 3.25 | + 24
+SPAIN Tercera Division - Group 16 - Round 19 06.03.2021 19:30:00 Yague Racing Rioja 5.50 3.90 1.44 -> Value: 2.32 | - 10
+SWEDEN Svenska Cupen - Round 3 06.03.2021 16:00:00 Degerfors Utsiktens 1.20 6.00 11.00 -> Value: 2.90 | - 10
+SWEDEN Svenska Cupen - Round 3 06.03.2021 16:00:00 Elfsborg Falkenbergs 1.36 5.00 6.50 -> Value: 6.99 | - 10
+SWEDEN Svenska Cupen - Round 3 06.03.2021 18:00:00 Brage Umea FC 1.44 4.50 6.00 -> Value: 4.82 | - 10
+SWITZERLAND Super League - Round 24 06.03.2021 19:15:00 Young Boys Vaduz 1.33 5.50 8.00 -> Value: 2.99 | + 45
+TANZANIA Ligi Kuu Bara - Round 23 06.03.2021 15:00:00 Mwadui Azam 7.00 4.00 1.40 -> Value: 2.23 | + 30
+TANZANIA Ligi Kuu Bara - Round 23 06.03.2021 15:00:00 Ruvu Shooting JKT Tanzania 1.62 3.20 5.50 -> Value: 1.01 | - 10
+THAILAND Thai League 2 - Round 27 06.03.2021 13:00:00 Samut Sakhon Chiangmai Utd 13.00 8.00 1.10 -> Value: 10.99 | - 10
+TUNISIA Ligue 2 - Round 6 06.03.2021 15:00:00 Kalaa Menzel Bouzelfa 2.20 2.85 3.25 -> Value: 4.50 | - 10
+TURKEY 1. Lig - Round 25 06.03.2021 12:30:00 Bandirmaspor Altinordu 2.05 3.40 3.20 -> Value: 3.96 | + 24
+UGANDA Premier League - Round 12 06.03.2021 12:00:00 Mbarara City Vipers 5.25 3.75 1.53 -> Value: 9.34 | - 10
+UGANDA Premier League - Round 12 06.03.2021 15:00:00 BUL Wakiso Giants 2.20 3.20 2.90 -> Value: 3.11 | - 10
+UGANDA Premier League - Round 12 06.03.2021 15:00:00 Villa Police 2.00 3.30 3.25 -> Value: 2.64 | + 23
+UKRAINE Premier League - Round 17 06.03.2021 17:00:00 Olimpik Donetsk Shakhtar Donetsk 11.00 6.00 1.20 -> Value: 8.83 | - 10
+URUGUAY Primera Division - Clausura - Round 11 06.03.2021 22:15:00 Boston River CA Cerro 1.80 3.60 4.00 -> Value: 2.58 | - 10
+ZAMBIA Super League - Round 21 06.03.2021 15:00:00 Green Buffaloes FC Nkwazi 1.95 3.00 3.80 -> Value: 9.42 | - 10
+ZAMBIA Super League - Round 21 06.03.2021 15:00:00 Kitwe United Green Eagles 4.75 3.10 1.72 -> Value: 7.21 | - 10
+ZAMBIA Super League - Round 21 06.03.2021 15:00:00 Zanaco Nkana 1.36 4.25 7.25 -> Value: 3.33 | POSTPONED

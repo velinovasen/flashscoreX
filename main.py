@@ -143,6 +143,9 @@ class GameCollector:
                 print(homehome_games_stats)
                 awayaway_games_stats = self.get_stats(awayaway_games, 'awayaway_games')
                 print(awayaway_games_stats)
+                total_games_checked = home_games_stats['total_games'] + away_games_stats['total_games'] + \
+                                      h2h_games_stats['total_games'] + homehome_games_stats['total_games'] + \
+                                      awayaway_games_stats['total_games']
                 average_percent_draws = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
                                          h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
                                          awayaway_games_stats['draws_percent']) / 5
@@ -151,12 +154,12 @@ class GameCollector:
                 except:
                     valuebet_percent = 0
                 valuebet_abs = False
-                if valuebet_percent > 0:
+                if valuebet_percent > 0 and total_games_checked > 50:
                     valuebet_abs = True
                 print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
                 if valuebet_abs:
                     with open(f'valuebets{date}.txt', 'a') as file:
-                        file.write(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
+                        file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
                     file.close()
 
                 print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %')
