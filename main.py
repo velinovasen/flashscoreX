@@ -128,6 +128,7 @@ class GameCollector:
 
                 except Exception:
                     home_odd, draw_odd, away_odd = '-', '-', '-'
+                    continue
 
                 home_team_games, away_team_games, h2h_games, homehome_games, awayaway_games = self.get_h2h(driver)
 

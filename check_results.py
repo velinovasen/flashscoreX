@@ -18,11 +18,11 @@ class CheckResults:
     def main(self):
         driver = self.driver_chrome()
 
-        games_ids = self.get_games()
+        games_id = self.get_games()
 
-        self.get_results()
+        self.get_results(games_id)
 
-    def get_results(self):
+    def get_results(self, games_id):
         pass
 
     def get_games(self):
