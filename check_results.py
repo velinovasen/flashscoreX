@@ -20,10 +20,16 @@ class CheckResults:
 
         games_id = self.get_games()
 
-        self.get_results(games_id)
+        self.get_results(driver, games_id)
 
-    def get_results(self, games_id):
-        pass
+    def get_results(self, driver, games_id):
+        for game_id in games_id:
+            clean_id = game_id.split('_')[-1]
+            driver.get(f'https://www.flashscore.com/match/{clean_id}/#match-summary')
+            WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.ID, 'event_detail_current_result')))
+            score_raw = driver.find_element_by_id('event_detail_current_result').text
+            home_team, away_team = score_raw.split('-')[0].strip(), score_raw.split('-')[1].strip()
+            print(f"home team {home_team} - {away_team} away team")
 
     def get_games(self):
         games = []
@@ -49,3 +55,7 @@ class CheckResults:
         driver.maximize_window()
         return driver
 
+
+if __name__ == '__main__':
+    script = CheckResults()
+    script.main()

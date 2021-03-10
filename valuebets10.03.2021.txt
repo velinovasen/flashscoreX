@@ -1,0 +1,78 @@
+g_1_pE5RNHFi
+ AFRICA CAF Confederations Cup - Round 1 10.03.2021 15:00:00 Sfaxien (Tun) Salitas (Bfa) 1.25 4.80 11.00 -> Value: 4.70
+g_1_CQdrKZEG
+ AFRICA CAF Confederations Cup - Round 1 10.03.2021 18:00:00 Pyramids (Egy) Nkana (Zam) 1.12 7.00 15.00 -> Value: 3.93
+g_1_pxdyOW5e
+ AFRICA CAF Confederations Cup - Round 1 10.03.2021 18:00:00 Raja Casablanca (Mar) Namungo (Tan) 1.11 7.00 15.00 -> Value: 9.71
+g_1_6kmp7SJU
+ AFRICA CAF Confederations Cup - Round 1 10.03.2021 21:00:00 Berkane (Mar) NAPSA Stars (Zam) 1.10 6.00 26.00 -> Value: 9.32
+g_1_UqfTlf94
+ BRAZIL Campeonato Cearense - Second stage - Round 1 10.03.2021 20:00:00 Crato Icasa 15.00 9.00 1.06 -> Value: 15.45
+g_1_KYntnhgN
+ BRAZIL Campeonato Cearense - Second stage - Round 1 10.03.2021 20:00:00 Pacajus Caucaia 2.40 3.30 2.55 -> Value: 8.45
+g_1_08A5C2UC
+ BRAZIL Campeonato Paraense - Round 3 10.03.2021 15:00:00 Castanhal Tuna Luso 1.67 3.30 4.75 -> Value: 9.97
+g_1_ShgXwoB3
+ BRAZIL Campeonato Paulista A2 - Round 3 10.03.2021 20:00:00 Atibaia Sao Bernardo 2.30 2.70 3.30 -> Value: 15.08
+g_1_GrmcE6VI
+ BRAZIL Campeonato Paulista A2 - Round 3 10.03.2021 20:00:00 Juventus-SP Monte Azul 2.25 2.90 3.10 -> Value: 9.72
+g_1_4Gy7Dsom
+ BRAZIL Copa do Brasil - 1/64-finals 10.03.2021 02:30:00 Campinense Bahia 9.00 6.50 1.20 -> Value: 11.40
+g_1_lrKn4bdb
+ COLOMBIA Copa Colombia - 1/64-finals 10.03.2021 23:00:00 Orsomarso Valledupar 2.55 3.20 2.45 -> Value: 2.90
+g_1_QRy1IKDo
+ CYPRUS Cyprus Cup - Quarter-finals 10.03.2021 18:00:00 Anorthosis Karmiotissa 1.16 6.50 13.00 -> Value: 7.62
+g_1_rFtxmF02
+ EL SALVADOR Primera Division - Clausura - 1st Phase - Round 5 10.03.2021 23:30:00 Jocoro Aguila 5.00 4.10 1.50 -> Value: 5.32
+g_1_0bmBrXMF
+ ESTONIA Estonian Cup - Quarter-finals 10.03.2021 20:00:00 Levadia Maardu 1.01 12.00 26.00 -> Value: 3.73
+g_1_EFChhVJt
+ EUROPE Champions League Women - 1/8-finals 10.03.2021 14:30:00 Atl. Madrid W Chelsea W 8.75 4.00 1.34 -> Value: 1.26
+g_1_Q35jYRYO
+ EUROPE Champions League Women - 1/8-finals 10.03.2021 21:30:00 St. Polten W Rosengard W 6.00 4.00 1.45 -> Value: 10.77
+g_1_fmyUs4na
+ GEORGIA Crystalbet Erovnuli Liga - Round 3 10.03.2021 18:00:00 Saburtalo Tbilisi Torpedo Kutaisi 1.44 4.00 6.00 -> Value: 0.17
+g_1_2VwIMGI7
+ GERMANY Regionalliga West - Round 26 10.03.2021 19:00:00 Dusseldorf II Koln II 2.10 3.40 2.90 -> Value: 0.85
+g_1_2NLR2r6A
+ GERMANY Regionalliga Sudwest - Round 23 10.03.2021 15:00:00 Freiburg II Walldorf 1.40 4.75 5.50 -> Value: 3.60
+g_1_KblCgNoe
+ GERMANY Bundesliga Women - Round 10 10.03.2021 15:00:00 Potsdam W Werder Bremen W 1.17 7.00 9.00 -> Value: 2.73
+g_1_U3U1k7cs
+ GREECE Super League - Round 21 10.03.2021 17:15:00 Lamia AEL Larissa 2.25 3.00 3.60 -> Value: 4.02
+g_1_no4CdahL
+ GREECE Super League 2 - Round 3 10.03.2021 15:00:00 Xanthi FC Doxa Dramas 1.28 4.75 8.50 -> Value: 9.37
+g_1_67dIOqCa
+ GUATEMALA Liga Nacional - Clausura - Round 5 10.03.2021 19:00:00 Antigua Xelaju 1.60 3.30 5.50 -> Value: 3.66
+g_1_OriNN3R5
+ GUATEMALA Liga Nacional - Clausura - Round 5 10.03.2021 23:00:00 Guastatoya Coban Imperial 1.65 3.60 4.50 -> Value: 5.83
+g_1_SGcEPPdg
+ GUATEMALA Liga Nacional - Clausura - Round 5 10.03.2021 23:00:00 Municipal Sacachispas 1.30 4.00 11.50 -> Value: 2.62
+g_1_hOC0WUS2
+ HUNGARY Hungarian Cup - Quarter-finals 10.03.2021 16:00:00 Kisvarda Zalaegerszegi 1.14 6.50 12.00 -> Value: 7.64
+g_1_YLWj3zdb
+ INDIA I-League - Winners stage - Round 2 10.03.2021 10:30:00 Punjab Mohammedan 2.25 3.25 2.87 -> Value: 13.35
+g_1_nPze2fB4
+ INDIA I-League - Winners stage - Round 2 10.03.2021 12:35:00 Real Kashmir TRAU FC 2.05 3.30 3.10 -> Value: 4.92
+g_1_YuiPystt
+ ITALY Serie C - Group B - Round 22 10.03.2021 16:00:00 Cesena Perugia 3.10 3.10 2.15 -> Value: 1.66
+g_1_0WncEVce
+ ITALY Serie D - Group H - Round 17 10.03.2021 15:30:00 Gravina Picerno 3.25 3.20 2.05 -> Value: 3.38
+g_1_6yEqpna0
+ ITALY Serie D - Group I - Round 13 10.03.2021 15:30:00 San Luca Biancavilla 1.95 3.40 3.30 -> Value: 6.34
+g_1_YDzUlzCQ
+ MALAYSIA Super League - Round 2 10.03.2021 15:00:00 Pahang Perak 2.20 3.40 2.80 -> Value: 0.00
+g_1_KpgRPyds
+ MALAYSIA Premier League - Round 2 10.03.2021 10:45:00 Perak 2 Sarawak Utd. 2.20 3.40 2.80 -> Value: 0.13
+g_1_Sx3q8f0C
+ MALI Premiere Division - Round 5 10.03.2021 18:30:00 Djoliba AS Nianan 1.40 4.25 6.25 -> Value: 0.29
+g_1_2k2hHKTR
+ MEXICO Liga de Expansion MX - Clausura - Round 9 10.03.2021 05:05:00 Dorados de Sinaloa Pumas Tabasco 1.85 3.40 3.60 -> Value: 22.59
+g_1_UN04Cpw4
+ MONTENEGRO Prva Crnogorska Liga - Round 24 10.03.2021 16:00:00 Iskra OFK Petrovac 1.53 3.70 5.75 -> Value: 4.38
+g_1_rw5Vpiw5
+ PARAGUAY Primera Division - Apertura - Round 7 10.03.2021 23:30:00 Olimpia Asuncion Nacional Asuncion 1.55 3.80 5.00 -> Value: 4.77
+g_1_vB5ooPS2
+ ENGLAND Premier League - Round 33 10.03.2021 20:00:00 Manchester City Southampton 1.16 7.00 17.00 -> Value: 2.70
+g_1_vB5ooPS2
+ ENGLAND Premier League - Round 33 10.03.2021 20:00:00 Manchester City Southampton 1.16 7.00 17.00 -> Value: 2.61

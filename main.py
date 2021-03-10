@@ -30,9 +30,9 @@ from selenium.webdriver import ChromeOptions, Chrome, ActionChains
 # file.close()
 
 class GameCollector:
-    GAME_DIV_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div/div[2]/div[2]/div/div/div'
+    GAME_DIV_XPATH = '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/section/div/div/div'
     HEADER_WAIT_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div[4]/div[2]/div[2]/div/div/div[1]'
-    COOKIE_BUTTON_XPATH = '/html/body/div[10]/div[3]/div/div/div[2]/div/button[1]'
+    COOKIE_BUTTON_XPATH = '//*[@id="onetrust-accept-btn-handler"]'
     GAME_WAIT_XPATH = '/html/body/iframe    '
     TEAMS_A_LINKS_CLASS = 'participant-imglink'
     ODDS_CLASS = 'odds value'
@@ -54,7 +54,7 @@ class GameCollector:
 
         driver.get('https://www.flashscore.com/')
 
-        all_games = self.gather_games(driver)
+        # all_games = self.gather_games(driver)
 
         # all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
         #              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
@@ -66,10 +66,10 @@ class GameCollector:
         #              'g_1_2q5ZEPPH', 'g_1_A98sD3fU', 'g_1_A98sD3fU', 'g_1_WI9wEquO', 'g_1_ngMMVCxd',
         #              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
 
-        # all_games = []
-        # with open('today_games.txt', 'r') as file:
-        #     for line in file.readlines():
-        #         all_games.append(line)
+        all_games = []
+        with open('today_games.txt', 'r') as file:
+            for line in file.readlines():
+                all_games.append(line)
 
         self.scan_each_game(driver, all_games)
 
@@ -77,6 +77,7 @@ class GameCollector:
 
         tokens_list = str(datetime.datetime.now()).split(' ')
         date_for_file = tokens_list[0]
+        # print(date_for_file)
         # with open(f'checked_today{date_for_file}.txt', 'w') as file:
         #     file.write('')
         # file.close()
@@ -93,7 +94,7 @@ class GameCollector:
                 BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
                 driver.get(BASE_URL)
                 with open(f'checked_today{date_for_file}.txt', 'a') as file:
-                    file.write(f'{game}\n')
+                    file.write(f'{game}')
                 file.close()
                 sleep(3)
                 try:
@@ -343,13 +344,14 @@ class GameCollector:
     def gather_games(self, driver):
         # sleep(3)
         try:
-            WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.XPATH, self.COOKIE_BUTTON_XPATH)))
+            WebDriverWait(driver, timeout=20).until(EC.visibility_of_element_located((By.XPATH, self.COOKIE_BUTTON_XPATH)))
             driver.find_element_by_xpath(self.COOKIE_BUTTON_XPATH).click()
         except:
             pass
-        sleep(1)
+        sleep(3)
         all_divs_token = driver.find_elements_by_xpath(self.GAME_DIV_XPATH)
-        # print(len(all_divs_token))
+        print(len(all_divs_token))
+        # asd
         all_games = []
 
         for div in all_divs_token:
