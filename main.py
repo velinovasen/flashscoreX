@@ -54,7 +54,7 @@ class GameCollector:
 
         driver.get('https://www.flashscore.com/')
 
-        # all_games = self.gather_games(driver)
+        all_games = self.gather_games(driver)
 
         # all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
         #              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
@@ -66,10 +66,10 @@ class GameCollector:
         #              'g_1_2q5ZEPPH', 'g_1_A98sD3fU', 'g_1_A98sD3fU', 'g_1_WI9wEquO', 'g_1_ngMMVCxd',
         #              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
 
-        all_games = []
-        with open('today_games.txt', 'r') as file:
-            for line in file.readlines():
-                all_games.append(line)
+        # all_games = []
+        # with open('today_games.txt', 'r') as file:
+        #     for line in file.readlines():
+        #         all_games.append(line)
 
         self.scan_each_game(driver, all_games)
 

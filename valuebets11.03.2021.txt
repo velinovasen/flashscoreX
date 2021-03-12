@@ -1,0 +1,35 @@
+g_1_lCwBkFw1 ARGENTINA Copa Argentina - 1/32-finals 11.03.2021 02:30:00 Independiente Villa Mitre 1.40 4.20 8.00 -> Value: 5.47
+g_1_OtOUEbj1 BELARUS Vysshaya Liga Reserve - Round 1 11.03.2021 14:00:00 Isloch 2 Slavia Mozyr 2 1.33 5.50 5.50 -> Value: 10.65
+g_1_nFTC3j6L BRAZIL Campeonato Amazonense - Round 2 11.03.2021 21:30:00 Nacional-AM Iranduba 1.22 5.75 8.25 -> Value: 2.29
+g_1_roLBH2e6 BRAZIL Campeonato Catarinense - Round 2 11.03.2021 21:00:00 Joinville Marcilio Dias 2.87 3.10 2.30 -> Value: 3.97
+g_1_tpsnvJc8 BRAZIL Campeonato Goiano - Round 1 11.03.2021 01:30:00 Atletico GO Jataiense 1.14 6.00 13.00 -> Value: 1.60
+g_1_KztjwwDE BRAZIL Campeonato Goiano - Round 1 11.03.2021 01:30:00 Goianesia Aparecidense 4.20 3.50 1.70 -> Value: 4.20
+g_1_SzURKhOR BRAZIL Campeonato Paraense - Round 3 11.03.2021 22:00:00 Remo Itupiranga 1.16 7.00 9.75 -> Value: 0.11
+g_1_CEnSlqoM BRAZIL Campeonato Paranaense - Round 2 11.03.2021 21:00:00 Azuriz Cascavel 6.00 4.00 1.44 -> Value: 0.20
+g_1_bm4YK3Jr BRAZIL Campeonato Tocantinense - Round 5 11.03.2021 01:15:00 Nova Conquista Palmas 5.25 3.90 1.50 -> Value: 5.89
+g_1_dAnXJq8J BRAZIL Copa do Brasil - 1/64-finals 11.03.2021 02:30:00 Moto Club Botafogo RJ 7.50 4.20 1.44 -> Value: 1.45
+g_1_QLQlxDXG BRAZIL Copa do Brasil U20 - 1/16-finals 11.03.2021 20:00:00 Jacioba U20 Internacional U20 14.00 10.50 1.06 -> Value: 3.90
+g_1_pADe2xRA COLOMBIA Copa Colombia - 1/64-finals 11.03.2021 03:05:00 Barranquilla Quindio 6.00 3.30 1.53 -> Value: 1.08
+g_1_O0YUGyt4 COLOMBIA Copa Colombia - 1/64-finals 11.03.2021 22:00:00 Fortaleza Leones 2.55 3.00 2.55 -> Value: 1.36
+g_1_IDnERqDd EL SALVADOR Primera Division - Clausura - 1st Phase - Round 5 11.03.2021 03:00:00 Santa Tecla Atletico Marte 1.53 3.90 5.00 -> Value: 8.83
+g_1_6TudjTkc EL SALVADOR Primera Division - Clausura - 1st Phase - Round 5 11.03.2021 03:15:00 Alianza FC Chalatenango 1.30 4.33 9.00 -> Value: 3.00
+g_1_lAOYKLjj ETHIOPIA Premier League - Round 16 11.03.2021 14:00:00 Fasil Ketema Jimma Aba Jifar 1.36 4.25 7.00 -> Value: 7.74
+g_1_bq8QD4Us HONDURAS Liga Nacional - Clausura - 1st Phase - Round 7 11.03.2021 01:06:00 Vida Honduras Progreso 1.57 3.50 5.25 -> Value: 4.68
+g_1_dzMbIpMQ HONDURAS Liga Nacional - Clausura - 1st Phase - Round 7 11.03.2021 23:00:00 UPNFM Real Sociedad 1.55 4.20 4.40 -> Value: 7.60
+g_1_MNIQhsv8 INDIA I-League - Losers stage - Round 2 11.03.2021 10:30:00 Neroca FC Aizawl 4.20 3.60 1.72 -> Value: 3.30
+g_1_EB0rPCJ2 IRAN Hazfi Cup - 1/16-finals 11.03.2021 13:45:00 Machine Sazi Foolad 6.25 3.60 1.48 -> Value: 5.54
+g_1_I3caLUIR IRAN Hazfi Cup - 1/16-finals 11.03.2021 16:00:00 Paykan Esteghlal F.C. 3.50 3.10 2.00 -> Value: 1.00
+g_1_OjsUGW3G IRAQ Super League - Round 23 11.03.2021 17:00:00 Al Minaa Al Najaf 3.20 2.75 2.30 -> Value: 4.37
+g_1_EsNXmrZF KENYA Premier League - Round 12 11.03.2021 14:00:00 Mathare Utd. Kariobangi Sharks 3.50 3.20 1.95 -> Value: 6.58
+g_1_8W0CBT64 MALI Premiere Division - Round 5 11.03.2021 18:30:00 Real Bamako AS Douanes de Sikasso 1.60 3.25 5.50 -> Value: 0.96
+g_1_2g0GAmMA MALI Premiere Division - Round 5 11.03.2021 20:30:00 Black Stars Onze Createurs 3.00 3.00 2.25 -> Value: 0.34
+g_1_hrTqjfY1 MEXICO Liga MX Women - Clausura - Round 10 11.03.2021 03:00:00 U.A.N.L.- Tigres W Queretaro W 1.09 8.50 13.50 -> Value: 0.64
+g_1_YwxZdqX9 POLAND Division 2 - Round 21 11.03.2021 20:30:00 Lublin Elblag 1.85 3.50 3.75 -> Value: 2.32
+g_1_dpc7CGIq QATAR QSL - Round 19 11.03.2021 18:15:00 Al-Sadd Al Wakra 1.14 7.00 12.00 -> Value: 6.73
+g_1_rFIMa3yQ ROMANIA Liga 2 - Round 19 11.03.2021 17:00:00 Concordia Petrolul 4.75 3.30 1.75 -> Value: 1.52
+g_1_6elwYSdA SERBIA Super Liga - Round 22 11.03.2021 20:10:00 FK Crvena zvezda Macva 1.04 15.00 21.00 -> Value: 8.07
+g_1_Mg3pdNtD SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 11.03.2021 02:30:00 Gremio (Bra) Ayacucho (Per) 1.16 7.50 10.00 -> Value: 6.33
+g_1_WGKfVlXs SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 11.03.2021 02:30:00 U. De Chile (Chi) San Lorenzo (Arg) 2.70 3.10 2.55 -> Value: 12.36
+g_1_EJ8aU5YM TANZANIA Ligi Kuu Bara - Round 24 11.03.2021 13:00:00 Namungo Mtibwa Sugar 1.67 3.20 5.00 -> Value: 1.34
+g_1_Kp5UGENg UNITED ARAB EMIRATES UAE League - Round 20 11.03.2021 15:45:00 Ajman Shabab Al-Ahli Dubai 5.50 4.50 1.40 -> Value: 0.49
+g_1_pzHlyH9D UZBEKISTAN Super League - Round 1 11.03.2021 15:30:00 Qizilqum Andijan 1.91 3.30 3.50 -> Value: 1.64
