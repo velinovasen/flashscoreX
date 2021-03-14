@@ -59,11 +59,6 @@ class GameCollector:
         # all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
         #              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
         #              'g_1_EHZ0UYta', 'g_1_Msw9SCBB', 'g_1_rcRHQjtO', 'g_1_IkthWfCn', 'g_1_fXULPAeU',
-        #              'g_1_h8Y4Thd5', 'g_1_WhpdVERh', 'g_1_nwrvqrcM', 'g_1_YoILfVf4', 'g_1_AaB2mq9r',
-        #              'g_1_jNCQgkAA', 'g_1_feJHeBub', 'g_1_4zQ5n3Ol', 'g_1_UHFbDvwd', 'g_1_thJ2Cbh2',
-        #              'g_1_Y9AyL2U2', 'g_1_COVIousG', 'g_1_8h0voSiO', 'g_1_Sn2Jmggn', 'g_1_zuOG3gTO',
-        #              'g_1_0S0zn8xI', 'g_1_ncGb9cam', 'g_1_xdSgjJyM', 'g_1_GnRckwiS', 'g_1_MT3Qpcaq',
-        #              'g_1_2q5ZEPPH', 'g_1_A98sD3fU', 'g_1_A98sD3fU', 'g_1_WI9wEquO', 'g_1_ngMMVCxd',
         #              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
 
         # all_games = []
@@ -82,7 +77,7 @@ class GameCollector:
         #     file.write('')
         # file.close()
         checked_today = []
-        with open(f'checked_today{date_for_file}.txt', 'r') as file:
+        with open(f'checked_today2021-03-15.txt', 'r') as file:
             [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         print(checked_today)
         for game in all_games:
@@ -148,9 +143,9 @@ class GameCollector:
                 total_games_checked = home_games_stats['total_games'] + away_games_stats['total_games'] + \
                                       h2h_games_stats['total_games'] + homehome_games_stats['total_games'] + \
                                       awayaway_games_stats['total_games']
-                average_percent_draws = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
-                                         h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
-                                         awayaway_games_stats['draws_percent']) / 5
+                average_percent_draws = ((home_games_stats['draws'] + away_games_stats['draws'] +
+                                         h2h_games_stats['draws'] + homehome_games_stats['draws'] +
+                                         awayaway_games_stats['draws']) / total_games_checked) * 100
                 try:
                     valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
                 except:
@@ -160,7 +155,7 @@ class GameCollector:
                     valuebet_abs = True
                 print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
                 if valuebet_abs:
-                    with open(f'valuebets{date}.txt', 'a') as file:
+                    with open(f'valuebets15.03.2021.txt', 'a') as file:
                         file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
                     file.close()
 
@@ -346,6 +341,11 @@ class GameCollector:
         try:
             WebDriverWait(driver, timeout=20).until(EC.visibility_of_element_located((By.XPATH, self.COOKIE_BUTTON_XPATH)))
             driver.find_element_by_xpath(self.COOKIE_BUTTON_XPATH).click()
+            sleep(3)
+            WebDriverWait(driver, timeout=15).until(EC.visibility_of_element_located(
+                (By.XPATH, '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]')))
+            driver.find_element_by_xpath(
+                '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]').click()
         except:
             pass
         sleep(3)
@@ -389,7 +389,7 @@ class GameCollector:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"

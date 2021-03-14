@@ -115,7 +115,7 @@ class CheckResults:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"

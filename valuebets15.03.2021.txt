@@ -1,0 +1,18 @@
+g_1_2sCbgDKs SPAIN LaLiga - Round 27 15.03.2021 22:00:00 Barcelona Huesca 1.16 7.50 15.00 -> Value: 9.60
+g_1_fiBsaCtT ARGENTINA Primera Nacional - Round 1 15.03.2021 22:10:00 Dep. Riestra Quilmes 2.40 3.00 2.75 -> Value: 5.88
+g_1_4xmFTt1h ARGENTINA Primera B - Apertura - Round 2 15.03.2021 22:10:00 Justo Jose de Urquiza Fenix 1.44 3.70 7.00 -> Value: 0.95
+g_1_IeP1xXf8 BRAZIL Campeonato Gaucho - First stage - Round 4 15.03.2021 01:00:00 Internacional Ypiranga FC 1.53 3.75 5.25 -> Value: 2.82
+g_1_Gr7KZvoS BRAZIL Campeonato Paulista - Round 4 15.03.2021 00:00:00 Bragantino Santo Andre 1.33 4.00 9.00 -> Value: 2.95
+g_1_0GriUI8k BRAZIL Campeonato Paulista - Round 4 15.03.2021 00:00:00 Sao Caetano Corinthians 8.00 4.00 1.36 -> Value: 1.59
+g_1_fHbC9Zjn CYPRUS First Division - Relegation Group - Round 29 15.03.2021 19:00:00 APOEL Karmiotissa 1.28 4.50 8.50 -> Value: 3.58
+g_1_h0jPBPyt ECUADOR Liga Pro - First stage - Round 4 15.03.2021 01:00:00 Barcelona SC Orense 1.28 5.00 10.00 -> Value: 15.76
+g_1_IDYKIXiK EGYPT Premier League - Round 16 15.03.2021 17:00:00 National Bank Egypt Al Ittihad 3.40 2.80 2.20 -> Value: 5.52
+g_1_pKv0km53 EL SALVADOR Primera Division - Clausura - 1st Phase - Round 6 15.03.2021 00:00:00 Chalatenango Santa Tecla 3.50 3.10 2.00 -> Value: 3.41
+g_1_6wX0lRuB GERMANY 2. Bundesliga - Round 25 15.03.2021 21:30:00 St. Pauli Paderborn 2.37 3.40 2.90 -> Value: 0.07
+g_1_YL8rgjYj INDIA I-League - Winners stage - Round 3 15.03.2021 10:30:00 Gokulam Real Kashmir 2.00 3.25 3.25 -> Value: 0.36
+g_1_C2pVqzvo ISRAEL Leumit League - Round 26 15.03.2021 19:00:00 H. Akko Hapoel Petah Tikva 2.50 2.87 2.75 -> Value: 1.57
+g_1_8lUX3eVG ISRAEL Leumit League - Round 26 15.03.2021 19:00:00 M. Nazareth H. Ironi Rishon 2.50 2.80 2.80 -> Value: 0.04
+g_1_250BPFxl ITALY Serie B - Round 29 15.03.2021 22:00:00 Pisa Spal 2.75 3.10 2.62 -> Value: 0.88
+g_1_lvlExTpo PARAGUAY Primera Division - Apertura - Round 8 15.03.2021 01:00:00 Sp. Luqueno Olimpia Asuncion 4.50 4.20 1.57 -> Value: 3.42
+g_1_t8ZS3rqN SERBIA Super Liga - Round 27 15.03.2021 19:10:00 Partizan Zlatibor Cajetina 1.20 5.50 10.00 -> Value: 0.77
+g_1_jZKHI9J5 URUGUAY Primera Division - Clausura - Round 12 15.03.2021 21:30:00 Fenix Rentistas 1.90 3.25 3.50 -> Value: 8.15
