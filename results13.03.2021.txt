@@ -136,7 +136,8 @@ g_1_0K4hRXV8 UGANDA Premier League - Round 14 13.03.2021 15:00:00 Mbarara City B
 g_1_b1mPdOfo WALES Cymru Premier - Round 12 13.03.2021 16:30:00 Penybont Connahs Q. 5.75 4.00 1.50 -> Value: 3.02 Score: 0 0 Odd: 4.0 Favourite: 2 final: profit :+: 30.0
 g_1_GWzVSAd9 WALES Cymru Premier - Round 16 13.03.2021 19:15:00 Haverfordwest TNS 11.00 6.00 1.20 -> Value: 2.33 Score: 2 1 Odd: 6.0 Favourite: 2 final: loss :+: 10
 g_1_Q1EPTJpc WORLD Club Friendly 13.03.2021 06:30:00 White City (Aus) Adelaide City (Aus) 5.00 4.60 1.44 -> Value: 5.81 Score: 0 2 Odd: 4.6 Favourite: 2 final: loss :+: 10
-g_1_pG4SUTcC WORLD Club Friendly 13.03.2021 16:00:00 HJK (Fin) Ilves (Fin) 1.33 5.00 7.50 -> Value: 2.65 Score: 2 1 Odd: 1.33 Favourite: 1 final: profit :+: handicap -1g_1_63Im4eE1 NETHERLANDS Eredivisie - Round 26 13.03.2021 19:45:00 Den Haag Heracles 5.00 3.80 1.65 -> Value: 5.70 Score: 1 2 Odd: 1.65 Favourite: 2 final: profit :+: handicap -1
+g_1_pG4SUTcC WORLD Club Friendly 13.03.2021 16:00:00 HJK (Fin) Ilves (Fin) 1.33 5.00 7.50 -> Value: 2.65 Score: 2 1 Odd: 1.33 Favourite: 1 final: profit :+: handicap -1
+g_1_63Im4eE1 NETHERLANDS Eredivisie - Round 26 13.03.2021 19:45:00 Den Haag Heracles 5.00 3.80 1.65 -> Value: 5.70 Score: 1 2 Odd: 1.65 Favourite: 2 final: profit :+: handicap -1
 
 g_1_IH4Ve6tt SPAIN LaLiga - Round 27 13.03.2021 17:15:00 Real Madrid Elche 1.20 6.50 15.00 -> Value: 2.45 Score: 2 1 Odd: 1.2 Favourite: 1 final: profit :+: handicap -1
 
@@ -169,4 +170,5 @@ g_1_pfewnZD4 TURKEY 1. Lig - Round 26 13.03.2021 12:30:00 Keciorengucu Eskisehir
 g_1_pG4SUTcC WORLD Club Friendly 13.03.2021 16:00:00 HJK (Fin) Ilves (Fin) 1.33 5.00 7.50 -> Value: 2.65 Score: 2 1 Odd: 1.33 Favourite: 1 final: profit :+: handicap -1
 
 
-Total profit: 794.3
+
+Total profit: 634.3

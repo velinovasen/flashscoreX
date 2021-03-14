@@ -1,0 +1,28 @@
+g_1_CdVGgVtJ ARGENTINA Copa de la Liga Profesional - Round 4 09.03.2021 02:30:00 River Plate Argentinos Jrs 1.28 5.25 10.00 -> Value: 4.80 Score: 0 1 Odd: 5.25 Favourite: 1 final: loss :+: 10
+g_1_tbMBlrd0 AZERBAIJAN Premier League - Round 19 09.03.2021 15:15:00 Zira Qarabag 4.75 3.70 1.60 -> Value: 5.82 Score: 0 2 Odd: 3.7 Favourite: 2 final: loss :+: 10
+g_1_zsubJeP6 BRAZIL Campeonato Gaucho - First stage - Round 3 09.03.2021 01:00:00 Internacional Sao Luiz 1.36 4.50 7.50 -> Value: 0.27 Score: 1 2 Odd: 4.5 Favourite: 1 final: loss :+: 10
+g_1_MwyfKyA0 BRAZIL Campeonato Gaucho - First stage - Round 3 09.03.2021 03:00:00 Novo Hamburgo Juventude 4.00 3.40 1.80 -> Value: 4.30 Score: 1 3 Odd: 3.4 Favourite: 2 final: loss :+: 10
+g_1_0f7GHuPq BRAZIL Campeonato Paulista - Round 3 09.03.2021 00:00:00 Santo Andre Sao Caetano 1.55 3.60 6.00 -> Value: 2.43 Score: 0 0 Odd: 3.6 Favourite: 1 final: profit :+: 26.0
+g_1_WE9YIfhr CZECH REPUBLIC 1. Liga - Round 21 09.03.2021 19:00:00 Sparta Prague Pribram 1.16 7.50 11.00 -> Value: 6.50 Score: 4 0 Odd: 7.5 Favourite: 1 final: loss :+: 10
+g_1_WIyrkIn5 CZECH REPUBLIC MOL Cup - 1/8-finals 09.03.2021 17:00:00 Bohemians 1905 Sigma Olomouc 2.50 3.00 2.75 -> Value: 0.63 Score: 0 2 Odd: 3.0 Favourite: X final: loss :+: 10
+g_1_jX7Ot5x6 ECUADOR Liga Pro - First stage - Round 3 09.03.2021 02:00:00 Tecnico U. Nueve de Octubre 2.10 3.10 3.40 -> Value: 15.81 Score: 0 0 Odd: 3.1 Favourite: X final: profit :+: 21.0
+g_1_Cdermk9E ENGLAND National League - Round 30 09.03.2021 21:45:00 Altrincham Hartlepool 3.40 3.50 2.00 -> Value: 9.97 Score: 1 1 Odd: 3.5 Favourite: X final: profit :+: 25.0
+g_1_vqa2pgh3 ESTONIA Estonian Cup - Quarter-finals 09.03.2021 18:00:00 Flora Tammeka 1.12 7.00 13.00 -> Value: 0.66 Score: 2 1 Odd: 1.12 Favourite: 1 final: profit :+: handicap -1
+g_1_nZZU3EPm FRANCE National - Round 20 09.03.2021 19:00:00 Boulogne Bastia-Borgo 1.55 3.50 5.50 -> Value: 2.59 Score: 1 1 Odd: 3.5 Favourite: 1 final: profit :+: 25.0
+g_1_YPhjSl85 FRANCE National - Round 22 09.03.2021 21:00:00 Red Star Sete 1.75 3.10 4.60 -> Value: 6.82 Score: 1 1 Odd: 3.1 Favourite: 1 final: profit :+: 21.0
+g_1_tW7QdBCp IRAQ Super League - Round 23 09.03.2021 15:15:00 Al Talaba Baghdad 2.65 2.80 2.65 -> Value: 3.76 Score: 1 2 Odd: 2.8 Favourite: X final: loss :+: 10
+g_1_Eud8Tblr ISRAEL Liga Alef South - Round 9 09.03.2021 15:00:00 Maccabi Yavne Agudat Sport Ashdod 2.70 3.10 2.40 -> Value: 10.14 Score: 0 4 Odd: 3.1 Favourite: X final: loss :+: 10
+g_1_dnj91QlB JORDAN Shield Cup - Play Offs - Semi-finals 09.03.2021 18:00:00 Al Jazeera Amman Al Jalil 1.50 3.75 5.50 -> Value: 9.54 Score: 0 0 Odd: 3.75 Favourite: 1 final: profit :+: 27.5
+g_1_SGXLjdsE MALAYSIA Super League - Round 2 09.03.2021 15:00:00 Johor DT Penang 1.28 5.25 7.00 -> Value: 3.69 Score: 2 0 Odd: 5.25 Favourite: 1 final: loss :+: 10
+g_1_GjsfeeYo NORTHERN IRELAND NIFL Premiership - Round 12 09.03.2021 21:30:00 Portadown Glenavon 5.25 4.75 1.44 -> Value: 0.75 Score: 1 2 Odd: 1.44 Favourite: 2 final: profit :+: handicap -1
+g_1_fc4PH3n9 NORTHERN IRELAND NIFL Premiership - Round 27 09.03.2021 21:45:00 Linfield Warrenpoint 1.20 6.50 9.00 -> Value: 0.26 Score: 5 0 Odd: 6.5 Favourite: 1 final: loss :+: 10
+g_1_fPh24vJl RUSSIA Youth League - Round 17 09.03.2021 13:00:00 Spartak Moscow U19 Akhmat Grozny U19 1.85 3.60 3.40 -> Value: 9.77 Score: 3 0 Odd: 3.6 Favourite: X final: loss :+: 10
+g_1_zTmQF6JT TANZANIA Ligi Kuu Bara - Round 23 09.03.2021 13:00:00 Mbeya City Dodoma Jiji 2.75 2.70 2.65 -> Value: 4.50 Score: 1 1 Odd: 2.7 Favourite: X final: profit :+: 17.0
+g_1_riMhOgjj THAILAND Thai League 1 - Round 26 09.03.2021 14:00:00 Rayong FC Prachuap 3.40 3.40 1.91 -> Value: 4.77 Score: 1 3 Odd: 3.4 Favourite: X final: loss :+: 10
+g_1_vqa2pgh3 ESTONIA Estonian Cup - Quarter-finals 09.03.2021 18:00:00 Flora Tammeka 1.12 7.00 13.00 -> Value: 0.66 Score: 2 1 Odd: 1.12 Favourite: 1 final: profit :+: handicap -1
+
+g_1_GjsfeeYo NORTHERN IRELAND NIFL Premiership - Round 12 09.03.2021 21:30:00 Portadown Glenavon 5.25 4.75 1.44 -> Value: 0.75 Score: 1 2 Odd: 1.44 Favourite: 2 final: profit :+: handicap -1
+
+
+
+Total profit: 22.5

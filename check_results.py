@@ -16,16 +16,16 @@ from selenium.webdriver import ChromeOptions, Chrome, ActionChains
 class CheckResults:
 
     def main(self):
-        # driver = self.driver_chrome()
+        driver = self.driver_chrome()
 
-        # games_data = self.get_games()
+        games_data = self.get_games()
 
-        # self.get_results(driver, games_data)
+        self.get_results(driver, games_data)
 
         self.calculate_profit()
 
     def calculate_profit(self):
-        with open('results13.03.2021.txt', 'r') as file:
+        with open('results07.03.2021.txt', 'r') as file:
             all_handicaps = []
             total_profit = 0
             for line in file.readlines():
@@ -36,12 +36,13 @@ class CheckResults:
                 elif profit_token == 'profit':
                     if 'handicap' in amount_token:
                         all_handicaps.append(line)
+                        total_profit -= 10
                     else:
                         total_profit += float(amount_token)
                 print(total_profit)
             file.close()
 
-        with open('results13.03.2021.txt', 'a') as file:
+        with open('results07.03.2021.txt', 'a') as file:
 
             [file.write(hand + '\n') for hand in all_handicaps]
 
@@ -69,8 +70,10 @@ class CheckResults:
             elif home_team < away_team:
                 sign = '2'
 
+            print(game)
             odds_raw = str(game).split(' -> Value:')[0].split(' ')
             favourite = 'X'
+
             home_odds, draw_odds, away_odds = float(odds_raw[-3]), float(odds_raw[-2]), float(odds_raw[-1])
             if home_odds <= 1.80:
                 favourite = '1'
@@ -78,7 +81,7 @@ class CheckResults:
                 favourite = '2'
 
             final_result = 'loss'
-            with open('results13.03.2021.txt', 'a') as file:
+            with open('results07.03.2021.txt', 'a') as file:
                 if sign == 'X':
                     final_result = f'profit :+: {(draw_odds * 10) - 10}'
                     file.write(f"{game[1].strip()} Score: {home_team} {away_team} Odd: {draw_odds} Favourite: {favourite} final: {final_result}\n")
@@ -98,8 +101,9 @@ class CheckResults:
 
     def get_games(self):
         games = []
-        with open('valuebets13.03.2021.txt') as file:
+        with open('valuebets07.03.2021.txt') as file:
             for game in file.readlines():
+                print(game)
                 game_id = game.split(' ')[0]
                 games.append([game_id, game])
         return games

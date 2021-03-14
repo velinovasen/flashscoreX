@@ -1,0 +1,106 @@
+g_1_YBP9N00O FRANCE Ligue 1 - Round 29 14.03.2021 16:00:00 Dijon Bordeaux 3.60 3.30 2.15 -> Value: 0.68
+g_1_QoM1PMVB FRANCE Ligue 1 - Round 29 14.03.2021 22:00:00 Paris SG Nantes 1.20 6.00 15.00 -> Value: 2.50
+g_1_hp8rDqQu GERMANY Bundesliga - Round 25 14.03.2021 14:30:00 Bayer Leverkusen Arminia Bielefeld 1.36 4.75 8.00 -> Value: 6.68
+g_1_SMtxh0fU GERMANY Bundesliga - Round 25 14.03.2021 16:30:00 RB Leipzig Eintracht Frankfurt 1.75 3.90 4.33 -> Value: 1.42
+g_1_EXH67ufH GERMANY Bundesliga - Round 25 14.03.2021 19:00:00 Stuttgart Hoffenheim 2.45 3.80 2.62 -> Value: 3.47
+g_1_ppAg671G ITALY Serie A - Round 27 14.03.2021 16:00:00 Torino Inter 8.00 5.00 1.36 -> Value: 10.74
+g_1_M9XMluWr ITALY Serie A - Round 27 14.03.2021 19:00:00 Cagliari Juventus 6.00 4.50 1.50 -> Value: 4.62
+g_1_E5w9BwMR NETHERLANDS Eredivisie - Round 26 14.03.2021 17:45:00 Zwolle Ajax 12.00 6.00 1.22 -> Value: 4.82
+g_1_ADbFkVJ6 SPAIN LaLiga - Round 27 14.03.2021 17:15:00 Granada CF Real Sociedad 5.50 4.20 1.57 -> Value: 2.67
+g_1_jHZqHp2E ARGENTINA Primera Nacional - Round 1 14.03.2021 22:10:00 Brown Adrogue Guillermo Brown 2.15 2.87 3.25 -> Value: 2.99
+g_1_EgqTW6D1 ARGENTINA Primera C - Apertura - Round 2 14.03.2021 22:10:00 Midland Central Cordoba 2.10 2.90 3.50 -> Value: 4.41
+g_1_nD6FhlzL ARGENTINA Primera C - Apertura - Round 2 14.03.2021 22:10:00 Victoriano A. Berazategui 2.10 2.90 3.50 -> Value: 8.38
+g_1_lAOoA9ym AUSTRALIA NPL Queensland - Round 2 14.03.2021 10:00:00 Brisbane Strikers Gold Coast Knights 17.00 15.00 1.05 -> Value: 12.58
+g_1_l2fVVWpc AZERBAIJAN Premier League - Round 20 14.03.2021 15:15:00 Neftci Baku Sabail 1.42 4.10 6.00 -> Value: 2.34
+g_1_t6tFxFbs BELGIUM 1B Pro League - Round 23 14.03.2021 21:00:00 Club Brugge KV U23 Seraing 8.00 5.00 1.28 -> Value: 3.55
+g_1_WrinHdw1 BOLIVIA Division Profesional - Round 2 14.03.2021 21:00:00 Always Ready San Jose 1.10 8.00 15.00 -> Value: 1.94
+g_1_hEqnoJl1 BRAZIL Campeonato Baiano - Round 5 14.03.2021 21:00:00 Alagoinhas Doce Mel 1.40 4.00 7.00 -> Value: 8.55
+g_1_0vqjpw47 BRAZIL Campeonato Baiano - Round 5 14.03.2021 21:00:00 Jacuipense Vitoria da Conquista 1.60 3.50 5.00 -> Value: 0.47
+g_1_foOh4Cse BRAZIL Campeonato Carioca - Taca Guanabara - Round 3 14.03.2021 02:05:00 Bangu Botafogo RJ 11.00 3.60 1.44 -> Value: 8.30
+g_1_lMxd3Wd1 BRAZIL Campeonato Carioca - Taca Guanabara - Round 3 14.03.2021 20:30:00 Portuguesa RJ Volta Redonda 2.70 3.40 2.30 -> Value: 2.33
+g_1_jBOJFtQI BRAZIL Campeonato Catarinense - Round 3 14.03.2021 21:00:00 Criciuma Chapecoense-SC 3.10 2.87 2.25 -> Value: 0.03
+g_1_Od8pU82l BRAZIL Campeonato Gaucho - First stage - Round 4 14.03.2021 01:00:00 Brasil de Pelotas SER Caxias 3.00 3.00 2.25 -> Value: 5.56
+g_1_rVONfUiC BRAZIL Campeonato Mineiro - Round 4 14.03.2021 02:00:00 America MG Caldense 1.45 3.60 6.00 -> Value: 0.25
+g_1_2u3GzLVL BRAZIL Campeonato Paulista - Round 4 14.03.2021 21:00:00 Palmeiras Ferroviaria 1.53 3.75 5.50 -> Value: 6.73
+g_1_2u5OURFa BRAZIL Campeonato Paulista A2 - Round 4 14.03.2021 15:00:00 Monte Azul Oeste 2.65 3.00 2.50 -> Value: 2.88
+g_1_rc9nZt7o BRAZIL Campeonato Paulista A2 - Round 4 14.03.2021 20:00:00 Agua Santa Sertaozinho 1.40 4.10 6.50 -> Value: 14.28
+g_1_QJsDcatc BRAZIL Campeonato Potiguar - First stage - Round 4 14.03.2021 20:30:00 ASSU Santa Cruz de Natal 4.00 3.50 1.75 -> Value: 3.16
+g_1_4MKleteR BRAZIL Copa do Nordeste - Round 3 14.03.2021 01:30:00 Botafogo PB Sampaio Correa 2.40 2.90 2.85 -> Value: 3.29
+g_1_h63Xhodp BULGARIA Parva liga - Round 21 14.03.2021 17:00:00 CSKA Sofia Etar 1.25 5.00 11.00 -> Value: 8.65
+g_1_2L6veKJA CAMEROON Elite One - Round 2 14.03.2021 15:00:00 APEJES Academy Canon Yaounde 2.50 2.70 2.95 -> Value: 3.76
+g_1_xEaqoqjn CAMEROON Elite One - Round 2 14.03.2021 17:00:00 Eding Sport Bamboutos FC 3.00 2.85 2.35 -> Value: 3.65
+g_1_rJlWrCJG COLOMBIA Primera A - Apertura - Round 12 14.03.2021 00:30:00 Dep. Pasto Petrolera 1.44 4.20 7.50 -> Value: 6.46
+g_1_baOw0NM7 COLOMBIA Primera B - Apertura - Round 11 14.03.2021 22:00:00 Leones Quindio 2.15 2.80 3.50 -> Value: 0.14
+g_1_C2CLO6a8 COLOMBIA Primera B - Apertura - Round 11 14.03.2021 22:30:00 Huila U. Magdalena 1.95 2.90 3.90 -> Value: 0.82
+g_1_MiIKAjTC COSTA RICA Primera Division - Clausura - Round 13 14.03.2021 03:00:00 Alajuelense Limon 1.20 5.50 13.00 -> Value: 5.03
+g_1_W2P7Dhqf COSTA RICA Primera Division - Clausura - Round 13 14.03.2021 23:00:00 ADR Jicaral Saprissa 4.00 3.20 1.85 -> Value: 0.33
+g_1_0Wrvqz5H COSTA RICA Liga de Ascenso - Clausura - Round 8 14.03.2021 00:00:00 Liberia Guanacasteca 2.50 3.20 2.50 -> Value: 1.20
+g_1_6Pg631n1 COSTA RICA Liga de Ascenso - Clausura - Round 8 14.03.2021 19:00:00 Municipal San Ramon Santa Ana 1.57 3.75 4.75 -> Value: 4.27
+g_1_YL01sVz0 CZECH REPUBLIC 1. Liga - Round 23 14.03.2021 19:30:00 Mlada Boleslav Slavia Prague 4.50 4.00 1.65 -> Value: 2.35
+g_1_bguN0SXH DENMARK 2nd Division - Group 2 - Round 14 14.03.2021 14:00:00 Naestved Slagelse 1.53 4.20 5.00 -> Value: 4.34
+g_1_EZKEiMjO ECUADOR Liga Pro - First stage - Round 4 14.03.2021 20:00:00 Mushuc Runa Manta 1.61 3.75 5.00 -> Value: 0.40
+g_1_Ym5TJeFI EL SALVADOR Primera Division - Clausura - 1st Phase - Round 6 14.03.2021 03:15:00 Metapan Sonsonate 1.50 4.00 5.25 -> Value: 3.69
+g_1_bNrzMuO6 ESTONIA Meistriliiga - Round 3 14.03.2021 13:00:00 Paide Narva 1.14 6.75 12.00 -> Value: 1.93
+g_1_vJX2UOkP FINLAND Suomen Cup - Play Offs - 1/8-finals 14.03.2021 17:30:00 Rovaniemi HIFK 13.00 6.00 1.18 -> Value: 3.87
+g_1_nklbmoeH GERMANY 2. Bundesliga - Round 25 14.03.2021 14:30:00 Karlsruher Braunschweig 1.80 3.80 4.00 -> Value: 0.94
+g_1_GOhBBRj1 GERMANY 3. Liga - Round 28 14.03.2021 15:00:00 Mannheim Meppen 2.00 3.75 3.40 -> Value: 7.73
+g_1_rwZxaHnT GREECE Super League - Round 26 14.03.2021 19:00:00 Lamia Atromitos 2.30 2.80 3.25 -> Value: 3.52
+g_1_vsMWX9GD GREECE Super League 2 - Round 14 14.03.2021 14:45:00 Doxa Dramas Xanthi FC 6.75 3.80 1.44 -> Value: 1.35
+g_1_ILv9LMDT HUNGARY OTP Bank Liga - Round 26 14.03.2021 18:00:00 Ferencvaros Paks 1.36 4.75 6.50 -> Value: 10.24
+g_1_KdXTpCu1 ICELAND League Cup - Round 5 14.03.2021 14:00:00 Grotta Vestri 1.33 5.50 6.00 -> Value: 2.85
+g_1_GlQRzzrC IRAN Division 1 - Round 18 14.03.2021 13:30:00 Astara Shahin Bushehr 1.91 2.90 4.10 -> Value: 4.05
+g_1_jgaJXoia ITALY Serie C - Group A - Round 30 14.03.2021 16:00:00 Pro Vercelli Como 2.10 3.25 3.10 -> Value: 3.22
+g_1_OQVJTb69 ITALY Serie C - Group B - Round 30 14.03.2021 13:30:00 Modena Mantova 1.85 3.40 3.75 -> Value: 2.73
+g_1_6kyFUvi3 ITALY Serie C - Group B - Round 30 14.03.2021 16:00:00 Sudtirol Imolese 1.55 3.60 5.25 -> Value: 2.10
+g_1_ANcrGswf ITALY Serie C - Group C - Round 30 14.03.2021 16:00:00 Casertana Bisceglie 1.61 3.40 5.00 -> Value: 1.59
+g_1_UVAEWPXA ITALY Serie C - Group C - Round 30 14.03.2021 16:00:00 Juve Stabia Turris 1.72 3.40 4.20 -> Value: 12.03
+g_1_tzbi9vBR JAPAN J1 League - Round 4 14.03.2021 07:00:00 Shimizu S-Pulse Sagan Tosu 2.75 3.40 2.50 -> Value: 4.15
+g_1_f9bjAAfi JAPAN J2 League - Round 3 14.03.2021 07:00:00 Kanazawa Giravanz Kitakyushu 2.00 3.60 3.50 -> Value: 4.73
+g_1_vgvlat8f JAPAN J2 League - Round 3 14.03.2021 07:00:00 Machida Verdy 2.50 3.10 2.90 -> Value: 3.53
+g_1_Iqwhb0N0 JAPAN J2 League - Round 3 14.03.2021 07:00:00 Okayama Sagamihara 1.80 3.20 5.00 -> Value: 15.85
+g_1_6g58oRHj JAPAN J2 League - Round 3 14.03.2021 07:00:00 Yamaga Montedio Yamagata 3.40 3.10 2.25 -> Value: 4.52
+g_1_vNivapnj JAPAN J3 League - Round 1 14.03.2021 07:00:00 Gifu Vanraure 1.42 4.50 5.50 -> Value: 5.24
+g_1_IBwZchfB KAZAKHSTAN Premier League - Round 1 14.03.2021 13:00:00 Kaisar Kyzylorda Taraz 1.83 3.10 4.10 -> Value: 0.87
+g_1_nXnfcp8n LUXEMBOURG National Division - Round 16 14.03.2021 17:00:00 Benfica Wiltz 4.20 4.20 1.57 -> Value: 2.31
+g_1_UgTpCkbJ MEXICO Liga MX - Clausura - Round 11 14.03.2021 03:00:00 U.A.N.L.- Tigres Mazatlan FC 1.44 4.00 8.00 -> Value: 4.55
+g_1_21GeVkgN NETHERLANDS Eredivisie Women - Round 12 14.03.2021 13:15:00 Ajax W PEC Zwolle W 1.13 8.25 9.75 -> Value: 7.86
+g_1_b3bhVAJb NICARAGUA Liga Primera - Clausura - Round 11 14.03.2021 03:00:00 CD Junior Jalapa 2.45 3.40 2.45 -> Value: 2.54
+g_1_SQMSfle2 NIGERIA NPFL - Round 15 14.03.2021 17:00:00 Dakkada FC Katsina Utd 1.33 4.00 9.00 -> Value: 9.00
+g_1_Wbm93ta2 NIGERIA NPFL - Round 15 14.03.2021 17:00:00 Enugu Rangers Adamawa Utd 1.10 7.00 18.00 -> Value: 7.19
+g_1_K0JKdAQk NIGERIA NPFL - Round 15 14.03.2021 17:00:00 Lobi Stars Plateau United 1.53 3.25 6.75 -> Value: 0.30
+g_1_drr58mxD NORTH MACEDONIA 1. MFL - Round 23 14.03.2021 16:00:00 Struga Trim & Lum Renova 1.75 3.30 4.40 -> Value: 1.87
+g_1_EHu00Wxh PARAGUAY Primera Division - Apertura - Round 8 14.03.2021 22:45:00 Guarani Guairena FC 1.95 3.10 3.60 -> Value: 7.07
+g_1_vg6sHIWH PERU Liga 1 - Apertura - Round 1 14.03.2021 01:00:00 Sport Boys Cesar Vallejo 4.33 3.30 1.75 -> Value: 5.04
+g_1_ber5CT5p PORTUGAL Liga Portugal 2 - Round 24 14.03.2021 16:00:00 Chaves FC Porto B 2.05 3.20 3.40 -> Value: 2.26
+g_1_SdiTUK1B PORTUGAL Campeonato de Portugal - Round 20 14.03.2021 14:00:00 Sporting Ideal Montijo 1.95 3.20 3.70 -> Value: 0.20
+g_1_tnE523XA PORTUGAL Campeonato de Portugal - Round 20 14.03.2021 17:00:00 Aljustrelense Louletano 8.50 4.25 1.34 -> Value: 2.11
+g_1_EF6R4jRT PORTUGAL Campeonato de Portugal - Round 20 14.03.2021 17:00:00 Braga B Cerveira 1.02 11.00 41.00 -> Value: 8.84
+g_1_zJUwhKZL ROMANIA Liga 1 - Round 27 14.03.2021 20:30:00 CFR Cluj Poli Iasi 1.20 5.50 13.00 -> Value: 6.43
+g_1_UZd5iuq6 ROMANIA Liga 2 - Round 19 14.03.2021 11:30:00 Csikszereda M. Ciuc Calarasi 2.37 3.10 2.80 -> Value: 1.64
+g_1_zaISwME6 ROMANIA Liga 2 - Round 19 14.03.2021 13:45:00 Unirea Slobozia FC Rapid Bucuresti 6.50 3.60 1.50 -> Value: 2.15
+g_1_S2f12jal RUSSIA Premier League - Round 22 14.03.2021 13:00:00 Ufa Rubin Kazan 3.50 3.00 2.25 -> Value: 0.70
+g_1_WW8V7CyR RUSSIA Premier League - Round 22 14.03.2021 15:30:00 Tambov Krasnodar 21.00 11.00 1.08 -> Value: 14.21
+g_1_2PluiUMd RUSSIA FNL - Round 30 14.03.2021 13:00:00 FK Krylya Sovetov Samara Omsk 1.16 6.00 12.00 -> Value: 0.75
+g_1_613PVJjl RUSSIA FNL - Round 30 14.03.2021 14:00:00 Akron Togliatti Orenburg 6.00 3.50 1.53 -> Value: 8.91
+g_1_fT6MProf RUSSIA Supreme Division Women - Round 1 14.03.2021 13:00:00 Lokomotiv Moscow W Krasnodar W 1.22 5.50 9.50 -> Value: 7.43
+g_1_GreVNMF6 RUSSIA Supreme Division Women - Round 1 14.03.2021 15:00:00 Zenit W Ryazan W 1.36 5.00 5.75 -> Value: 4.06
+g_1_ADbizze0 SENEGAL Ligue 1 - Round 10 14.03.2021 19:00:00 Niary Tally Excellence 4.25 3.00 1.85 -> Value: 18.09
+g_1_KbYW22bT SERBIA Super Liga - Round 27 14.03.2021 14:00:00 Napredak Backa 1.57 3.75 5.25 -> Value: 3.01
+g_1_O6o4U4P4 SOUTH KOREA K League 2 - Round 3 14.03.2021 06:30:00 Seoul E. Jeonnam 2.10 2.90 3.80 -> Value: 7.37
+g_1_KnKzvhaR SPAIN LaLiga2 - Round 29 14.03.2021 15:00:00 Logrones Malaga 2.90 2.80 2.70 -> Value: 6.46
+g_1_Qm3JVT67 SPAIN LaLiga2 - Round 29 14.03.2021 19:15:00 Tenerife Albacete 1.57 3.50 7.00 -> Value: 2.27
+g_1_bFf7mAsp SPAIN Segunda Division B - Group 1 - Round 17 14.03.2021 18:00:00 Burgos CF Lealtad 1.44 3.60 6.75 -> Value: 4.77
+g_1_bs1p9Cp1 SPAIN Segunda Division B - Group 2 - Round 17 14.03.2021 17:30:00 Calahorra Osasuna B 1.85 2.90 4.25 -> Value: 0.56
+g_1_0YLuMq6a SPAIN Segunda Division B - Group 2 - Round 20 14.03.2021 18:00:00 Arenas Club Amorebieta 2.95 2.80 2.35 -> Value: 4.25
+g_1_bDL54OYJ SPAIN Segunda Division B - Group 3 - Round 17 14.03.2021 17:30:00 Orihuela Villarreal B 3.00 2.90 2.25 -> Value: 4.27
+g_1_2ZiWhAu6 SPAIN Segunda Division B - Group 5 - Round 17 14.03.2021 13:00:00 CF Talavera Villarrubia 1.72 2.95 5.00 -> Value: 4.48
+g_1_ljfrj8PO SPAIN Segunda Division B - Group 5 - Round 17 14.03.2021 13:00:00 Extremadura UD Melilla 1.90 2.90 4.00 -> Value: 0.72
+g_1_hpSjfN3q SPAIN Segunda Division B - Group 5 - Round 17 14.03.2021 17:30:00 Navalcarnero Internacional de Madrid 2.70 2.75 2.60 -> Value: 3.07
+g_1_UscFZZ7A SPAIN Tercera Division - Group 5 - Round 20 14.03.2021 13:00:00 CE Europa Igualada 1.40 4.10 5.75 -> Value: 12.37
+g_1_fkESFzDM SPAIN Tercera Division - Group 10 - Round 19 14.03.2021 13:00:00 San Roque Coria C.F. 1.45 4.10 5.00 -> Value: 8.99
+g_1_63IEC7cQ SWITZERLAND Super League - Round 25 14.03.2021 17:00:00 Sion Servette 4.33 3.75 1.75 -> Value: 6.93
+g_1_jHHvZTJi TANZANIA Ligi Kuu Bara - Round 24 14.03.2021 15:00:00 Tanzania Prisons JKT Tanzania 1.85 2.90 4.50 -> Value: 8.13
+g_1_Cp1DRlea TUNISIA Ligue Professionnelle 1 - Round 18 14.03.2021 15:00:00 Olympique Beja US Tataouine 2.15 2.80 3.50 -> Value: 8.17
+g_1_x2DppDrH TURKEY 1. Lig - Round 26 14.03.2021 12:30:00 Tuzlaspor Umraniyespor 2.15 3.20 3.20 -> Value: 2.35
+g_1_KQ2kqXcN TURKEY 1. Lig - Round 26 14.03.2021 15:00:00 Balikesirspor Altay 3.50 3.60 1.90 -> Value: 1.28
+g_1_8n3G2RYc TURKEY 2. Lig Red Group - Round 28 14.03.2021 13:00:00 Serik Belediyespor 1922 Konyaspor 1.80 3.25 4.00 -> Value: 8.02

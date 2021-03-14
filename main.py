@@ -94,7 +94,7 @@ class GameCollector:
                 BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
                 driver.get(BASE_URL)
                 with open(f'checked_today{date_for_file}.txt', 'a') as file:
-                    file.write(f'{game}')
+                    file.write(f"{game} + '\n'")
                 file.close()
                 sleep(3)
                 try:
