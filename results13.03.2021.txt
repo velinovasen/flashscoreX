@@ -1,0 +1,172 @@
+g_1_nsv7wvQ0 ENGLAND Premier League - Round 28 13.03.2021 22:00:00 Fulham Manchester City 9.50 5.00 1.33 -> Value: 0.82 Score: 0 3 Odd: 5.0 Favourite: 2 final: loss :+: 10
+g_1_KAI28LvB GERMANY Bundesliga - Round 25 13.03.2021 16:30:00 Werder Bremen Bayern Munich 13.00 7.00 1.20 -> Value: 2.42 Score: 1 3 Odd: 7.0 Favourite: 2 final: loss :+: 10
+g_1_jVQoC3un GERMANY Bundesliga - Round 25 13.03.2021 16:30:00 Wolfsburg Schalke 1.40 4.50 8.00 -> Value: 5.10 Score: 5 0 Odd: 4.5 Favourite: 1 final: loss :+: 10
+g_1_63Im4eE1 NETHERLANDS Eredivisie - Round 26 13.03.2021 19:45:00 Den Haag Heracles 5.00 3.80 1.65 -> Value: 5.70 Score: 1 2 Odd: 1.65 Favourite: 2 final: profit :+: handicap -1
+g_1_OvTr5yae NETHERLANDS Eredivisie - Round 26 13.03.2021 21:00:00 AZ Alkmaar Twente 1.50 4.50 5.75 -> Value: 3.07 Score: 4 1 Odd: 4.5 Favourite: 1 final: loss :+: 10
+g_1_QLKWcgCQ SPAIN LaLiga - Round 27 13.03.2021 15:00:00 Alaves Cadiz CF 2.15 2.90 4.00 -> Value: 0.33 Score: 1 1 Odd: 2.9 Favourite: X final: profit :+: 19.0
+g_1_IH4Ve6tt SPAIN LaLiga - Round 27 13.03.2021 17:15:00 Real Madrid Elche 1.20 6.50 15.00 -> Value: 2.45 Score: 2 1 Odd: 1.2 Favourite: 1 final: profit :+: handicap -1
+g_1_0f7C9Qck ALGERIA Ligue 1 - Round 17 13.03.2021 16:00:00 Oran Bordj Bou Arreridj 1.25 4.75 12.00 -> Value: 10.55 Score: 1 1 Odd: 4.75 Favourite: 1 final: profit :+: 37.5
+g_1_IoQZU4aJ ALGERIA U21 League - Round 17 13.03.2021 11:00:00 Hussein Dey U21 Paradou U21 5.75 3.90 1.50 -> Value: 3.56 Score: 0 1 Odd: 1.5 Favourite: 2 final: profit :+: handicap -1
+g_1_6Vv0Hgdc ARGENTINA Primera Nacional - Round 1 13.03.2021 01:10:00 Nueva Chicago CA Mitre 2.25 2.80 3.30 -> Value: 10.32 Score: 1 2 Odd: 2.8 Favourite: X final: loss :+: 10
+g_1_lhkodqQl ARGENTINA Primera Nacional - Round 1 13.03.2021 22:30:00 Santamarina Gimnasia Jujuy 2.20 2.90 3.20 -> Value: 0.87 Score: 2 1 Odd: 2.9 Favourite: X final: loss :+: 10
+g_1_rToJS0Gb ARGENTINA Primera B - Apertura - Round 2 13.03.2021 22:10:00 Sacachispas Defensores Unidos 2.65 2.75 2.70 -> Value: 2.84 Score: 0 1 Odd: 2.75 Favourite: X final: loss :+: 10
+g_1_00xDnMQC AZERBAIJAN Premier League - Round 20 13.03.2021 15:00:00 Qarabag Sabah Baku 1.15 6.00 13.50 -> Value: 9.73 Score: 2 0 Odd: 6.0 Favourite: 1 final: loss :+: 10
+g_1_W8v37jW3 BELARUS Vysshaya Liga - Round 1 13.03.2021 15:00:00 Rukh Brest FC Gomel 1.65 3.40 5.25 -> Value: 11.73 Score: 1 1 Odd: 3.4 Favourite: 1 final: profit :+: 24.0
+g_1_lpkb8WGc BELARUS Vysshaya Liga - Round 1 13.03.2021 19:45:00 Shakhtyor Soligorsk FC Minsk 1.16 5.50 15.00 -> Value: 0.67 Score: 1 0 Odd: 1.16 Favourite: 1 final: profit :+: handicap -1
+g_1_OImvJI8l BOLIVIA Division Profesional - Round 2 13.03.2021 23:15:00 Wilstermann Nacional Potosi 1.30 4.50 10.00 -> Value: 4.78 Score: 1 2 Odd: 4.5 Favourite: 1 final: loss :+: 10
+g_1_ENprnaZf BRAZIL Campeonato Baiano - Round 5 13.03.2021 21:00:00 UNIRB Fluminense de Feira 1.57 3.80 4.50 -> Value: 18.28 Score: 0 0 Odd: 3.8 Favourite: 1 final: profit :+: 28.0
+g_1_WvoDk7Tf BRAZIL Campeonato Capixaba - Round 3 13.03.2021 20:00:00 Real Noroeste SAO Mateus 1.13 6.75 14.50 -> Value: 1.18 Score: 2 0 Odd: 6.75 Favourite: 1 final: loss :+: 10
+g_1_GfPl5hSl BRAZIL Campeonato Carioca - Taca Guanabara - Round 3 13.03.2021 20:30:00 Madureira Resende 2.37 3.25 2.70 -> Value: 1.28 Score: 0 0 Odd: 3.25 Favourite: X final: profit :+: 22.5
+g_1_pzBWQ6YJ BRAZIL Campeonato Catarinense - Round 3 13.03.2021 21:00:00 Metropolitano Joinville 3.10 3.25 2.05 -> Value: 2.73 Score: 0 1 Odd: 3.25 Favourite: X final: loss :+: 10
+g_1_WKtvzwMH BRAZIL Campeonato Goiano - Round 4 13.03.2021 20:30:00 Vila Nova FC Ipora 1.33 4.00 8.50 -> Value: 7.23 Score: 5 0 Odd: 4.0 Favourite: 1 final: loss :+: 10
+g_1_48kNwLMh BRAZIL Campeonato Goiano - Round 4 13.03.2021 21:00:00 Atletico GO Gremio Anapolis 1.36 4.00 7.50 -> Value: 2.91 Score: 2 0 Odd: 4.0 Favourite: 1 final: loss :+: 10
+g_1_EkX6bChm BRAZIL Campeonato Mineiro - Round 4 13.03.2021 00:00:00 Boa Coimbra 2.05 2.87 3.60 -> Value: 5.76 Score: 2 1 Odd: 2.87 Favourite: X final: loss :+: 10
+g_1_4vQJeAx6 BRAZIL Campeonato Mineiro - Round 4 13.03.2021 21:30:00 Patrocinense Atletico-MG 17.00 7.00 1.10 -> Value: 12.95 Score: 1 3 Odd: 7.0 Favourite: 2 final: loss :+: 10
+g_1_lGmBwNo3 BRAZIL Campeonato Paulista - Round 4 13.03.2021 21:30:00 Guarani Sao Bento 1.90 3.20 3.80 -> Value: 1.42 Score: 0 0 Odd: 3.2 Favourite: X final: profit :+: 22.0
+g_1_8I3Cy1GF BRAZIL Campeonato Paulista - Round 4 13.03.2021 21:30:00 Novorizontino Sao Paulo 4.75 3.50 1.70 -> Value: 10.58 Score: 2 1 Odd: 3.5 Favourite: 2 final: loss :+: 10
+g_1_hUcySPaI BRAZIL Campeonato Paulista A2 - Round 4 13.03.2021 20:00:00 Taubate Atibaia 2.85 3.20 2.25 -> Value: 9.05 Score: 1 1 Odd: 3.2 Favourite: X final: profit :+: 22.0
+g_1_fTAPe4VD BRAZIL Campeonato Pernambucano - Round 3 13.03.2021 20:00:00 Afogados da Ingazeira Academica Vitoria 1.50 3.60 6.50 -> Value: 1.55 Score: 2 0 Odd: 3.6 Favourite: 1 final: loss :+: 10
+g_1_tOgJPDAt BRAZIL Campeonato Sergipano - Round 4 13.03.2021 21:00:00 Atletico Gloriense Lagarto 5.50 4.50 1.42 -> Value: 17.24 Score: 0 2 Odd: 4.5 Favourite: 2 final: loss :+: 10
+g_1_dlyBCsJ1 BRAZIL Campeonato Sul-Matogrossense - First stage - Round 3 13.03.2021 21:00:00 Aquidauanense Novoperario 1.25 5.00 9.00 -> Value: 2.80 Score: 1 0 Odd: 1.25 Favourite: 1 final: profit :+: handicap -1
+g_1_feVhyXnN BRAZIL Copa do Brasil U20 - 1/16-finals 13.03.2021 00:00:00 Atletico-MG U20 Fluminense U20 1.10 8.75 12.00 -> Value: 6.24 Score: 0 0 Odd: 8.75 Favourite: 1 final: profit :+: 77.5
+g_1_ITvfZbY7 BRAZIL Copa do Nordeste - Round 3 13.03.2021 21:00:00 Vitoria Bahia 3.60 3.30 1.90 -> Value: 0.94 Score: 1 0 Odd: 3.3 Favourite: X final: loss :+: 10
+g_1_r7Wuc2QE BRAZIL Copa do Nordeste - Round 3 13.03.2021 23:15:00 Fortaleza Treze PB 1.34 4.10 8.25 -> Value: 0.19 Score: 1 1 Odd: 4.1 Favourite: 1 final: profit :+: 31.0
+g_1_GEgoZf2C CAMBODIA C-League - Round 2 13.03.2021 13:00:00 Svay Rieng Electricite Du Cambodge 1.04 10.50 18.00 -> Value: 1.30 Score: 6 1 Odd: 10.5 Favourite: 1 final: loss :+: 10
+g_1_KMrMPyO8 CAMEROON Elite Two - Round 2 13.03.2021 16:00:00 Bafang Stade de Bertoua 2.00 2.75 4.00 -> Value: 22.05 Score: 2 2 Odd: 2.75 Favourite: X final: profit :+: 17.5
+g_1_EqrQOewF CAMEROON Elite Two - Round 2 13.03.2021 16:00:00 Fauve Azur Elite Leopard de Douala 1.57 3.25 6.00 -> Value: 11.52 Score: 1 0 Odd: 1.57 Favourite: 1 final: profit :+: handicap -1
+g_1_M30NpYl4 COLOMBIA Primera A - Apertura - Round 12 13.03.2021 03:00:00 Deportes Tolima Jaguares de Cordoba 1.55 3.60 7.50 -> Value: 0.89 Score: 3 2 Odd: 1.55 Favourite: 1 final: profit :+: handicap -1
+g_1_nL4YL4qR COLOMBIA Primera B - Apertura - Round 11 13.03.2021 22:15:00 Barranquilla Tigres 3.00 3.00 2.25 -> Value: 0.23 Score: 1 0 Odd: 3.0 Favourite: X final: loss :+: 10
+g_1_QPOBCCb0 COSTA RICA Primera Division - Clausura - Round 13 13.03.2021 04:00:00 Herediano San Carlos 1.60 3.60 4.75 -> Value: 4.08 Score: 0 1 Odd: 3.6 Favourite: 1 final: loss :+: 10
+g_1_0rHO9ArJ COSTA RICA Primera Division - Clausura - Round 13 13.03.2021 22:00:00 Sporting San Jose Grecia 2.37 3.30 2.70 -> Value: 3.00 Score: 0 0 Odd: 3.3 Favourite: X final: profit :+: 23.0
+g_1_0SCVGBTa CYPRUS Division 2 - Round 23 13.03.2021 15:30:00 ASIL Lysi Digenis Akritas 1.65 3.75 4.33 -> Value: 0.92 Score: 1 1 Odd: 3.75 Favourite: 1 final: profit :+: 27.5
+g_1_MyERHiEg CYPRUS Division 2 - Round 23 13.03.2021 15:30:00 Ayia Napa Kouris Erimi 1.50 4.20 5.00 -> Value: 5.99 Score: 3 1 Odd: 4.2 Favourite: 1 final: loss :+: 10
+g_1_UwZnPZLJ CYPRUS Division 2 - Round 23 13.03.2021 15:30:00 Paeek Zakakiou 1.30 5.00 7.75 -> Value: 11.66 Score: 5 1 Odd: 5.0 Favourite: 1 final: loss :+: 10
+g_1_SEENIXbm CYPRUS Division 2 - Round 23 13.03.2021 15:30:00 Sotiras Alki Oroklini 2.00 3.40 3.30 -> Value: 16.42 Score: 0 0 Odd: 3.4 Favourite: X final: profit :+: 24.0
+g_1_Otn11WTC CYPRUS Division 2 - Round 23 13.03.2021 15:30:00 Ypsonas Achyronas Liopetriou 2.45 3.60 2.40 -> Value: 0.48 Score: 1 1 Odd: 3.6 Favourite: X final: profit :+: 26.0
+g_1_jTFxSD0n DENMARK 1st Division - Round 21 13.03.2021 16:00:00 Koge Kolding IF 1.75 3.75 4.33 -> Value: 4.22 Score: 1 1 Odd: 3.75 Favourite: 1 final: profit :+: 27.5
+g_1_EBhj1pgB DENMARK 2nd Division - Group 1 - Round 14 13.03.2021 16:00:00 BK Frem Dalum IF 1.57 3.80 5.00 -> Value: 3.54 Score: 0 2 Odd: 3.8 Favourite: 1 final: loss :+: 10
+g_1_K2tJ18IB DENMARK 2nd Division - Group 2 - Round 14 13.03.2021 16:00:00 Nykobing Avarta 1.20 5.50 13.00 -> Value: 8.58 Score: 2 0 Odd: 5.5 Favourite: 1 final: loss :+: 10
+g_1_OpS1fO65 ECUADOR Liga Pro - First stage - Round 4 13.03.2021 02:00:00 Dep. Cuenca LDU Quito 5.25 4.00 1.53 -> Value: 2.49 Score: 2 2 Odd: 4.0 Favourite: 2 final: profit :+: 30.0
+g_1_UVvpogVE EL SALVADOR Primera Division - Clausura - 1st Phase - Round 6 13.03.2021 23:30:00 Aguila Luis Angel Firpo 1.91 3.50 3.30 -> Value: 1.64 Score: 0 0 Odd: 3.5 Favourite: X final: profit :+: 25.0
+g_1_CYEagQVm ENGLAND National League - Round 31 13.03.2021 17:00:00 Bromley Barnet 1.40 4.33 6.00 -> Value: 1.59 Score: 2 2 Odd: 4.33 Favourite: 1 final: profit :+: 33.3
+g_1_ni7CjOF6 ENGLAND National League - Round 31 13.03.2021 17:00:00 Hartlepool Eastleigh 1.70 3.60 4.50 -> Value: 0.55 Score: 0 0 Odd: 3.6 Favourite: 1 final: profit :+: 26.0
+g_1_6mrvLawD ESTONIA Meistriliiga - Round 3 13.03.2021 13:00:00 Levadia Parnu JK Vaprus 1.05 9.75 19.50 -> Value: 6.81 Score: 5 0 Odd: 9.75 Favourite: 1 final: loss :+: 10
+g_1_UmCsNtra FINLAND Suomen Cup - Play Offs - 1/8-finals 13.03.2021 13:00:00 VPS Honka 5.50 4.20 1.50 -> Value: 3.95 Score: 0 4 Odd: 4.2 Favourite: 2 final: loss :+: 10
+g_1_zkJYO2Dn FINLAND Suomen Cup - Play Offs - 1/8-finals 13.03.2021 14:30:00 PEPO PK-35 7.00 4.50 1.36 -> Value: 6.83 Score: 0 3 Odd: 4.5 Favourite: 2 final: loss :+: 10
+g_1_G00uO7Ie FRANCE Ligue 2 - Round 29 13.03.2021 21:00:00 Rodez Valenciennes 1.83 3.10 4.50 -> Value: 6.40 Score: 3 0 Odd: 3.1 Favourite: X final: loss :+: 10
+g_1_pfinovKi FRANCE Ligue 2 - Round 29 13.03.2021 21:00:00 Sochaux Chateauroux 1.65 3.60 5.50 -> Value: 2.99 Score: 0 0 Odd: 3.6 Favourite: 1 final: profit :+: 26.0
+g_1_63hrnK4o FRANCE Ligue 2 - Round 29 13.03.2021 21:00:00 Toulouse Chambly 1.30 5.00 10.00 -> Value: 25.49 Score: 4 0 Odd: 5.0 Favourite: 1 final: loss :+: 10
+g_1_xzqrevr9 FRANCE National - Round 25 13.03.2021 19:00:00 Sete Le Mans 2.75 2.60 2.75 -> Value: 7.62 Score: 2 0 Odd: 2.6 Favourite: X final: loss :+: 10
+g_1_IoGIA1jt GAMBIA GFA League - Round 9 13.03.2021 18:00:00 Fortune Elite United 1.62 3.10 5.75 -> Value: 24.56 Score: 0 0 Odd: 3.1 Favourite: 1 final: profit :+: 21.0
+g_1_C8FM9L5n GAMBIA GFA League - Round 9 13.03.2021 18:00:00 Marimoo Gambia Ports 4.20 2.85 1.91 -> Value: 7.25 Score: 2 0 Odd: 2.85 Favourite: X final: loss :+: 10
+g_1_rHHAGriA GERMANY Regionalliga West - Round 30 13.03.2021 15:00:00 Ahlen Dortmund II 11.00 5.50 1.20 -> Value: 13.24 Score: 1 1 Odd: 5.5 Favourite: 2 final: profit :+: 45.0
+g_1_ER8h0N6T GERMANY Regionalliga West - Round 30 13.03.2021 15:00:00 Straelen Wegberg-Beeck 2.10 3.30 3.00 -> Value: 11.43 Score: 0 0 Odd: 3.3 Favourite: X final: profit :+: 23.0
+g_1_pMqpYQ1C GERMANY Regionalliga Sudwest - Round 27 13.03.2021 15:00:00 Giessen Aalen 2.45 2.80 2.90 -> Value: 1.34 Score: 0 0 Odd: 2.8 Favourite: X final: profit :+: 18.0
+g_1_d0D2j8Ht GERMANY Regionalliga Sudwest - Round 27 13.03.2021 15:00:00 Kassel Elversberg 4.75 3.75 1.57 -> Value: 3.10 Score: 0 2 Odd: 3.75 Favourite: 2 final: loss :+: 10
+g_1_jNC6kSWn GERMANY Regionalliga Sudwest - Round 27 13.03.2021 15:00:00 Pirmasens FC 08 Homburg 4.00 3.25 1.80 -> Value: 1.92 Score: 1 1 Odd: 3.25 Favourite: 2 final: profit :+: 22.5
+g_1_hpAEdggE GREECE Super League 2 - Round 14 13.03.2021 14:45:00 AO Trikala Ionikos 5.50 3.50 1.55 -> Value: 1.07 Score: 2 3 Odd: 1.55 Favourite: 2 final: profit :+: handicap -1
+g_1_zkPFyhHl GREECE Super League 2 - Round 14 13.03.2021 14:45:00 PAE Chania Karaiskakis 1.36 4.00 8.00 -> Value: 2.58 Score: 1 0 Odd: 1.36 Favourite: 1 final: profit :+: handicap -1
+g_1_0UHiwqRh GUATEMALA Liga Nacional - Clausura - Round 6 13.03.2021 23:00:00 Municipal Coban Imperial 1.55 4.20 4.50 -> Value: 2.25 Score: 2 0 Odd: 4.2 Favourite: 1 final: loss :+: 10
+g_1_8tWvhY2e HUNGARY NB I Women - Round 13 13.03.2021 14:00:00 Kelen W Astra Hungary W 14.00 11.00 1.06 -> Value: 0.22 Score: 1 2 Odd: 1.06 Favourite: 2 final: profit :+: handicap -1
+g_1_0WtREjfs ICELAND League Cup - Round 5 13.03.2021 15:00:00 Breidablik Fylkir 1.14 7.00 10.00 -> Value: 2.09 Score: 2 1 Odd: 1.14 Favourite: 1 final: profit :+: handicap -1
+g_1_lWyYqWf7 ICELAND League Cup - Round 5 13.03.2021 16:00:00 Selfoss Stjarnan 11.00 7.00 1.16 -> Value: 4.83 Score: 2 1 Odd: 7.0 Favourite: 2 final: loss :+: 10
+g_1_rZrUJryo ICELAND League Cup - Round 5 13.03.2021 16:00:00 Valur Afturelding 1.02 17.00 26.00 -> Value: 11.24 Score: 3 0 Odd: 17.0 Favourite: 1 final: loss :+: 10
+g_1_bHaUDA9m ICELAND League Cup - Round 5 13.03.2021 17:00:00 Fjolnir Vestmannaeyjar 2.62 4.20 2.05 -> Value: 0.76 Score: 1 3 Odd: 4.2 Favourite: X final: loss :+: 10
+g_1_tQd2OOST ICELAND League Cup - Round 5 13.03.2021 21:30:00 KA Akureyri Grindavik 1.10 9.00 13.00 -> Value: 19.84 Score: 1 1 Odd: 9.0 Favourite: 1 final: profit :+: 80.0
+g_1_ziOaU4OF ITALY Serie B - Round 28 13.03.2021 15:00:00 Ascoli Venezia 3.00 3.00 2.50 -> Value: 0.32 Score: 1 1 Odd: 3.0 Favourite: X final: profit :+: 20.0
+g_1_hbBwFPOS ITALY Serie B - Round 28 13.03.2021 15:00:00 Lecce Chievo 2.20 3.10 3.40 -> Value: 2.95 Score: 4 2 Odd: 3.1 Favourite: X final: loss :+: 10
+g_1_Ot2993nj ITALY Serie B - Round 28 13.03.2021 19:00:00 L.R. Vicenza Empoli 3.75 3.20 2.05 -> Value: 3.75 Score: 0 2 Odd: 3.2 Favourite: X final: loss :+: 10
+g_1_nLhSVPLB ITALY Serie C - Group A - Round 30 13.03.2021 16:00:00 Lecco Grosseto 1.70 3.50 4.75 -> Value: 6.19 Score: 1 1 Odd: 3.5 Favourite: 1 final: profit :+: 25.0
+g_1_EelT6yad ITALY Serie C - Group B - Round 30 13.03.2021 16:00:00 Arezzo Fermana 2.05 3.20 3.60 -> Value: 7.06 Score: 1 0 Odd: 3.2 Favourite: X final: loss :+: 10
+g_1_SbxBVKyc ITALY Serie C - Group B - Round 30 13.03.2021 16:00:00 Virtus Verona Gubbio 2.05 2.90 3.80 -> Value: 7.09 Score: 0 1 Odd: 2.9 Favourite: X final: loss :+: 10
+g_1_juCAX5I4 ITALY Serie C - Group C - Round 30 13.03.2021 13:30:00 Catania Teramo 2.10 3.10 3.30 -> Value: 3.37 Score: 0 1 Odd: 3.1 Favourite: X final: loss :+: 10
+g_1_0jJcz8Yo ITALY Serie C - Group C - Round 30 13.03.2021 16:00:00 Monopoli Avellino 7.00 3.75 1.45 -> Value: 0.37 Score: 1 1 Odd: 3.75 Favourite: 2 final: profit :+: 27.5
+g_1_fDI1ZRmh ITALY Serie C - Group C - Round 30 13.03.2021 16:00:00 Ternana Bari 1.95 3.40 3.50 -> Value: 1.50 Score: 2 1 Odd: 3.4 Favourite: X final: loss :+: 10
+g_1_O6PHVqmH ITALY Serie C - Group C - Round 30 13.03.2021 18:30:00 Potenza Vibonese 2.00 3.10 3.75 -> Value: 2.77 Score: 2 2 Odd: 3.1 Favourite: X final: profit :+: 21.0
+g_1_K68QC9Sg ITALY Primavera 1 - Round 15 13.03.2021 12:00:00 Cagliari U19 Juventus U19 1.95 3.50 3.25 -> Value: 3.11 Score: 3 0 Odd: 3.5 Favourite: X final: loss :+: 10
+g_1_SEbD5rVQ JAPAN J2 League - Round 3 13.03.2021 07:00:00 V-Varen Nagasaki Ehime 1.53 4.20 5.75 -> Value: 0.86 Score: 1 1 Odd: 4.2 Favourite: 1 final: profit :+: 32.0
+g_1_WfyN0fAh KAZAKHSTAN Premier League - Round 1 13.03.2021 11:00:00 K. Almaty Zhetysu Taldykorgan 1.10 7.75 14.50 -> Value: 0.84 Score: 2 0 Odd: 7.75 Favourite: 1 final: loss :+: 10
+g_1_pbuRaEPb KAZAKHSTAN Premier League - Round 1 13.03.2021 13:00:00 Turan FC Astana 6.50 4.20 1.40 -> Value: 16.89 Score: 2 2 Odd: 4.2 Favourite: 2 final: profit :+: 32.0
+g_1_I1YL4xJf LATVIA Optibet Virsliga - Round 1 13.03.2021 15:00:00 FK Liepaja Metta/LU 1.10 9.00 13.00 -> Value: 7.95 Score: 4 1 Odd: 9.0 Favourite: 1 final: loss :+: 10
+g_1_vFJCtCJ6 MALAYSIA Super League - Round 3 13.03.2021 15:00:00 Selangor Kuala Lumpur City 1.36 4.75 6.00 -> Value: 6.53 Score: 1 1 Odd: 4.75 Favourite: 1 final: profit :+: 37.5
+g_1_j3UtDVrD MEXICO Liga MX - Clausura - Round 11 13.03.2021 05:30:00 Juarez U.N.A.M.- Pumas 2.30 3.20 3.10 -> Value: 8.34 Score: 1 1 Odd: 3.2 Favourite: X final: profit :+: 22.0
+g_1_Yiez9dy8 MEXICO Liga de Expansion MX - Clausura - Round 9 13.03.2021 01:30:00 Atl. Morelia Venados 1.60 3.40 5.25 -> Value: 4.94 Score: 1 1 Odd: 3.4 Favourite: 1 final: profit :+: 24.0
+g_1_dOkJJpZg NORTHERN IRELAND NIFL Premiership - Round 31 13.03.2021 17:00:00 Linfield Carrick Rangers 1.11 9.00 17.00 -> Value: 3.67 Score: 7 0 Odd: 9.0 Favourite: 1 final: loss :+: 10
+g_1_GbN51mx5 PANAMA LPF - Apertura - Round 4 13.03.2021 02:00:00 Independiente Deportivo Universitario 1.87 2.90 4.25 -> Value: 1.63 Score: 0 2 Odd: 2.9 Favourite: X final: loss :+: 10
+g_1_vJwrUMEn PARAGUAY Primera Division - Apertura - Round 8 13.03.2021 23:30:00 River Plate Nacional Asuncion 2.50 3.10 2.90 -> Value: 0.51 Score: 0 0 Odd: 3.1 Favourite: X final: profit :+: 21.0
+g_1_xU9QK0Xh PERU Liga 1 - Apertura - Round 1 13.03.2021 18:00:00 Carlos Mannucci AD Cantolao 1.80 3.40 4.00 -> Value: 0.41 Score: 2 0 Odd: 3.4 Favourite: 1 final: loss :+: 10
+g_1_Ma8rDKYR POLAND Division 1 - Round 20 13.03.2021 16:00:00 R. Rzeszow Legnica 3.80 3.25 2.00 -> Value: 0.75 Score: 0 0 Odd: 3.25 Favourite: X final: profit :+: 22.5
+g_1_QNBF71m5 POLAND III Liga - Group II - Round 19 13.03.2021 12:00:00 Stezyca Chemik Police 1.05 9.50 19.00 -> Value: 4.01 Score: 9 0 Odd: 9.5 Favourite: 1 final: loss :+: 10
+g_1_j5HanvTt POLAND III Liga - Group III - Round 21 13.03.2021 13:00:00 Legnica 2 Zaglebie 2 2.75 3.30 2.25 -> Value: 0.38 Score: 1 1 Odd: 3.3 Favourite: X final: profit :+: 23.0
+g_1_0SYQuSsb PORTUGAL Primeira Liga - Round 23 13.03.2021 20:00:00 Benfica Boavista 1.28 5.25 10.00 -> Value: 6.25 Score: 2 0 Odd: 5.25 Favourite: 1 final: loss :+: 10
+g_1_6oivy4dT PORTUGAL Primeira Liga - Round 23 13.03.2021 22:30:00 Tondela Sporting 9.00 4.75 1.33 -> Value: 0.75 Score: 0 1 Odd: 1.33 Favourite: 2 final: profit :+: handicap -1
+g_1_GMmPV0n5 PORTUGAL Campeonato de Portugal - Round 20 13.03.2021 21:00:00 Estrela Sporting B 2.45 2.90 2.90 -> Value: 4.72 Score: 1 0 Odd: 2.9 Favourite: X final: loss :+: 10
+g_1_jwHNl1PT PORTUGAL Liga Revelacao U23 - Losers stage - Round 6 13.03.2021 13:00:00 CD Cova da Piedade U23 Benfica U23 7.50 5.00 1.30 -> Value: 4.88 Score: 0 5 Odd: 5.0 Favourite: 2 final: loss :+: 10
+g_1_tdVZh0KF ROMANIA Liga 1 - Round 27 13.03.2021 14:30:00 FC Hermannstadt Viitorul Constanta 3.50 3.10 2.05 -> Value: 4.25 Score: 0 0 Odd: 3.1 Favourite: X final: profit :+: 21.0
+g_1_dMbcg1Eg ROMANIA Liga 2 - Round 19 13.03.2021 11:00:00 CSM Resita CSM Slatina 1.95 3.20 3.75 -> Value: 4.94 Score: 1 1 Odd: 3.2 Favourite: X final: profit :+: 22.0
+g_1_rPLzx0qJ ROMANIA Liga 2 - Round 19 13.03.2021 11:00:00 Pandurii ASU Poli Timisoara 9.00 5.25 1.22 -> Value: 14.47 Score: 1 1 Odd: 5.25 Favourite: 2 final: profit :+: 42.5
+g_1_vRmjKGRn ROMANIA Liga 3 - Seria 4 - Round 11 13.03.2021 15:00:00 Rapid Bucuresti 2 Metalul Buzau 2.30 3.50 2.55 -> Value: 0.99 Score: 1 1 Odd: 3.5 Favourite: X final: profit :+: 25.0
+g_1_p4lnLdCt ROMANIA Liga 3 - Seria 4 - Round 11 13.03.2021 15:00:00 Tunari Voluntari 2 1.70 3.50 4.20 -> Value: 7.46 Score: 0 0 Odd: 3.5 Favourite: 1 final: profit :+: 25.0
+g_1_46fJ5Ska RUSSIA PFL - Group 1 - Round 18 13.03.2021 12:00:00 Forte Taganrog FK Makhachkala 1.53 3.90 5.25 -> Value: 9.62 Score: 0 0 Odd: 3.9 Favourite: 1 final: profit :+: 29.0
+g_1_Ms5E68zg RUSSIA PFL - Group 1 - Round 18 13.03.2021 17:00:00 Mashuk Kuban 9.00 6.00 1.22 -> Value: 3.64 Score: 1 2 Odd: 1.22 Favourite: 2 final: profit :+: handicap -1
+g_1_8pKOAebB RUSSIA Youth League - Round 17 13.03.2021 11:00:00 Lokomotiv Moscow U19 CSKA Moscow U19 1.95 3.60 3.20 -> Value: 0.06 Score: 0 1 Odd: 3.6 Favourite: X final: loss :+: 10
+g_1_QLh41Lnd SINGAPORE Premier League - Round 1 13.03.2021 11:30:00 Lion City Tampines 1.85 3.80 3.50 -> Value: 1.06 Score: 3 3 Odd: 3.8 Favourite: X final: profit :+: 28.0
+g_1_vDz0LP1Q SLOVAKIA Fortuna liga - Relegation Group - Round 23 13.03.2021 18:00:00 Michalovce Nitra 1.65 3.80 4.33 -> Value: 0.07 Score: 1 1 Odd: 3.8 Favourite: 1 final: profit :+: 28.0
+g_1_GYRRGqAs SLOVAKIA Fortuna liga - Relegation Group - Round 23 13.03.2021 18:00:00 Sered Ruzomberok 3.40 3.40 1.95 -> Value: 1.82 Score: 1 0 Odd: 3.4 Favourite: X final: loss :+: 10
+g_1_ngA9hUSF SLOVAKIA Fortuna liga - Championship Group - Round 23 13.03.2021 18:00:00 Dun. Streda Z. Moravce-Vrable 1.28 5.25 8.50 -> Value: 0.82 Score: 2 0 Odd: 5.25 Favourite: 1 final: loss :+: 10
+g_1_xOUVvYqL SPAIN LaLiga2 - Round 29 13.03.2021 17:00:00 Fuenlabrada Las Palmas 2.05 3.00 4.10 -> Value: 10.60 Score: 1 2 Odd: 3.0 Favourite: X final: loss :+: 10
+g_1_Ic2xa2ds SPAIN Segunda Division B - Group 3 - Round 17 13.03.2021 17:00:00 Valencia B La Nucia 2.75 2.50 2.80 -> Value: 3.65 Score: 1 0 Odd: 2.5 Favourite: X final: loss :+: 10
+g_1_zqESSJJ7 SPAIN Tercera Division - Group 6 - Round 17 13.03.2021 20:00:00 Beniganim CF Intercity 7.25 4.00 1.35 -> Value: 2.04 Score: 0 0 Odd: 4.0 Favourite: 2 final: profit :+: 30.0
+g_1_tMCGZhKN SPAIN Tercera Division - Group 6 - Round 21 13.03.2021 20:00:00 Recambios Colon Saguntino 2.90 2.90 2.25 -> Value: 1.52 Score: 1 2 Odd: 2.9 Favourite: X final: loss :+: 10
+g_1_OtKRvgAI SPAIN Tercera Division - Group 9 - Round 16 13.03.2021 19:00:00 Antequera Melilla CD 1.19 4.75 12.00 -> Value: 3.18 Score: 4 0 Odd: 4.75 Favourite: 1 final: loss :+: 10
+g_1_4xoYwjBl SPAIN Primera Division Women - Round 22 13.03.2021 13:00:00 Levante W Betis W 1.11 7.00 15.50 -> Value: 3.17 Score: 1 1 Odd: 7.0 Favourite: 1 final: profit :+: 60.0
+g_1_EoNF7k6d SWEDEN Svenska Cupen Women 13.03.2021 15:30:00 Alingsas FC W Kristianstads W 11.00 8.00 1.12 -> Value: 2.10 Score: 0 4 Odd: 8.0 Favourite: 2 final: loss :+: 10
+g_1_UeMHCMFG SWITZERLAND Challenge League - Round 25 13.03.2021 19:15:00 Lausanne Ouchy Chiasso 1.44 4.20 6.00 -> Value: 2.59 Score: 3 0 Odd: 4.2 Favourite: 1 final: loss :+: 10
+g_1_Y3kWOqdp TANZANIA Ligi Kuu Bara - Round 24 13.03.2021 15:00:00 Gwambina Polisi Tanzania 2.15 2.50 4.10 -> Value: 13.89 Score: 0 0 Odd: 2.5 Favourite: X final: profit :+: 15.0
+g_1_vw6erFsM THAILAND Thai League 1 - Round 27 13.03.2021 13:30:00 Police Tero Bangkok Utd 4.75 4.25 1.50 -> Value: 2.41 Score: 1 2 Odd: 1.5 Favourite: 2 final: profit :+: handicap -1
+g_1_dh1vOgr4 THAILAND Thai League 2 - Round 29 13.03.2021 12:00:00 Chiangmai Utd Ranong 1.40 4.20 6.50 -> Value: 2.19 Score: 2 0 Odd: 4.2 Favourite: 1 final: loss :+: 10
+g_1_jifmMXCG THAILAND Thai League 2 - Round 29 13.03.2021 14:00:00 Lampang Udon Thani 2.75 2.75 2.60 -> Value: 7.40 Score: 0 0 Odd: 2.75 Favourite: X final: profit :+: 17.5
+g_1_EskXozOd TURKEY Super Lig - Round 30 13.03.2021 12:30:00 Sivasspor Karagumruk 2.50 3.30 2.55 -> Value: 0.70 Score: 1 0 Odd: 3.3 Favourite: X final: loss :+: 10
+g_1_p6cKzAFe TURKEY Super Lig - Round 30 13.03.2021 15:00:00 Alanyaspor Antalyaspor 1.70 3.60 4.33 -> Value: 4.00 Score: 4 0 Odd: 3.6 Favourite: 1 final: loss :+: 10
+g_1_ChaCxWpq TURKEY Super Lig - Round 30 13.03.2021 15:00:00 Rizespor Hatayspor 3.20 3.30 2.20 -> Value: 3.72 Score: 1 0 Odd: 3.3 Favourite: X final: loss :+: 10
+g_1_pfewnZD4 TURKEY 1. Lig - Round 26 13.03.2021 12:30:00 Keciorengucu Eskisehirspor 1.10 8.00 17.00 -> Value: 13.00 Score: 1 0 Odd: 1.1 Favourite: 1 final: profit :+: handicap -1
+g_1_rqfcQioF UGANDA Premier League - Round 14 13.03.2021 12:00:00 URA SC Vipers 2.20 3.20 2.90 -> Value: 2.31 Score: 2 1 Odd: 3.2 Favourite: X final: loss :+: 10
+g_1_h44b5j9k UGANDA Premier League - Round 14 13.03.2021 15:00:00 Express Kyetume 1.20 5.50 10.50 -> Value: 13.30 Score: 0 0 Odd: 5.5 Favourite: 1 final: profit :+: 45.0
+g_1_0K4hRXV8 UGANDA Premier League - Round 14 13.03.2021 15:00:00 Mbarara City Bright Stars 2.00 3.25 3.30 -> Value: 2.99 Score: 0 1 Odd: 3.25 Favourite: X final: loss :+: 10
+g_1_b1mPdOfo WALES Cymru Premier - Round 12 13.03.2021 16:30:00 Penybont Connahs Q. 5.75 4.00 1.50 -> Value: 3.02 Score: 0 0 Odd: 4.0 Favourite: 2 final: profit :+: 30.0
+g_1_GWzVSAd9 WALES Cymru Premier - Round 16 13.03.2021 19:15:00 Haverfordwest TNS 11.00 6.00 1.20 -> Value: 2.33 Score: 2 1 Odd: 6.0 Favourite: 2 final: loss :+: 10
+g_1_Q1EPTJpc WORLD Club Friendly 13.03.2021 06:30:00 White City (Aus) Adelaide City (Aus) 5.00 4.60 1.44 -> Value: 5.81 Score: 0 2 Odd: 4.6 Favourite: 2 final: loss :+: 10
+g_1_pG4SUTcC WORLD Club Friendly 13.03.2021 16:00:00 HJK (Fin) Ilves (Fin) 1.33 5.00 7.50 -> Value: 2.65 Score: 2 1 Odd: 1.33 Favourite: 1 final: profit :+: handicap -1g_1_63Im4eE1 NETHERLANDS Eredivisie - Round 26 13.03.2021 19:45:00 Den Haag Heracles 5.00 3.80 1.65 -> Value: 5.70 Score: 1 2 Odd: 1.65 Favourite: 2 final: profit :+: handicap -1
+
+g_1_IH4Ve6tt SPAIN LaLiga - Round 27 13.03.2021 17:15:00 Real Madrid Elche 1.20 6.50 15.00 -> Value: 2.45 Score: 2 1 Odd: 1.2 Favourite: 1 final: profit :+: handicap -1
+
+g_1_IoQZU4aJ ALGERIA U21 League - Round 17 13.03.2021 11:00:00 Hussein Dey U21 Paradou U21 5.75 3.90 1.50 -> Value: 3.56 Score: 0 1 Odd: 1.5 Favourite: 2 final: profit :+: handicap -1
+
+g_1_lpkb8WGc BELARUS Vysshaya Liga - Round 1 13.03.2021 19:45:00 Shakhtyor Soligorsk FC Minsk 1.16 5.50 15.00 -> Value: 0.67 Score: 1 0 Odd: 1.16 Favourite: 1 final: profit :+: handicap -1
+
+g_1_dlyBCsJ1 BRAZIL Campeonato Sul-Matogrossense - First stage - Round 3 13.03.2021 21:00:00 Aquidauanense Novoperario 1.25 5.00 9.00 -> Value: 2.80 Score: 1 0 Odd: 1.25 Favourite: 1 final: profit :+: handicap -1
+
+g_1_EqrQOewF CAMEROON Elite Two - Round 2 13.03.2021 16:00:00 Fauve Azur Elite Leopard de Douala 1.57 3.25 6.00 -> Value: 11.52 Score: 1 0 Odd: 1.57 Favourite: 1 final: profit :+: handicap -1
+
+g_1_M30NpYl4 COLOMBIA Primera A - Apertura - Round 12 13.03.2021 03:00:00 Deportes Tolima Jaguares de Cordoba 1.55 3.60 7.50 -> Value: 0.89 Score: 3 2 Odd: 1.55 Favourite: 1 final: profit :+: handicap -1
+
+g_1_hpAEdggE GREECE Super League 2 - Round 14 13.03.2021 14:45:00 AO Trikala Ionikos 5.50 3.50 1.55 -> Value: 1.07 Score: 2 3 Odd: 1.55 Favourite: 2 final: profit :+: handicap -1
+
+g_1_zkPFyhHl GREECE Super League 2 - Round 14 13.03.2021 14:45:00 PAE Chania Karaiskakis 1.36 4.00 8.00 -> Value: 2.58 Score: 1 0 Odd: 1.36 Favourite: 1 final: profit :+: handicap -1
+
+g_1_8tWvhY2e HUNGARY NB I Women - Round 13 13.03.2021 14:00:00 Kelen W Astra Hungary W 14.00 11.00 1.06 -> Value: 0.22 Score: 1 2 Odd: 1.06 Favourite: 2 final: profit :+: handicap -1
+
+g_1_0WtREjfs ICELAND League Cup - Round 5 13.03.2021 15:00:00 Breidablik Fylkir 1.14 7.00 10.00 -> Value: 2.09 Score: 2 1 Odd: 1.14 Favourite: 1 final: profit :+: handicap -1
+
+g_1_6oivy4dT PORTUGAL Primeira Liga - Round 23 13.03.2021 22:30:00 Tondela Sporting 9.00 4.75 1.33 -> Value: 0.75 Score: 0 1 Odd: 1.33 Favourite: 2 final: profit :+: handicap -1
+
+g_1_Ms5E68zg RUSSIA PFL - Group 1 - Round 18 13.03.2021 17:00:00 Mashuk Kuban 9.00 6.00 1.22 -> Value: 3.64 Score: 1 2 Odd: 1.22 Favourite: 2 final: profit :+: handicap -1
+
+g_1_vw6erFsM THAILAND Thai League 1 - Round 27 13.03.2021 13:30:00 Police Tero Bangkok Utd 4.75 4.25 1.50 -> Value: 2.41 Score: 1 2 Odd: 1.5 Favourite: 2 final: profit :+: handicap -1
+
+g_1_pfewnZD4 TURKEY 1. Lig - Round 26 13.03.2021 12:30:00 Keciorengucu Eskisehirspor 1.10 8.00 17.00 -> Value: 13.00 Score: 1 0 Odd: 1.1 Favourite: 1 final: profit :+: handicap -1
+
+g_1_pG4SUTcC WORLD Club Friendly 13.03.2021 16:00:00 HJK (Fin) Ilves (Fin) 1.33 5.00 7.50 -> Value: 2.65 Score: 2 1 Odd: 1.33 Favourite: 1 final: profit :+: handicap -1
+
+
+Total profit: 794.3
