@@ -77,7 +77,7 @@ class GameCollector:
         #     file.write('')
         # file.close()
         checked_today = []
-        with open(f'checked_today2021-03-15.txt', 'r') as file:
+        with open(f'checked_today2021-03-16.txt', 'r') as file:
             [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         print(checked_today)
         for game in all_games:
@@ -155,7 +155,7 @@ class GameCollector:
                     valuebet_abs = True
                 print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
                 if valuebet_abs:
-                    with open(f'valuebets15.03.2021.txt', 'a') as file:
+                    with open(f'valuebets16.03.2021.txt', 'a') as file:
                         file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
                     file.close()
 
@@ -389,7 +389,7 @@ class GameCollector:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"
