@@ -1,0 +1,38 @@
+g_1_4ho4QVmO ITALY Serie A - Round 24 17.03.2021 16:00:00 Torino Sassuolo 2.45 3.40 2.80 -> Value: 1.62
+g_1_0AZEamUL ALGERIA U21 League - Round 18 17.03.2021 11:00:00 Bordj Bou Arreridj U21 Constantine U21 5.50 4.33 1.45 -> Value: 3.36
+g_1_r38zhkND BRAZIL Campeonato Baiano - Round 5 17.03.2021 23:00:00 Bahia Vitoria 3.50 3.25 1.90 -> Value: 0.12
+g_1_GnVAtLh2 BRAZIL Campeonato Paranaense - Round 3 17.03.2021 21:00:00 Londrina Azuriz 1.61 3.60 4.50 -> Value: 5.56
+g_1_nu5tcM06 BRAZIL Copa do Brasil - 1/64-finals 17.03.2021 00:15:00 Sergipe Cuiaba Esporte 13.00 5.75 1.18 -> Value: 9.64
+g_1_8xl0ZZm1 BULGARIA Bulgarian Cup - Quarter-finals 17.03.2021 15:30:00 CSKA 1948 Sofia Arda 2.40 3.20 2.75 -> Value: 0.78
+g_1_x4xZFeeA COLOMBIA Copa Colombia - 1/64-finals 17.03.2021 22:00:00 Leones Fortaleza 2.25 3.00 3.20 -> Value: 1.40
+g_1_GQVuA26r CROATIA 1. HNL - Round 16 17.03.2021 18:00:00 Slaven Belupo Rijeka 3.60 3.60 1.85 -> Value: 1.56
+g_1_SnYdk7Q4 GERMANY 2. Bundesliga - Round 25 17.03.2021 19:30:00 Regensburg Greuther Furth 3.75 3.40 2.00 -> Value: 3.12
+g_1_GWUyMqSd GERMANY Regionalliga West - Round 24 17.03.2021 19:00:00 Lippstadt Alemannia Aachen 3.30 3.25 2.00 -> Value: 0.44
+g_1_lUnY7DTP ISRAEL State Cup - 1/8-finals 17.03.2021 18:30:00 Hapoel Kfar Saba Hapoel Afula 1.44 4.20 5.50 -> Value: 1.98
+g_1_rmOdo5Lb ITALY Serie C - Group A - Round 31 17.03.2021 21:30:00 Como AlbinoLeffe 1.85 3.30 3.75 -> Value: 5.20
+g_1_fPnVQdjS ITALY Serie C - Group B - Round 31 17.03.2021 16:00:00 Fano Arezzo 2.25 3.00 3.00 -> Value: 3.44
+g_1_vcO1LzEk ITALY Serie C - Group B - Round 31 17.03.2021 18:30:00 Imolese Legnago Salus 2.10 3.10 3.20 -> Value: 1.51
+g_1_zq84ud5L ITALY Serie C - Group B - Round 31 17.03.2021 21:30:00 Mantova Virtus Verona 2.00 3.10 3.40 -> Value: 5.40
+g_1_G0leq3HG ITALY Serie C - Group C - Round 31 17.03.2021 18:30:00 Teramo Ternana 3.80 3.30 1.83 -> Value: 3.03
+g_1_MZpGCsIR ITALY Coppa Italia Primavera - Quarter-finals 17.03.2021 14:00:00 Inter U19 Lazio U19 1.28 5.50 6.50 -> Value: 2.20
+g_1_nysz1GI7 JAPAN J1 League - Round 5 17.03.2021 12:00:00 Sanfrecce Hiroshima Shimizu S-Pulse 1.85 3.80 3.80 -> Value: 0.82
+g_1_bPZoeBYa MALAYSIA Super League - Round 4 17.03.2021 15:00:00 Johor DT Selangor 1.20 6.00 9.25 -> Value: 4.65
+g_1_pK0lgPqo PANAMA LPF - Apertura - Round 5 17.03.2021 00:00:00 Chiriqui Independiente 3.25 3.20 2.05 -> Value: 1.44
+g_1_YZgWH8Mo PANAMA LPF - Apertura - Round 5 17.03.2021 00:00:00 Plaza Amador Alianza 2.05 2.70 3.90 -> Value: 5.16
+g_1_4fzFqds2 ROMANIA Liga 1 - Round 28 17.03.2021 17:30:00 Viitorul Constanta Chindia Targoviste 1.90 3.40 4.00 -> Value: 2.00
+g_1_2k0LiMjt RUSSIA Youth League - Round 18 17.03.2021 12:00:00 Chertanovo M. U19 Arsenal Tula U19 3.00 4.33 1.80 -> Value: 5.48
+g_1_25OnFAkc RUSSIA Youth League - Round 18 17.03.2021 12:00:00 CSKA Moscow U19 UOR U19 1.12 7.00 12.00 -> Value: 6.51
+g_1_WpG3BSlM RUSSIA Youth League - Round 18 17.03.2021 12:00:00 FK Strogino Moscow U19 Lokomotiv Moscow U19 8.00 6.50 1.20 -> Value: 1.28
+g_1_tdNjEU43 RUSSIA Youth League - Round 18 17.03.2021 12:00:00 Ural U19 Zenit U19 12.00 7.00 1.12 -> Value: 4.51
+g_1_bPmbN29F SINGAPORE Premier League - Round 2 17.03.2021 13:45:00 Balestier Khalsa Tampines 5.00 4.00 1.50 -> Value: 2.43
+g_1_G0r3MMOL SINGAPORE Premier League - Round 2 17.03.2021 13:45:00 Tanjong Pagar Lion City 9.00 6.50 1.20 -> Value: 0.83
+g_1_CWTYG0nq SINGAPORE Premier League - Round 2 17.03.2021 13:45:00 Young Lions Albirex Niigata 9.00 5.50 1.25 -> Value: 0.09
+g_1_48adKWma SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 17.03.2021 00:15:00 Bolivar (Bol) Wanderers (Uru) 1.14 6.50 13.00 -> Value: 6.91
+g_1_xMc4IAIB SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 17.03.2021 00:15:00 Lara (Ven) Santos (Bra) 3.75 3.75 1.83 -> Value: 4.05
+g_1_0p2lesdJ SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 17.03.2021 02:30:00 Ayacucho (Per) Gremio (Bra) 4.75 3.60 1.60 -> Value: 1.08
+g_1_QZsSZUOQ SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 17.03.2021 02:30:00 Ind. del Valle (Ecu) U. Espanola (Chi) 1.22 5.25 17.00 -> Value: 6.61
+g_1_6RjONplL THAILAND Thai League 2 - Round 30 17.03.2021 13:00:00 Chiangmai FC Lampang 1.30 5.00 7.25 -> Value: 3.33
+g_1_G0xfIOBr THAILAND Thai League 2 - Round 30 17.03.2021 14:00:00 Nong Bua Pitchaya Udon Thani 1.18 6.50 9.25 -> Value: 20.03
+g_1_WQBLfU99 TURKEY 3. Lig Group 4 - Round 26 17.03.2021 13:00:00 Bursa 52 Orduspor 2.10 3.00 3.30 -> Value: 4.06
+g_1_WS8CN41a TURKEY Turkish Cup - Semi-finals 17.03.2021 19:45:00 Antalyaspor Alanyaspor 3.10 3.40 2.10 -> Value: 1.36
+g_1_dECk3LqJ UGANDA Premier League - Round 15 17.03.2021 15:00:00 Onduparaka FC URA SC 4.25 3.50 1.70 -> Value: 1.36

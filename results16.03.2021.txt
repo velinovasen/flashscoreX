@@ -1,0 +1,33 @@
+g_1_8KGyBbK3 EUROPE Champions League - Play Offs - 1/8-finals 16.03.2021 22:00:00 Manchester City B. Monchengladbach 1.22 6.00 13.00 -> Value: 1.92 Score: 2 0 Odd: 6.0 Favourite: 1 final: loss :+: 10
+g_1_MBOFimBS AFRICA CAF Champions League 16.03.2021 21:00:00 MC Alger (Alg) Teungueth (Sen) 1.50 3.40 6.50 -> Value: 2.17 Score: 1 0 Odd: 1.5 Favourite: 1 final: profit :+: handicap -1
+g_1_vBofo6Sf ARGENTINA Primera C - Apertura - Round 2 16.03.2021 22:10:00 Deportivo Espanol Sportivo Italiano 2.50 2.80 2.80 -> Value: 0.70 Score: 2 1 Odd: 2.8 Favourite: X final: loss :+: 10
+g_1_MkFhB1Yi BAHRAIN Bahrain Cup 16.03.2021 17:30:00 Malkia Tadamun Buri 1.20 6.50 8.00 -> Value: 4.78 Score: 0 0 Odd: 6.5 Favourite: 1 final: profit :+: 55.0
+g_1_IPQjMiT2 ENGLAND League Two - Round 26 16.03.2021 21:00:00 Crawley Walsall 2.20 3.40 3.30 -> Value: 0.52 Score: 1 1 Odd: 3.4 Favourite: X final: profit :+: 24.0
+g_1_tCyA9xMo ENGLAND National League - Round 32 16.03.2021 21:00:00 Stockport Barnet 1.40 4.50 6.50 -> Value: 0.81 Score: 2 1 Odd: 1.4 Favourite: 1 final: profit :+: handicap -1
+g_1_4bbVcm54 GERMANY 3. Liga - Round 24 16.03.2021 20:00:00 Hallescher Duisburg 2.20 3.50 3.20 -> Value: 1.43 Score: 1 1 Odd: 3.5 Favourite: X final: profit :+: 25.0
+g_1_vamB0gcE INDIA I-League - Losers stage - Round 3 16.03.2021 10:30:00 Aizawl Indian Arrows 1.20 6.00 9.00 -> Value: 8.82 Score: 1 2 Odd: 6.0 Favourite: 1 final: loss :+: 10
+g_1_fZVc7iA5 ISRAEL Liga Alef North - Round 13 16.03.2021 13:00:00 M. Tzur Shalom Ironi Tiberias 2.30 3.25 2.70 -> Value: 1.31 Score: 2 1 Odd: 3.25 Favourite: X final: loss :+: 10
+g_1_b3MHaky6 ISRAEL State Cup - 1/8-finals 16.03.2021 18:00:00 Sakhnin Nordia Jerusalem 1.25 5.00 9.00 -> Value: 2.88 Score: 1 0 Odd: 1.25 Favourite: 1 final: profit :+: handicap -1
+g_1_2yT81B6g ISRAEL State Cup - 1/8-finals 16.03.2021 20:45:00 Hapoel Haifa Maccabi Tel Aviv 5.00 4.00 1.50 -> Value: 3.28 Score: 2 3 Odd: 1.5 Favourite: 2 final: profit :+: handicap -1
+g_1_ADhqMtWe ITALY Serie B - Round 29 16.03.2021 18:00:00 Venezia Lecce 2.80 3.20 2.50 -> Value: 0.43 Score: 2 3 Odd: 3.2 Favourite: X final: loss :+: 10
+g_1_zipVqpO2 ITALY Serie B - Round 29 16.03.2021 20:00:00 Empoli Pordenone 1.70 3.40 5.50 -> Value: 6.35 Score: 1 0 Odd: 1.7 Favourite: 1 final: profit :+: handicap -1
+g_1_EsqZr4w9 ITALY Serie B - Round 29 16.03.2021 20:00:00 Monza Reggiana 1.44 4.33 7.00 -> Value: 5.66 Score: 2 0 Odd: 4.33 Favourite: 1 final: loss :+: 10
+g_1_A3omoPn4 ITALY Serie C - Group C - Round 31 16.03.2021 18:30:00 Vibonese Monopoli 2.60 2.90 2.62 -> Value: 1.10 Score: 0 0 Odd: 2.9 Favourite: X final: profit :+: 19.0
+g_1_GSCaLAJ8 LITHUANIA A Lyga - Round 1 16.03.2021 17:00:00 Zalgiris Riteriai 1.16 7.00 10.00 -> Value: 3.70 Score: 2 0 Odd: 7.0 Favourite: 1 final: loss :+: 10
+g_1_CvUsBbU0 NORTHERN IRELAND NIFL Premiership - Round 18 16.03.2021 21:45:00 Linfield Dungannon 1.10 9.00 21.00 -> Value: 3.94 Score: 2 0 Odd: 9.0 Favourite: 1 final: loss :+: 10
+g_1_pK0lgPqo PANAMA LPF - Apertura - Round 5 16.03.2021 23:00:00 Chiriqui Independiente 5.00 3.20 1.67 -> Value: 1.44 Score: 2 1 Odd: 3.2 Favourite: 2 final: loss :+: 10
+g_1_YZgWH8Mo PANAMA LPF - Apertura - Round 5 16.03.2021 23:00:00 Plaza Amador Alianza 1.95 3.10 3.60 -> Value: 9.94 Score: 1 0 Odd: 3.1 Favourite: X final: loss :+: 10
+g_1_GbBlMauf WALES Cymru Premier - Round 18 16.03.2021 21:45:00 TNS Druids 1.10 9.00 13.00 -> Value: 2.79 Score: 5 0 Odd: 9.0 Favourite: 1 final: loss :+: 10
+g_1_MBOFimBS AFRICA CAF Champions League 16.03.2021 21:00:00 MC Alger (Alg) Teungueth (Sen) 1.50 3.40 6.50 -> Value: 2.17 Score: 1 0 Odd: 1.5 Favourite: 1 final: profit :+: handicap -1
+
+g_1_tCyA9xMo ENGLAND National League - Round 32 16.03.2021 21:00:00 Stockport Barnet 1.40 4.50 6.50 -> Value: 0.81 Score: 2 1 Odd: 1.4 Favourite: 1 final: profit :+: handicap -1
+
+g_1_b3MHaky6 ISRAEL State Cup - 1/8-finals 16.03.2021 18:00:00 Sakhnin Nordia Jerusalem 1.25 5.00 9.00 -> Value: 2.88 Score: 1 0 Odd: 1.25 Favourite: 1 final: profit :+: handicap -1
+
+g_1_2yT81B6g ISRAEL State Cup - 1/8-finals 16.03.2021 20:45:00 Hapoel Haifa Maccabi Tel Aviv 5.00 4.00 1.50 -> Value: 3.28 Score: 2 3 Odd: 1.5 Favourite: 2 final: profit :+: handicap -1
+
+g_1_zipVqpO2 ITALY Serie B - Round 29 16.03.2021 20:00:00 Empoli Pordenone 1.70 3.40 5.50 -> Value: 6.35 Score: 1 0 Odd: 1.7 Favourite: 1 final: profit :+: handicap -1
+
+
+
+Total profit: -37.0
