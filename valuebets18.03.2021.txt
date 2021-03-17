@@ -1,0 +1,11 @@
+g_1_AZReSnkS ARGENTINA Copa Argentina - 1/32-finals 18.03.2021 00:25:00 Racing Club Sportivo Belgrano 1.36 4.20 7.00 -> Value: 8.86
+g_1_bDiKwvah BRAZIL Copa do Brasil - 1/64-finals 18.03.2021 02:30:00 Salgueiro Corinthians 7.00 4.20 1.36 -> Value: 3.82
+g_1_nNaiydJl BULGARIA Bulgarian Cup - Quarter-finals 18.03.2021 17:00:00 CSKA Sofia Botev Vratsa 1.20 6.00 9.25 -> Value: 5.43
+g_1_fmJxx1ro ITALY Serie C - Group A - Round 31 18.03.2021 18:30:00 Novara Piacenza 1.90 3.10 3.75 -> Value: 2.18
+g_1_OtOSEnPQ MEXICO Liga de Expansion MX - Clausura - Round 10 18.03.2021 01:00:00 Celaya Dorados de Sinaloa 1.33 4.50 7.50 -> Value: 11.87
+g_1_vk8g0QGK PORTUGAL Liga Portugal 2 - Round 20 18.03.2021 17:00:00 Vilafranquense Penafiel 2.50 3.10 2.75 -> Value: 3.08
+g_1_2cv5JILc SLOVENIA Slovenian Cup - 1/8-finals 18.03.2021 15:00:00 Beltinci Domzale 8.50 6.50 1.22 -> Value: 4.08
+g_1_M11IeFTj SLOVENIA Slovenian Cup - 1/8-finals 18.03.2021 17:00:00 Triglav Celje 7.00 5.50 1.28 -> Value: 3.68
+g_1_pxOFH9R6 SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 18.03.2021 02:30:00 Junior (Col) Caracas (Ven) 1.36 4.10 8.50 -> Value: 3.31
+g_1_A7JbU8nl SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 18.03.2021 02:30:00 San Lorenzo (Arg) U. De Chile (Chi) 1.50 3.60 6.00 -> Value: 4.22
+g_1_6DNFrMYu SOUTH AMERICA Copa Sudamericana - Qualification - Final 18.03.2021 02:30:00 Cajamarca (Per) Sport Huancayo (Per) 2.50 3.20 2.50 -> Value: 6.54
