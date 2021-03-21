@@ -1,0 +1,31 @@
+g_1_noxpLbOG GERMANY Bundesliga - Round 26 19.03.2021 21:30:00 Arminia Bielefeld RB Leipzig 10.00 5.00 1.33 -> Value: 4.00
+g_1_jqM87JXG BAHRAIN Bahrain Cup 19.03.2021 17:30:00 Al-Ahli Manama Tadamun Buri 1.03 13.00 21.00 -> Value: 7.69
+g_1_vTGP7SRa BAHRAIN Bahrain Cup 19.03.2021 17:30:00 Al-Muharraq Al-Hala 1.25 5.50 7.50 -> Value: 7.64
+g_1_veJoI7pM BELARUS Vysshaya Liga - Round 2 19.03.2021 19:45:00 Isloch Smorgon 1.40 4.75 5.25 -> Value: 2.37
+g_1_l4D8QekD BELARUS Vysshaya Liga Reserve - Round 2 19.03.2021 12:00:00 Minsk 2 Rukh Brest 2 1.25 6.50 6.50 -> Value: 0.19
+g_1_KOPleSD1 BRAZIL Campeonato Amazonense - Round 3 19.03.2021 22:00:00 Iranduba Princesa Solimoes 7.75 5.50 1.25 -> Value: 0.29
+g_1_EB8sBkxg BRAZIL Campeonato Mineiro - Round 5 19.03.2021 22:30:00 Atletico-MG Coimbra 1.16 6.00 11.00 -> Value: 5.56
+g_1_hzDghwEo BRAZIL Copa do Brasil - 1/64-finals 19.03.2021 01:00:00 Mirassol Bragantino 6.00 3.50 1.61 -> Value: 2.64
+g_1_tdmuZFDN BRAZIL Copa do Brasil - 1/64-finals 19.03.2021 01:00:00 Penarol Ypiranga FC 5.75 3.50 1.53 -> Value: 1.23
+g_1_6capRBDg COSTA RICA Primera Division - Clausura - Round 14 19.03.2021 23:00:00 Limon ADR Jicaral 2.50 3.20 2.50 -> Value: 2.51
+g_1_0E1K7DLb CYPRUS First Division - Relegation Group - Round 30 19.03.2021 19:00:00 APOEL Doxa 1.33 4.50 8.00 -> Value: 0.17
+g_1_MZOV4saj DENMARK 1st Division - Round 22 19.03.2021 20:00:00 Esbjerg Hobro 1.70 3.75 4.50 -> Value: 0.16
+g_1_SY6cNkFH DENMARK 1st Division - Round 22 19.03.2021 20:00:00 Kolding IF Viborg 7.50 4.75 1.36 -> Value: 11.45
+g_1_0YmNoz5e FRANCE National - Round 26 19.03.2021 19:00:00 Villefranche Bastia-Borgo 1.80 2.70 5.50 -> Value: 0.14
+g_1_vP8d0ZJl FRANCE National - Round 26 19.03.2021 21:00:00 Le Mans Concarneau 2.30 2.70 3.30 -> Value: 0.14
+g_1_8lj3JzV3 ISRAEL Leumit League - Round 27 19.03.2021 15:00:00 Hapoel Umm al-Fahm MS Kafr Qasim 2.50 3.20 2.50 -> Value: 0.33
+g_1_KS98cg8p ISRAEL Leumit League - Round 27 19.03.2021 15:00:00 Ramat Hasharon M. Nazareth 2.20 3.25 2.87 -> Value: 1.82
+g_1_hUcONCfn ISRAEL Liga Alef North - Round 14 19.03.2021 13:00:00 Ironi Tiberias MS Tira 9.25 5.50 1.22 -> Value: 11.69
+g_1_GYTXhFHg ISRAEL Liga Alef South - Round 14 19.03.2021 12:00:00 SC Dimona Agudat Sport Ashdod 5.50 4.20 1.45 -> Value: 11.44
+g_1_4Gk6iiFe KENYA Premier League - Round 4 19.03.2021 14:00:00 Posta Rangers Mathare Utd. 2.10 3.00 3.30 -> Value: 10.04
+g_1_Uwi1Y7wh LATVIA Optibet Virsliga - Round 2 19.03.2021 17:00:00 Valmiera BFC Daugavpils 1.25 5.00 9.00 -> Value: 2.75
+g_1_YkxEBwP5 MEXICO Liga MX - Clausura - Round 12 19.03.2021 04:00:00 Pachuca U.A.N.L.- Tigres 2.37 3.20 2.90 -> Value: 3.22
+g_1_OUT9D90j NETHERLANDS Eerste Divisie - Round 29 19.03.2021 21:00:00 G.A. Eagles Dordrecht 1.22 5.50 11.00 -> Value: 0.79
+g_1_p0hP7A4s PERU Liga 1 - Apertura - Round 2 19.03.2021 22:00:00 AD Cantolao U. de Deportes 4.50 3.50 1.66 -> Value: 0.36
+g_1_407X4qLn RUSSIA Premier League - Round 23 19.03.2021 18:00:00 Sochi Tambov 1.04 13.00 34.00 -> Value: 13.93
+g_1_OdtDPjy6 SCOTLAND Championship - Round 21 19.03.2021 21:45:00 Alloa Dundee FC 6.00 4.00 1.53 -> Value: 3.14
+g_1_hbuhH0XN SOUTH AMERICA Copa Libertadores - Qualification - Semi-finals 19.03.2021 02:30:00 Atl. Nacional (Col) Guarani (Par) 1.57 3.80 5.00 -> Value: 1.02
+g_1_KvrTM5CJ SOUTH AMERICA Copa Sudamericana - Qualification - Final 19.03.2021 00:15:00 Metropolitanos (Ven) Puerto Cabello (Ven) 2.10 3.10 3.20 -> Value: 5.16
+g_1_MR6AZrdP SOUTH AMERICA Copa Sudamericana - Qualification - Final 19.03.2021 02:30:00 Carlos Mannucci (Per) FBC Melgar (Per) 2.55 3.10 2.50 -> Value: 2.36
+g_1_vPOaHqzs SOUTH AMERICA Copa Sudamericana - Qualification - Final 19.03.2021 02:30:00 La Equidad (Col) Dep. Pasto (Col) 2.20 3.10 3.10 -> Value: 3.04
+g_1_4nOkjkFr TURKEY Super Lig - Round 31 19.03.2021 18:00:00 Galatasaray Rizespor 1.36 4.75 8.00 -> Value: 3.81

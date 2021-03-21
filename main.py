@@ -77,7 +77,7 @@ class GameCollector:
         #     file.write('')
         # file.close()
         checked_today = []
-        with open(f'checked_today2021-03-18.txt', 'r') as file:
+        with open(f'checked_today2021-03-22.txt', 'r') as file:
             [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         print(checked_today)
         for game in all_games:
@@ -90,7 +90,7 @@ class GameCollector:
                 driver.get(BASE_URL)
                 with open(f'checked_today{date_for_file}.txt', 'a') as file:
                     file.write(f"{game} + '\n'")
-                    file.close()
+                file.close()
                 sleep(3)
                 try:
                     driver.find_element_by_id('onetrust-accept-btn-handler').click()
@@ -155,7 +155,7 @@ class GameCollector:
                     valuebet_abs = True
                 print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
                 if valuebet_abs:
-                    with open(f'valuebets18.03.2021.txt', 'a') as file:
+                    with open(f'valuebets22.03.2021.txt', 'a') as file:
                         file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
                     file.close()
 

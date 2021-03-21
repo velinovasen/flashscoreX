@@ -1,0 +1,90 @@
+g_1_8UwhzvpU FRANCE Ligue 1 - Round 30 21.03.2021 16:00:00 Dijon Reims 3.60 3.40 2.10 -> Value: 1.66
+g_1_AwQJVcho FRANCE Ligue 1 - Round 30 21.03.2021 18:05:00 Lille Nimes 1.22 5.25 15.00 -> Value: 1.07
+g_1_OfTM7KxL ITALY Serie A - Round 28 21.03.2021 13:30:00 Verona Atalanta 5.00 4.00 1.65 -> Value: 2.68
+g_1_xbXQ6vhR ITALY Serie A - Round 28 21.03.2021 16:00:00 Juventus Benevento 1.18 7.00 15.00 -> Value: 7.00
+g_1_EXDS4S4C NETHERLANDS Eredivisie - Round 27 21.03.2021 21:00:00 Ajax Den Haag 1.05 15.00 21.00 -> Value: 15.50
+g_1_6wNH73uh SPAIN LaLiga - Round 28 21.03.2021 17:15:00 Villarreal Cadiz CF 1.40 4.50 8.50 -> Value: 5.63
+g_1_hzcrg4Qb SPAIN LaLiga - Round 28 21.03.2021 19:30:00 Atl. Madrid Alaves 1.33 4.50 12.00 -> Value: 2.18
+g_1_fiqek2Bs ALGERIA Ligue 1 - Round 19 21.03.2021 16:00:00 Biskra CR Belouizdad 5.00 3.40 1.61 -> Value: 2.03
+g_1_IgzGpvQC ALGERIA Ligue 1 - Round 19 21.03.2021 16:00:00 Magra Oran 4.33 3.30 1.72 -> Value: 5.22
+g_1_S4s3mttf ALGERIA Ligue 1 - Round 19 21.03.2021 16:00:00 Medea Bordj Bou Arreridj 1.25 4.75 10.00 -> Value: 1.59
+g_1_Mw3dCQDR ALGERIA U21 League - Round 19 21.03.2021 11:00:00 Constantine U21 Bel Abbes U21 1.14 6.75 13.00 -> Value: 11.60
+g_1_xjThh5Me ALGERIA U21 League - Round 19 21.03.2021 11:00:00 Mlila U21 Saoura U21 9.25 5.25 1.25 -> Value: 1.73
+g_1_4nxuFx9d ARGENTINA Copa de la Liga Profesional - Round 6 21.03.2021 19:00:00 Sarmiento Junin Defensa y Justicia 3.60 3.40 1.85 -> Value: 0.78
+g_1_pt2cYdpB ARGENTINA Primera Nacional - Round 2 21.03.2021 21:30:00 Brown Adrogue All Boys 1.85 3.20 4.20 -> Value: 3.05
+g_1_WMLsAGon ARGENTINA Primera B - Apertura - Round 3 21.03.2021 20:30:00 Defensores Unidos Justo Jose de Urquiza 2.45 2.95 2.75 -> Value: 2.31
+g_1_KUxQiZVH ARGENTINA Primera B - Apertura - Round 3 21.03.2021 20:30:00 UAI Urquiza Flandria 2.40 2.75 3.00 -> Value: 2.88
+g_1_voOVxLwt ARGENTINA Primera C - Apertura - Round 3 21.03.2021 20:30:00 Ituzaingo Real Pilar 2.40 2.85 2.90 -> Value: 3.47
+g_1_IFDA8I4B AUSTRALIA NPL NSW - Round 4 21.03.2021 06:00:00 Rockdale City Suns Manly Utd 1.50 4.50 4.50 -> Value: 1.92
+g_1_Uco6jXrf AUSTRALIA NPL Western Australia - Round 1 21.03.2021 10:00:00 Gwelup Croatia SC ECU Joondalup 1.67 4.00 3.80 -> Value: 1.89
+g_1_ADE4Ryz7 BELARUS Vysshaya Liga Reserve - Round 2 21.03.2021 13:00:00 Vitebsk 2 Din. Minsk 2 9.00 8.50 1.12 -> Value: 5.52
+g_1_Q1rlDw95 BOSNIA AND HERZEGOVINA Premier League - Round 23 21.03.2021 16:00:00 FK Sarajevo Krupa 1.12 7.50 11.00 -> Value: 7.27
+g_1_fm9pAjPE CAMEROON Elite One - Round 3 21.03.2021 15:00:00 Fovu Baham Yafoot 1.44 3.80 6.50 -> Value: 3.95
+g_1_fBmT1SWf CAMEROON Elite One - Round 3 21.03.2021 16:00:00 Panthere Cotonsport 2.90 2.85 2.40 -> Value: 0.03
+g_1_vuRcnmX7 CAMEROON Elite One - Round 3 21.03.2021 17:00:00 Bamboutos FC Stade Renard 1.67 3.20 5.00 -> Value: 7.99
+g_1_Y1nX0nn1 CAMEROON Elite One - Round 3 21.03.2021 17:00:00 Les Astres APEJES Academy 2.75 2.85 2.50 -> Value: 0.36
+g_1_d2x0IgGr CAMEROON Elite Two - Round 3 21.03.2021 16:00:00 Leopard de Douala OFTA 3.20 2.65 2.40 -> Value: 2.11
+g_1_IDO8dVmG COLOMBIA Primera A - Apertura - Round 13 21.03.2021 00:40:00 Junior Pereira 1.44 4.00 9.00 -> Value: 0.57
+g_1_SMjxu3Ir COLOMBIA Primera A - Apertura - Round 13 21.03.2021 03:00:00 Once Caldas America De Cali 3.40 3.00 2.30 -> Value: 2.08
+g_1_bXexTXrs COSTA RICA Primera Division - Clausura - Round 14 21.03.2021 01:00:00 Guadalupe San Carlos 2.45 3.20 2.55 -> Value: 1.25
+g_1_G8r31xaP CYPRUS First Division - Championship Group - Round 30 21.03.2021 16:00:00 Ol. Nicosia Apollon 8.50 5.50 1.25 -> Value: 3.01
+g_1_21hIwmzP CZECH REPUBLIC 1. Liga - Round 24 21.03.2021 19:30:00 Slavia Prague Opava 1.14 8.00 11.00 -> Value: 11.92
+g_1_UsFLGPhb DENMARK 2nd Division - Group 1 - Round 15 21.03.2021 14:00:00 Holstebro BK Frem 4.50 3.75 1.66 -> Value: 1.54
+g_1_tGwj41vA DENMARK 2nd Division - Group 2 - Round 15 21.03.2021 14:00:00 Slagelse Nykobing 7.50 4.75 1.35 -> Value: 3.63
+g_1_6Ndu8sy5 ECUADOR Liga Pro - First stage - Round 5 21.03.2021 20:00:00 Manta Aucas 2.62 3.40 2.45 -> Value: 0.34
+g_1_Oxn78Qbj EL SALVADOR Primera Division - Clausura - 2nd Phase - Round 1 21.03.2021 02:30:00 Santa Tecla Municipal Limeno 2.40 3.20 2.60 -> Value: 4.96
+g_1_2TpB7pEd EL SALVADOR Primera Division - Clausura - 2nd Phase - Round 1 21.03.2021 03:00:00 Sonsonate Chalatenango 2.00 3.20 3.40 -> Value: 5.06
+g_1_Io8HaFyi ENGLAND FA Cup - Quarter-finals 21.03.2021 15:30:00 Chelsea Sheffield Utd 1.22 6.25 13.00 -> Value: 2.52
+g_1_tAdQjK19 GERMANY 2. Bundesliga - Round 26 21.03.2021 14:30:00 Greuther Furth Nurnberg 1.72 3.90 4.50 -> Value: 2.68
+g_1_2PpZlbWL GERMANY 2. Bundesliga - Round 26 21.03.2021 14:30:00 VfL Osnabruck St. Pauli 3.40 3.50 2.05 -> Value: 1.01
+g_1_2gAhrsbi GREECE Super League - Championship Group - Round 27 21.03.2021 15:00:00 Asteras Tripolis Panathinaikos 2.80 3.20 2.37 -> Value: 1.54
+g_1_AawImJRt GREECE Super League 2 - Round 16 21.03.2021 14:00:00 Diagoras Doxa Dramas 1.55 3.80 5.00 -> Value: 3.36
+g_1_hKjjhaJP GREECE Super League 2 - Round 16 21.03.2021 14:45:00 Levadiakos AO Trikala 1.33 4.20 8.25 -> Value: 6.96
+g_1_tpmngu4J GREECE Super League 2 - Round 16 21.03.2021 14:45:00 O.F. Ierapetra Ionikos 5.25 3.80 1.53 -> Value: 1.61
+g_1_A56Feqfk INDIA I-League - Winners stage - Round 4 21.03.2021 15:30:00 Punjab Real Kashmir 2.50 3.20 2.50 -> Value: 4.01
+g_1_Cr4yc2KA ITALY Serie C - Group A - Round 32 21.03.2021 18:30:00 Piacenza Como 3.30 3.30 1.95 -> Value: 2.82
+g_1_4Wu2DN4i ITALY Serie C - Group A - Round 32 21.03.2021 21:30:00 Lucchese Pistoiese 2.37 3.10 2.70 -> Value: 1.45
+g_1_I3BTZZSr ITALY Serie C - Group B - Round 32 21.03.2021 16:00:00 Virtus Verona Fano 2.10 2.87 3.40 -> Value: 6.22
+g_1_zadSfy58 ITALY Serie C - Group B - Round 32 21.03.2021 18:30:00 Arezzo Imolese 2.00 3.20 3.30 -> Value: 2.08
+g_1_WzoWpGhL ITALY Serie C - Group C - Round 32 21.03.2021 16:00:00 Ternana Vibonese 1.33 4.50 7.00 -> Value: 19.61
+g_1_Cn2Tqz8R ITALY Serie C - Group C - Round 32 21.03.2021 18:30:00 Teramo Virtus Francavilla 1.90 3.25 3.50 -> Value: 1.91
+g_1_pKrKmI82 ITALY Serie C - Group C - Round 32 21.03.2021 21:30:00 Paganese Juve Stabia 3.25 3.25 2.00 -> Value: 2.16
+g_1_KbSZsYi4 ITALY Serie D - Group A - Round 25 21.03.2021 15:30:00 Casale Borgosesia 1.80 3.30 4.00 -> Value: 5.37
+g_1_t8TVrExb ITALY Serie D - Group A - Round 25 21.03.2021 16:00:00 Caronnese Sestri Levante 2.25 3.30 2.75 -> Value: 0.22
+g_1_b7MAxG9l ITALY Serie D - Group B - Round 22 21.03.2021 15:30:00 Ponte San Pietro Villa Alme 2.00 3.25 3.30 -> Value: 8.59
+g_1_dUhGhE9F ITALY Serie D - Group C - Round 25 21.03.2021 15:30:00 Belluno San Giorgio-Sedico 2.10 3.30 3.00 -> Value: 0.05
+g_1_UokN2yRn ITALY Serie D - Group D - Round 22 21.03.2021 15:30:00 Rimini Sasso Marconi 1.53 3.75 5.25 -> Value: 3.20
+g_1_b3bi8c3P ITALY Serie D - Group D - Round 22 21.03.2021 15:30:00 SCD Progresso Marignanese 1.80 3.40 3.80 -> Value: 5.28
+g_1_t8P1jBVn ITALY Serie D - Group E - Round 22 21.03.2021 15:30:00 Montespaccato Pianese 2.70 3.10 2.40 -> Value: 6.06
+g_1_r9LGNQtC ITALY Primavera 1 - Round 16 21.03.2021 13:30:00 AS Roma U19 Ascoli U19 1.20 6.00 9.00 -> Value: 3.07
+g_1_CzMSKA9t JAPAN J1 League - Round 6 21.03.2021 07:00:00 Oita Trinita Sanfrecce Hiroshima 3.80 3.60 1.90 -> Value: 2.34
+g_1_xlAIEL7s JAPAN J2 League - Round 4 21.03.2021 07:00:00 Ehime Kofu 4.50 3.50 1.80 -> Value: 3.17
+g_1_4GTRAw76 JAPAN J2 League - Round 4 21.03.2021 09:00:00 Sagamihara Omiya Ardija 5.75 3.30 1.70 -> Value: 0.16
+g_1_t6pOIHae MOROCCO Botola Pro - Round 10 21.03.2021 16:00:00 Olympique de Safi Berkane 3.00 3.00 2.25 -> Value: 3.64
+g_1_8SGmC4jN PANAMA LPF - Apertura - Round 6 21.03.2021 01:00:00 Chiriqui Alianza 2.50 3.20 2.50 -> Value: 3.94
+g_1_nJFiBO5T PANAMA LPF - Apertura - Round 6 21.03.2021 02:00:00 Plaza Amador Veraguas 2.00 3.00 3.60 -> Value: 12.45
+g_1_zXT8bA74 PARAGUAY Primera Division - Apertura - Round 9 21.03.2021 00:00:00 Nacional Asuncion 12 de Octubre 1.80 3.50 4.00 -> Value: 2.15
+g_1_W8bwP1G2 POLAND Division 2 - Round 23 21.03.2021 16:00:00 Chojniczanka Elblag 1.44 4.50 5.50 -> Value: 1.78
+g_1_6XJZplC9 PORTUGAL Liga Portugal 2 - Round 25 21.03.2021 17:00:00 FC Porto B Covilha 1.75 3.40 4.33 -> Value: 1.54
+g_1_rw19jabC ROMANIA Liga 2 - Round 20 21.03.2021 19:00:00 FC Rapid Bucuresti Calarasi 2.30 3.25 2.70 -> Value: 0.20
+g_1_0ANFOipl SPAIN Segunda Division B - Group 2 - Round 18 21.03.2021 13:00:00 Ebro Izarra 2.05 3.00 3.40 -> Value: 0.65
+g_1_URWqUDMQ SPAIN Segunda Division B - Group 2 - Round 18 21.03.2021 13:00:00 Tudelano Calahorra 2.25 2.95 3.00 -> Value: 8.31
+g_1_4AzQ0ZZj SPAIN Segunda Division B - Group 2 - Round 21 21.03.2021 18:00:00 Racing Santander Arenas Club 1.55 3.30 5.75 -> Value: 4.99
+g_1_vXhcfvBC SPAIN Segunda Division B - Group 3 - Round 18 21.03.2021 13:00:00 Alcoyano Valencia B 1.90 2.80 4.20 -> Value: 0.86
+g_1_W6aXVlA4 SPAIN Segunda Division B - Group 3 - Round 21 21.03.2021 13:00:00 Gimnastic Espanyol B 1.62 3.70 4.33 -> Value: 4.85
+g_1_I3eTWUfb SPAIN Segunda Division B - Group 3 - Round 21 21.03.2021 18:00:00 Olot Llagostera 2.50 3.10 2.50 -> Value: 4.17
+g_1_UkyU870n SPAIN Segunda Division B - Group 4 - Round 18 21.03.2021 13:00:00 Sevilla FC B Yeclano 1.62 3.40 4.75 -> Value: 2.17
+g_1_MwPd9VPn SPAIN Segunda Division B - Group 5 - Round 18 21.03.2021 13:00:00 Merida AD Villarrobledo 1.50 3.50 6.00 -> Value: 5.87
+g_1_fTG96T95 SPAIN Segunda Division B - Group 5 - Round 18 21.03.2021 13:00:00 Villarrubia Don Benito 2.85 3.00 2.30 -> Value: 0.86
+g_1_2Bck65zf SWITZERLAND Super League - Round 26 21.03.2021 17:00:00 Luzern Sion 1.55 4.00 5.75 -> Value: 5.80
+g_1_MF0Ae9NR SWITZERLAND Super League - Round 26 21.03.2021 17:00:00 Servette Vaduz 1.55 4.20 5.50 -> Value: 3.41
+g_1_xnoUh5es THAILAND Thai League 1 - Round 29 21.03.2021 12:00:00 Bangkok Utd Rayong FC 1.18 5.75 11.00 -> Value: 0.64
+g_1_lMlYiPAm THAILAND Thai League 1 - Round 29 21.03.2021 14:00:00 Buriram Prachuap 1.28 5.00 7.50 -> Value: 2.73
+g_1_xU5yV1el THAILAND Thai League 2 - Round 31 21.03.2021 14:00:00 Chainat Kasetsart 1.36 4.75 6.00 -> Value: 1.53
+g_1_fyH2mma1 TURKEY Super Lig - Round 31 21.03.2021 12:30:00 Antalyaspor Erzurum BB 2.30 3.30 3.00 -> Value: 0.16
+g_1_pj3jOjwe TURKEY 1. Lig - Round 27 21.03.2021 15:00:00 Ankaraspor Boluspor 3.30 3.30 2.05 -> Value: 0.51
+g_1_8SK4ppn2 TURKEY 3. Lig Group 4 - Round 27 21.03.2021 13:00:00 52 Orduspor Kestel 2.00 2.87 3.75 -> Value: 4.81
+g_1_OOj0mn2q TURKEY 3. Lig Group 4 - Round 27 21.03.2021 13:00:00 Modafenspor Silivrispor 2.10 3.10 3.20 -> Value: 0.41
+g_1_8zFn5yvO UKRAINE Premier League - Round 19 21.03.2021 17:00:00 Dyn. Kyiv Rukh Lviv 1.18 6.50 11.00 -> Value: 7.49
+g_1_nRDj4egU UKRAINE Premier League - Round 19 21.03.2021 17:00:00 Lviv Shakhtar Donetsk 13.00 8.00 1.12 -> Value: 16.35
+g_1_MaOEq81f URUGUAY Primera Division - Clausura - Round 13 21.03.2021 00:00:00 Penarol Plaza Colonia 1.61 3.60 5.00 -> Value: 4.17

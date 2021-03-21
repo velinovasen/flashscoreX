@@ -25,7 +25,7 @@ class CheckResults:
         self.calculate_profit()
 
     def calculate_profit(self):
-        with open('results16.03.2021.txt', 'r') as file:
+        with open('results20.03.2021.txt', 'r') as file:
             all_handicaps = []
             total_profit = 0
             for line in file.readlines():
@@ -42,7 +42,7 @@ class CheckResults:
                 print(total_profit)
             file.close()
 
-        with open('results16.03.2021.txt', 'a') as file:
+        with open('results20.03.2021.txt', 'a') as file:
 
             [file.write(hand + '\n') for hand in all_handicaps]
 
@@ -81,7 +81,7 @@ class CheckResults:
                 favourite = '2'
 
             final_result = 'loss'
-            with open('results16.03.2021.txt', 'a') as file:
+            with open('results20.03.2021.txt', 'a') as file:
                 if sign == 'X':
                     final_result = f'profit :+: {(draw_odds * 10) - 10}'
                     file.write(f"{game[1].strip()} Score: {home_team} {away_team} Odd: {draw_odds} Favourite: {favourite} final: {final_result}\n")
@@ -101,7 +101,7 @@ class CheckResults:
 
     def get_games(self):
         games = []
-        with open('valuebets16.03.2021.txt') as file:
+        with open('valuebets20.03.2021.txt') as file:
             for game in file.readlines():
                 print(game)
                 game_id = game.split(' ')[0]

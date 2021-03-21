@@ -1,0 +1,8 @@
+g_1_xY9SZ5Rh ARGENTINA Primera Nacional - Round 2 22.03.2021 00:00:00 Quilmes Gimnasia Mendoza 2.45 2.90 2.80 -> Value: 4.33
+g_1_8pn7Q0GE BOLIVIA Division Profesional - Round 1 22.03.2021 01:30:00 Bolivar Real Potosi 1.12 8.50 9.00 -> Value: 8.32
+g_1_Q9dvaal9 BRAZIL Campeonato Gaucho - First stage - Round 5 22.03.2021 01:00:00 Novo Hamburgo Internacional 6.00 4.33 1.40 -> Value: 5.13
+g_1_jeMoytLh BRAZIL Copa do Nordeste - Round 4 22.03.2021 01:00:00 CRB Botafogo PB 2.15 2.95 3.25 -> Value: 0.30
+g_1_QDlX936h ECUADOR Liga Pro - First stage - Round 5 22.03.2021 01:00:00 Emelec Nueve de Octubre 1.28 5.00 9.00 -> Value: 7.27
+g_1_2LSDCTFd NETHERLANDS Eerste Divisie - Round 29 22.03.2021 21:00:00 Cambuur Eindhoven FC 1.18 7.00 9.00 -> Value: 2.20
+g_1_QymTP9QP PERU Liga 1 - Apertura - Round 2 22.03.2021 18:00:00 Sport Huancayo Binacional 1.83 3.50 3.60 -> Value: 0.19
+g_1_IDjX5lZg PERU Liga 1 - Apertura - Round 2 22.03.2021 22:30:00 Cajamarca Carlos Mannucci 2.62 3.25 2.45 -> Value: 5.90
