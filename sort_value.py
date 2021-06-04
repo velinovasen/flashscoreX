@@ -1,5 +1,5 @@
 all_bets = []
-with open('valuebets06.03.2021.txt', 'r') as file:
+with open('first_batch_results/valuebets06.03.2021.txt', 'r') as file:
     [all_bets.append(line) for line in file.readlines()]
 
 for game in all_bets:

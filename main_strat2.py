@@ -36,12 +36,11 @@ class GameCollector:
     GAME_WAIT_XPATH = '/html/body/iframe    '
     TEAMS_A_LINKS_CLASS = 'participant-imglink'
     ODDS_CLASS = 'odds value'
-    COUNTRY_TOURNAMENT_DIV_XPATH = '/html/body/div[1]/div[3]/div/span[3]'
-    H2H_XPATH = '/html/body/div[1]/div[5]/div/a[3]'
-    H2H_XPATH_2 = '/html/body/div[1]/div[6]/div/a[3]'
-    HOME_GAMES_XPATH = '/html/body/div[1]/div[8]/div[1]/div[2]/div'
-    AWAY_GAMES_XPATH = '/html/body/div[1]/div[8]/div[2]/div[2]/div'
-    H2H_GAMES_XPATH = '/html/body/div[1]/div[8]/div[3]/div[2]/div'
+    COUNTRY_TOURNAMENT_DIV_XPATH = '/html/body/div[2]/div[1]/div[2]/div[1]/span[2]'
+    H2H_ID = 'a-match-head-2-head'
+    HOME_GAMES_XPATH = '/html/body/div[2]/div[1]/div[4]/div/div[2]/div[4]/div[1]/table/tbody/tr'
+    AWAY_GAMES_XPATH = '/html/body/div[2]/div[1]/div[4]/div/div[2]/div[4]/div[2]/table/tbody/tr'
+    H2H_GAMES_XPATH = '/html/body/div[2]/div[1]/div[4]/div/div[2]/div[4]/div[3]/table/tbody/tr'
     HOME_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[1]/table/tbody/tr'
     AWAY_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[2]/table/tbody/tr'
     H2H_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[3]/table/tbody/tr'
@@ -78,11 +77,10 @@ class GameCollector:
         #     file.write('')
         # file.close()
         checked_today = []
-        with open(f'checked_today2021-06-04.txt', 'r') as file:
+        with open(f'checked_today_2strat2021-03-23.txt', 'r') as file:
             [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         print(checked_today)
         for game in all_games:
-            print(f'84 -> {game}')
             if game in checked_today:
                 print('CHECKED')
                 continue
@@ -90,7 +88,7 @@ class GameCollector:
                 # print(game.split('g_1_')[1])
                 BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
                 driver.get(BASE_URL)
-                with open(f'checked_today{date_for_file}.txt', 'a') as file:
+                with open(f'checked_today_2strat{date_for_file}.txt', 'a') as file:
                     file.write(f"{game} + '\n'")
                 file.close()
                 sleep(3)
@@ -100,12 +98,11 @@ class GameCollector:
                     pass
                 # WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.XPATH, self.GAME_WAIT_XPATH)))
 
-                home_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[2]/div[4]').text
-                away_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[4]/div[4]').text
+                teams_token = driver.find_elements_by_class_name(self.TEAMS_A_LINKS_CLASS)
 
-                print(f'105 -> {home_team} vs {away_team}')
+                home_team, away_team = teams_token[1].text, teams_token[3].text
 
-                date_time_token = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[1]/div').text.split(' ')
+                date_time_token = driver.find_element_by_id('utime').text.split(' ')
                 date, time = date_time_token[0], date_time_token[1]
                 print(date, time)
                 time += ':00'
@@ -120,27 +117,14 @@ class GameCollector:
                 county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH).text.split(': ')
                 country, league = county_league_token
 
-                print(f'122 -> {country}: {league}')
-
                 try:
-                    odds_token = driver.find_element_by_xpath('/html/body/div[1]/div[8]/div[1]/div/div').text.split('\n')
-
-                    print(f'127 -> {odds_token}')
+                    odds_token = driver.find_element_by_id('tab-prematch-odds').text.split('\n')
 
                     home_odd, draw_odd, away_odd = odds_token[1], odds_token[3], odds_token[5]
 
                 except Exception:
-                    try:
-                        odds_token = driver.find_element_by_xpath('/html/body/div[1]/div[9]/div/div/div').text.split(
-                            '\n')
-
-                        print(f'136 -> {odds_token}')
-
-                        home_odd, draw_odd, away_odd = odds_token[1], odds_token[3], odds_token[5]
-                    except:
-                        print(f'130 -> No odds -> skipping')
-                        home_odd, draw_odd, away_odd = '-', '-', '-'
-                        continue
+                    home_odd, draw_odd, away_odd = '-', '-', '-'
+                    continue
 
                 home_team_games, away_team_games, h2h_games, homehome_games, awayaway_games = self.get_h2h(driver)
 
@@ -159,9 +143,9 @@ class GameCollector:
                 total_games_checked = home_games_stats['total_games'] + away_games_stats['total_games'] + \
                                       h2h_games_stats['total_games'] + homehome_games_stats['total_games'] + \
                                       awayaway_games_stats['total_games']
-                average_percent_draws = ((home_games_stats['draws'] + away_games_stats['draws'] +
-                                         h2h_games_stats['draws'] + homehome_games_stats['draws'] +
-                                         awayaway_games_stats['draws']) / total_games_checked) * 100
+                average_percent_draws = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
+                                         h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
+                                         awayaway_games_stats['draws_percent']) / 5
                 try:
                     valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
                 except:
@@ -171,13 +155,12 @@ class GameCollector:
                     valuebet_abs = True
                 print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
                 if valuebet_abs:
-                    with open(f'valuebets04.06.2021.txt', 'a') as file:
+                    with open(f'valuebets_2strat23.03.2021.txt', 'a') as file:
                         file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
                     file.close()
 
                 print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %')
             except:
-                print('166 -> CHUPI SE MAMKA MU')
                 pass
 
     def get_stats(self, games, trigger):
@@ -193,18 +176,12 @@ class GameCollector:
         return stats
 
     def get_h2h(self, driver):
-        print('195 -> VLEZNAHME V get_h2h')
         try:
-            driver.find_element_by_xpath(self.H2H_XPATH).click()
+            driver.find_element_by_id(self.H2H_ID).click()
             sleep(1)
             self.click_show_more_buttons(driver)
         except Exception:
-            try:
-                driver.find_element_by_xpath(self.H2H_XPATH_2).click()
-                sleep(1)
-                self.click_show_more_buttons(driver)
-            except:
-                print('No h2h button')
+            print('No h2h button')
 
         # try:
         home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
@@ -367,8 +344,8 @@ class GameCollector:
             sleep(3)
             WebDriverWait(driver, timeout=15).until(EC.visibility_of_element_located(
                 (By.XPATH, '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]')))
-            # driver.find_element_by_xpath(
-            #     '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]').click()
+            driver.find_element_by_xpath(
+                '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]').click()
         except:
             pass
         sleep(3)
@@ -412,7 +389,7 @@ class GameCollector:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"
