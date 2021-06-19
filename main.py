@@ -175,20 +175,27 @@ class GameCollector:
             average_percent_draws = ((home_games_stats['draws'] + away_games_stats['draws'] +
                                      h2h_games_stats['draws'] + homehome_games_stats['draws'] +
                                      awayaway_games_stats['draws']) / total_games_checked) * 100
+            average_percentage_strat2 = (home_games_stats['draws_percent'] + away_games_stats['draws_percent'] +
+                                         h2h_games_stats['draws_percent'] + homehome_games_stats['draws_percent'] +
+                                         awayaway_games_stats['draws_percent']) / 5
+
             try:
                 valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
+                valuebet_second_strat = average_percentage_strat2 - (1/float(draw_odd) * 100)
             except:
                 valuebet_percent = 0
+                valuebet_second_strat = 0
             valuebet_abs = False
             if valuebet_percent > 0 and total_games_checked > 50:
                 valuebet_abs = True
-            print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
+            print(f'Average percent draws: {average_percent_draws:.2f}, Average percent draws 2 strat: {average_percentage_strat2:.2f},'
+                  f' current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}, Valuebet2 %: {valuebet_second_strat:.2f}')
             if valuebet_abs:
                 with open(f'valuebets06.18.2021.txt', 'a') as file:
-                    file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
+                    file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}, Valuebet2 %: {valuebet_second_strat:.2f}\n')
                 file.close()
 
-            print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %')
+            print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %, Valuebet2 %: {valuebet_second_strat:.2f}')
             # except:
             #     print('184 -> CHUPI SE MAMKA MU')
             #     pass
@@ -225,7 +232,7 @@ class GameCollector:
 
         away_away_games = self.get_home_away_h2h_games(driver, 'awayaway')
 
-        print(len(home_team_games), len(away_team_games), len(h2h_games), len(home_home_games), len(home_h2h_games) len(away_away_games))
+        print(len(home_team_games), len(away_team_games), len(h2h_games), len(home_home_games), len(home_h2h_games), len(away_away_games))
 
         return home_team_games, away_team_games, h2h_games, home_home_games, home_h2h_games, away_away_games
 
