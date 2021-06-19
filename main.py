@@ -36,13 +36,16 @@ class GameCollector:
     GAME_WAIT_XPATH = '/html/body/iframe    '
     TEAMS_A_LINKS_CLASS = 'participant-imglink'
     ODDS_CLASS = 'odds value'
+    ODDS_XPATH = str("//div[{'contains(concat(" ",normalize-space(@class),' '),' oddsWrapper ')}']")
     COUNTRY_TOURNAMENT_DIV_XPATH = '/html/body/div[1]/div[3]/div/span[3]'
+    COUNTRY_TOURNAMENT_DIV_XPATH_2 = '/html/body/div[2]/div[3]/div/span[3]'
     H2H_XPATH = '/html/body/div[1]/div[5]/div/a[3]'
     H2H_XPATH_2 = '/html/body/div[1]/div[6]/div/a[3]'
     HOME_GAMES_XPATH = '/html/body/div[1]/div[8]/div[1]/div[2]/div'
+    HOME_GAMES_XPATH_2 = '/html/body/div[2]/div[8]/div[1]/div[2]/div'
     AWAY_GAMES_XPATH = '/html/body/div[1]/div[8]/div[2]/div[2]/div'
     H2H_GAMES_XPATH = '/html/body/div[1]/div[8]/div[3]/div[2]/div'
-    HOME_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[1]/table/tbody/tr'
+    HOME_GAMES_XPATH_3 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[1]/table/tbody/tr'
     AWAY_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[2]/table/tbody/tr'
     H2H_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[3]/table/tbody/tr'
     HOME_HOME_XPATH = '/html/body/div[2]/div[1]/div[4]/div/div[2]/div[5]/div[1]/table/tbody/tr'
@@ -55,13 +58,10 @@ class GameCollector:
 
         driver.get('https://www.flashscore.com/')
 
-        all_games = self.gather_games(driver)
+        # all_games = self.gather_games(driver)
 
-        # all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
-        #              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
-        #              'g_1_EHZ0UYta', 'g_1_Msw9SCBB', 'g_1_rcRHQjtO', 'g_1_IkthWfCn', 'g_1_fXULPAeU',
-        #              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
-
+        all_games = ['g_1_8MZOBNVL', 'g_1_GMP2SN8h', 'g_1_KCFSWvfH', 'g_1_dzACfQFJ', 'g_1_vsbvWLUs', 'g_1_pld9xCMD']
+        #
         # all_games = []
         # with open('today_games.txt', 'r') as file:
         #     for line in file.readlines():
@@ -78,7 +78,7 @@ class GameCollector:
         #     file.write('')
         # file.close()
         checked_today = []
-        with open(f'checked_today2021-06-04.txt', 'r') as file:
+        with open(f'checked_today2021-06-18.txt', 'r') as file:
             [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         print(checked_today)
         for game in all_games:
@@ -86,99 +86,118 @@ class GameCollector:
             if game in checked_today:
                 print('CHECKED')
                 continue
+            # try:
+            # print(game.split('g_1_')[1])
+            BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
+            driver.get(BASE_URL)
+            with open(f'checked_today{date_for_file}.txt', 'a') as file:
+                file.write(f"{game} + '\n'")
+            file.close()
+            sleep(3)
             try:
-                # print(game.split('g_1_')[1])
-                BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
-                driver.get(BASE_URL)
-                with open(f'checked_today{date_for_file}.txt', 'a') as file:
-                    file.write(f"{game} + '\n'")
-                file.close()
-                sleep(3)
-                try:
-                    driver.find_element_by_id('onetrust-accept-btn-handler').click()
-                except:
-                    pass
-                # WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.XPATH, self.GAME_WAIT_XPATH)))
-
+                driver.find_element_by_id('onetrust-accept-btn-handler').click()
+            except:
+                pass
+            # WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.XPATH, self.GAME_WAIT_XPATH)))
+            try:
                 home_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[2]/div[4]').text
                 away_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[4]/div[4]').text
+            except:
+                home_team = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[2]/div[4]/div[2]').text
+                away_team = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[4]/div[4]/div[1]').text
 
-                print(f'105 -> {home_team} vs {away_team}')
+            print('---------------------------------------------')
+            print(f'110 -> {home_team} vs {away_team}')
 
-                date_time_token = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[1]/div').text.split(' ')
-                date, time = date_time_token[0], date_time_token[1]
-                print(date, time)
-                time += ':00'
-                my_datetime = datetime.datetime.strptime(time, "%H:%M:%S")
-                print(datetime.datetime.now())
-                tokens_list = str(datetime.datetime.now()).split(' ')
-                curr_time = datetime.datetime.strptime(tokens_list[1].split('.')[0], '%H:%M:%S')
-                # if my_datetime < curr_time:
-                #     print(f'Finished - {home_team} {away_team}')
-                #     continue
+            try:
+                print('PROBVA ZA DATATA')
+                date_time_token = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[1]').text.split(' ')
+            except:
+                print('EXCEPTVA DATATA')
+                date_time_token = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[1]').text.split(' ')
+            date, time = date_time_token[0], date_time_token[1]
+            print(date, time)
+            time += ':00'
+            my_datetime = datetime.datetime.strptime(time, "%H:%M:%S")
+            print(datetime.datetime.now())
+            tokens_list = str(datetime.datetime.now()).split(' ')
+            curr_time = datetime.datetime.strptime(tokens_list[1].split('.')[0], '%H:%M:%S')
+            # if my_datetime < curr_time:
+            #     print(f'Finished - {home_team} {away_team}')
+            #     continue
 
+            try:
                 county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH).text.split(': ')
-                country, league = county_league_token
+            except:
+                county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH_2).text.split(': ')
+            country, league = county_league_token
 
-                print(f'122 -> {country}: {league}')
 
+            print(f'137 -> {country}: {league}')
+
+            try:
+                odds_token = driver.find_element_by_xpath(self.ODDS_XPATH).text.split('\n')
+
+                print(f'142 -> {odds_token}')
+
+                home_odd, draw_odd, away_odd = odds_token[1], odds_token[3], odds_token[5]
+
+            except Exception:
                 try:
-                    odds_token = driver.find_element_by_xpath('/html/body/div[1]/div[8]/div[1]/div/div').text.split('\n')
+                    odds_token = driver.find_element_by_xpath('/html/body/div[1]/div[9]/div/div/div').text.split(
+                        '\n')
 
-                    print(f'127 -> {odds_token}')
+                    print(f'151 -> {odds_token}')
 
                     home_odd, draw_odd, away_odd = odds_token[1], odds_token[3], odds_token[5]
-
-                except Exception:
+                except:
                     try:
-                        odds_token = driver.find_element_by_xpath('/html/body/div[1]/div[9]/div/div/div').text.split(
-                            '\n')
-
-                        print(f'136 -> {odds_token}')
+                        odds_token = driver.find_element_by_xpath('/html/body/div[2]/div[15]/div/div/div').text.split('\n')
+                        print(f'151 -> {odds_token}')
 
                         home_odd, draw_odd, away_odd = odds_token[1], odds_token[3], odds_token[5]
                     except:
-                        print(f'130 -> No odds -> skipping')
+                        print(f'155 -> No odds -> skipping')
                         home_odd, draw_odd, away_odd = '-', '-', '-'
                         continue
 
-                home_team_games, away_team_games, h2h_games, homehome_games, awayaway_games = self.get_h2h(driver)
+            home_team_games, away_team_games, h2h_games, homehome_games, awayaway_games = self.get_h2h(driver)
 
-                print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
+            print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
 
-                home_games_stats = self.get_stats(home_team_games, 'home_games')
-                print(home_games_stats)
-                away_games_stats = self.get_stats(away_team_games, 'away_games')
-                print(away_games_stats)
-                h2h_games_stats = self.get_stats(h2h_games, 'h2h_games')
-                print(h2h_games_stats)
-                homehome_games_stats = self.get_stats(homehome_games, 'homehome_games')
-                print(homehome_games_stats)
-                awayaway_games_stats = self.get_stats(awayaway_games, 'awayaway_games')
-                print(awayaway_games_stats)
-                total_games_checked = home_games_stats['total_games'] + away_games_stats['total_games'] + \
-                                      h2h_games_stats['total_games'] + homehome_games_stats['total_games'] + \
-                                      awayaway_games_stats['total_games']
-                average_percent_draws = ((home_games_stats['draws'] + away_games_stats['draws'] +
-                                         h2h_games_stats['draws'] + homehome_games_stats['draws'] +
-                                         awayaway_games_stats['draws']) / total_games_checked) * 100
-                try:
-                    valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
-                except:
-                    valuebet_percent = 0
-                valuebet_abs = False
-                if valuebet_percent > 0 and total_games_checked > 50:
-                    valuebet_abs = True
-                print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
-                if valuebet_abs:
-                    with open(f'valuebets04.06.2021.txt', 'a') as file:
-                        file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
-                    file.close()
-
-                print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %')
+            home_games_stats = self.get_stats(home_team_games, 'home_games')
+            print(home_games_stats)
+            away_games_stats = self.get_stats(away_team_games, 'away_games')
+            print(away_games_stats)
+            h2h_games_stats = self.get_stats(h2h_games, 'h2h_games')
+            print(h2h_games_stats)
+            homehome_games_stats = self.get_stats(homehome_games, 'homehome_games')
+            print(homehome_games_stats)
+            awayaway_games_stats = self.get_stats(awayaway_games, 'awayaway_games')
+            print(awayaway_games_stats)
+            total_games_checked = home_games_stats['total_games'] + away_games_stats['total_games'] + \
+                                  h2h_games_stats['total_games'] + homehome_games_stats['total_games'] + \
+                                  awayaway_games_stats['total_games']
+            average_percent_draws = ((home_games_stats['draws'] + away_games_stats['draws'] +
+                                     h2h_games_stats['draws'] + homehome_games_stats['draws'] +
+                                     awayaway_games_stats['draws']) / total_games_checked) * 100
+            try:
+                valuebet_percent = average_percent_draws - (1/float(draw_odd) * 100)
             except:
-                print('166 -> CHUPI SE MAMKA MU')
-                pass
+                valuebet_percent = 0
+            valuebet_abs = False
+            if valuebet_percent > 0 and total_games_checked > 50:
+                valuebet_abs = True
+            print(f'Average percent draws: {average_percent_draws:.2f}, current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}')
+            if valuebet_abs:
+                with open(f'valuebets06.18.2021.txt', 'a') as file:
+                    file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}\n')
+                file.close()
+
+            print(f'{country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f} %')
+            # except:
+            #     print('184 -> CHUPI SE MAMKA MU')
+            #     pass
 
     def get_stats(self, games, trigger):
         stats = {'total_games': 0, 'draws': 0}
@@ -193,10 +212,11 @@ class GameCollector:
         return stats
 
     def get_h2h(self, driver):
-        print('195 -> VLEZNAHME V get_h2h')
+        print('215 -> VLEZNAHME V get_h2h')
         try:
-            driver.find_element_by_xpath(self.H2H_XPATH).click()
-            sleep(1)
+            driver.find_element_by_link_text('H2H').click()
+            sleep(3)
+            print('220 -> KLIKA NA H2H')
             self.click_show_more_buttons(driver)
         except Exception:
             try:
@@ -206,85 +226,121 @@ class GameCollector:
             except:
                 print('No h2h button')
 
-        # try:
-        home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH)
-        if len(home_team_games) >= 5:
-            home_team_games = home_team_games[:-1]
-        away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH)
-        if len(away_team_games) >= 5:
-            away_team_games = away_team_games[:-1]
-        h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH)
-        if len(h2h_games) >= 5:
-            h2h_games = h2h_games[:-1]
+        WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((By.XPATH, '/html/body/div[2]/div[15]')))
 
-        if len(home_team_games) == 0:
-            home_team_games = driver.find_elements_by_xpath(self.HOME_GAMES_XPATH_2)
-            if len(home_team_games) >= 5:
-                home_team_games = home_team_games[:-1]
-            away_team_games = driver.find_elements_by_xpath(self.AWAY_GAMES_XPATH_2)
-            if len(away_team_games) >= 5:
-                away_team_games = away_team_games[:-1]
-            h2h_games = driver.find_elements_by_xpath(self.H2H_GAMES_XPATH_2)
-            if len(h2h_games) >= 5:
-                h2h_games = h2h_games[:-1]
-        # print(len(home_team_games), len(away_team_games), len(h2h_games))
+        home_team_games = self.get_home_away_h2h_games(driver, 'home')
+
+        away_team_games = self.get_home_away_h2h_games(driver, 'away')
+
+        h2h_games = self.get_home_away_h2h_games(driver, 'h2h')
+
+        print(len(home_team_games), len(away_team_games), len(h2h_games))
 
         home_team_games, away_team_games, h2h_games = self.clean_h2h_data(driver, home_team_games, away_team_games,
                                                                           h2h_games)
 
         home_home_games, away_away_games = self.get_home_home_away_away(driver)
 
-        # except Exception:
-        #     print('Click more button error')
-
         try:
-            driver.find_element_by_id('h2h-home').click()
+            driver.find_element_by_link_text(' - Home').click()
             self.click_show_more_buttons(driver)
         except Exception:
-            print('No h2h home button.')
+            print(f'272 -> No h2h home button.')
 
         return home_team_games, away_team_games, h2h_games, home_home_games, away_away_games
 
+    def get_home_away_h2h_games(self, driver, option):
+        '''
+        :param driver:
+        :param option: a string, home team games, away team games or h2h games
+        :return: a list with web elements containing the games
+        '''
+        main_h2h_div = driver.find_element_by_id('detail')
+        raw_tokens = main_h2h_div.find_elements_by_tag_name('div')
+        div_raw_big = ''
+        for raw_div in raw_tokens:
+            if 'h2h' in raw_div.get_attribute('class'):
+                div_raw_big = raw_div
+                break
+
+        all_divs_section_tokens = []
+        for tok in div_raw_big.find_elements_by_tag_name('div'):
+            if 'section' in tok.get_attribute('class'):
+                all_divs_section_tokens.append(tok)
+
+        if option == 'home':
+            div_class_section_home = all_divs_section_tokens[0]
+            div_class_rows_home = div_class_section_home.find_elements_by_tag_name('div')[1]
+            home_team_games = div_class_rows_home.find_elements_by_tag_name('div')
+            home_team_games = home_team_games[0::2]
+            return home_team_games
+
+        if option == 'away':
+            div_class_section_away = all_divs_section_tokens[1]
+            div_class_rows_away = div_class_section_away.find_elements_by_tag_name('div')[1]
+            away_team_games = div_class_rows_away.find_elements_by_tag_name('div')
+            away_team_games = away_team_games[0::2]
+            return away_team_games
+
+        if option == 'h2h':
+            div_class_section_h2h = all_divs_section_tokens[2]
+            div_class_rows_h2h = div_class_section_h2h.find_elements_by_tag_name('div')[1]
+            h2h_games = div_class_rows_h2h.find_elements_by_tag_name('div')
+            h2h_games = h2h_games[0::2]
+            return h2h_games
+
+        if option == 'homehome':
+            div_class_section_homehome = all_divs_section_tokens[0]
+            div_class_rows_homehome = div_class_section_homehome.find_elements_by_tag_name('div')[1]
+            homehome_games = div_class_rows_homehome.find_elements_by_tag_name('div')
+            homehome_games = homehome_games[0::2]
+            return homehome_games
+
+        if option == 'homeh2h':
+            div_class_section_homeh2h = all_divs_section_tokens[1]
+            div_class_rows_homeh2h = div_class_section_homeh2h.find_elements_by_tag_name('div')[1]
+            homeh2h_games = div_class_rows_homeh2h.find_elements_by_tag_name('div')
+            homeh2h_games = homeh2h_games[0::2]
+            return homeh2h_games
+
     def get_home_home_away_away(self, driver):
-        driver.find_element_by_id('h2h-home').click()
+        main_div = driver.find_element_by_class_name('subTabs')
+        # print(main_div.text)
+        home_home_div = main_div.find_elements_by_tag_name('a')[1]
+        ActionChains(driver).move_to_element(home_home_div).click().perform()
         sleep(1)
         self.click_show_more_buttons(driver)
 
         home_home_games = []
         away_away_games = []
 
-        try:
-            home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH)
-            if len(home_team_games) >= 5:
-                home_team_games = home_team_games[:-1]
+        # try:
+            # home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH)
+        main_h2h_div = driver.find_element_by_id('detail')
+        # print('------------------')
+        # print(f"291 -> {main_h2h_div.get_attribute('outerHTML')}")
+        # print('------------------')
+        raw_tokens = main_h2h_div.find_elements_by_tag_name('div')
+        div_raw_big = ''
+        for raw_div in raw_tokens:
+            if 'h2h' in raw_div.get_attribute('class'):
+                div_raw_big = raw_div
+                break
 
-            if len(home_team_games) == 0:
-                home_team_games = driver.find_elements_by_xpath(self.HOME_HOME_XPATH_2)
-                if len(home_team_games) >= 5:
-                    home_team_games = home_team_games[:-1]
+        print(f"300 -> {div_raw_big.get_attribute('outerHTML')}")
 
-            for home_game in home_team_games:
-                # print(type(home_game))
-                # print(home_game.get_attribute('outerHTML'))
-                all_tds = home_game.find_elements_by_tag_name('td')
-                # print(len(all_tds))
+        self.click_show_more_buttons(driver)
 
-                date = all_tds[0].get_attribute('innerText')
-                result = home_game.find_element_by_tag_name('a').get_attribute('title')
-                score = all_tds[4].get_attribute('innerText')
-                teams_token = home_game.find_elements_by_class_name('name')
-                home_team = teams_token[0].get_attribute('innerText')
-                away_team = teams_token[1].get_attribute('innerText')
-                home_home_games.append([date, home_team, away_team, result, score])
+        homehome_games = self.get_home_away_h2h_games(driver, 'homehome')
+        ## TO FINISH !!!
 
-                # print('||||||||||||||||')
-                # print(len(date), len(home_team), len(away_team), len(result), len(score))
-                # print(date, home_team, away_team, result, score)
+        clean_homehome_games = self.clean_homehome_games(homehome_games)
 
-        except Exception:
-            print('home_home_games_problem')
+        # except Exception:
+        #     print('home_home_games_problem')
 
-        driver.find_element_by_id('h2h-away').click()
+        away_away_div = main_div.find_elements_by_tag_name('a')[2]
+        away_away_div.click()
         sleep(1)
         self.click_show_more_buttons(driver)
 
@@ -314,6 +370,38 @@ class GameCollector:
             return home_home_games, away_away_games
         except Exception:
             print('problem_away_away_games')
+
+    def clean_homehome_games(self, homehome_games):
+        all_ready_games = []
+        for homegame in homehome_games:
+            date_token, competition_token, home_team_token, away_team_token, score_token, result_token = '', '', '', '', '', ''
+            all_spans = homegame.find_elements_by_tag_name('span')
+            for span in all_spans:
+                if 'date' in span.get_attribute('class'):
+                    date_token = span
+                elif 'event' in span.get_attribute('class'):
+                    competition_token = span
+                elif 'home' in span.get_attribute('class'):
+                    home_team_token = span
+                elif 'away' in span.get_attribute('class'):
+                    away_team_token = span
+                elif 'result' in span.get_attribute('class'):
+                    score_token = span
+                elif 'icon' in span.get_attribute('class'):
+                    result_token = span
+            try:
+                date = date_token.get_attribute('innerText')
+            except:
+                date = ''
+                # print(homegame.get_attribute('outerHTML'))
+            competition_token = competition_token.get_attribute('innerText')
+            home_team = home_team_token.get_attribute('innerText')
+            away_team = away_team_token.get_attribute('innerText')
+            score = score_token.get_attribute('innerText')
+            result = result_token.get_attribute('innerText')
+            print(date, competition_token, home_team, away_team, score, result)
+            all_ready_games.append([date, competition_token, home_team, away_team, score, result])
+        return all_ready_games
 
     def clean_h2h_data(self, driver, home_team_games, away_team_games, h2h_games):
         all_home_finished_games = []
@@ -391,19 +479,26 @@ class GameCollector:
 
     @staticmethod
     def click_show_more_buttons(driver):
-        try:
-            buttons = driver.find_elements_by_class_name('show_more')
-            for button in buttons:
-                if 'Show more matches' in button.text:
-                    while True:
-                        try:
-                            button.click()
-                        except Exception:
-                            break
-            buttons.click()
-            sleep(1)
-        except Exception:
-            pass
+        while True:
+            try:
+                # print('444 -> VLIZA V BUTONA')
+                main_h2h_div = driver.find_element_by_id('detail')
+                raw_tokens = main_h2h_div.find_elements_by_tag_name('div')
+                div_raw_big = ''
+                for raw_div in raw_tokens:
+                    if 'h2h' in raw_div.get_attribute('class'):
+                        div_raw_big = raw_div
+                        break
+                all_divs = div_raw_big.find_elements_by_tag_name('div')
+                button = ''
+                for div in all_divs:
+                    if 'showMore' in div.get_attribute('class'):
+                        button = div
+                        break
+                button.click()
+                # print('454 -> KLIKNA')
+            except:
+                break
 
     @staticmethod
     def driver_chrome():
