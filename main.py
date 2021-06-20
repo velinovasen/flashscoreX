@@ -1,70 +1,39 @@
 import datetime
 
-from bs4 import BeautifulSoup
-from time import sleep, perf_counter
-import re
+from time import sleep
 
-# from webdriver_manager.firefox import GeckoDriverManager
-import csv
-from selenium.webdriver import FirefoxOptions, Firefox, ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities as DC
 from selenium.webdriver.support.wait import WebDriverWait
-# from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import ChromeOptions, Chrome, ActionChains
 
 
-# all_games = ['g_1_OzaZBCdm', 'g_1_4CPdbgSm', 'g_1_QwxUj2dh', 'g_1_YRFhXtQE', 'g_1_g_1_IqeVeTDH',
-#              'g_1_bVESOjSp','g_1_jPPhVhkH', 'g_1_K8if632r', 'g_1_vglJ2naP', 'g_1_x480LCM3',
-#              'g_1_EHZ0UYta', 'g_1_Msw9SCBB', 'g_1_rcRHQjtO', 'g_1_IkthWfCn', 'g_1_fXULPAeU',
-#              'g_1_h8Y4Thd5', 'g_1_WhpdVERh', 'g_1_nwrvqrcM', 'g_1_YoILfVf4', 'g_1_AaB2mq9r',
-#              'g_1_jNCQgkAA', 'g_1_feJHeBub', 'g_1_4zQ5n3Ol', 'g_1_UHFbDvwd', 'g_1_thJ2Cbh2',
-#              'g_1_Y9AyL2U2', 'g_1_COVIousG', 'g_1_8h0voSiO', 'g_1_Sn2Jmggn', 'g_1_zuOG3gTO',
-#              'g_1_0S0zn8xI', 'g_1_ncGb9cam', 'g_1_xdSgjJyM', 'g_1_GnRckwiS', 'g_1_MT3Qpcaq',
-#              'g_1_2q5ZEPPH', 'g_1_A98sD3fU', 'g_1_A98sD3fU', 'g_1_WI9wEquO', 'g_1_ngMMVCxd',
-#              'g_1_SMI4AiQh', 'g_1_MqI89Bua']
-#
 # with open('checked_games2021-03-06.txt', 'a') as file:
 #     [file.write(game + '\n') for game in all_games]
 # file.close()
 
 class GameCollector:
     GAME_DIV_XPATH = '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/section/div/div/div'
-    HEADER_WAIT_XPATH = '/html/body/div[5]/div[1]/div/div[1]/div[2]/div[4]/div[2]/div[2]/div/div/div[1]'
-    COOKIE_BUTTON_XPATH = '//*[@id="onetrust-accept-btn-handler"]'
-    GAME_WAIT_XPATH = '/html/body/iframe    '
-    TEAMS_A_LINKS_CLASS = 'participant-imglink'
-    ODDS_CLASS = 'odds value'
-    ODDS_XPATH = str("//div[{'contains(concat(" ",normalize-space(@class),' '),' oddsWrapper ')}']")
     COUNTRY_TOURNAMENT_DIV_XPATH = '/html/body/div[1]/div[3]/div/span[3]'
+    COOKIE_BUTTON_XPATH = '//*[@id="onetrust-accept-btn-handler"]'
     COUNTRY_TOURNAMENT_DIV_XPATH_2 = '/html/body/div[2]/div[3]/div/span[3]'
     H2H_XPATH = '/html/body/div[1]/div[5]/div/a[3]'
     H2H_XPATH_2 = '/html/body/div[1]/div[6]/div/a[3]'
-    HOME_GAMES_XPATH = '/html/body/div[1]/div[8]/div[1]/div[2]/div'
-    HOME_GAMES_XPATH_2 = '/html/body/div[2]/div[8]/div[1]/div[2]/div'
-    AWAY_GAMES_XPATH = '/html/body/div[1]/div[8]/div[2]/div[2]/div'
-    H2H_GAMES_XPATH = '/html/body/div[1]/div[8]/div[3]/div[2]/div'
-    HOME_GAMES_XPATH_3 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[1]/table/tbody/tr'
-    AWAY_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[2]/table/tbody/tr'
-    H2H_GAMES_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[4]/div[3]/table/tbody/tr'
-    HOME_HOME_XPATH = '/html/body/div[2]/div[1]/div[4]/div/div[2]/div[5]/div[1]/table/tbody/tr'
-    AWAY_AWAY_XPATH = '/html/body/div[2]/div[1]/div[4]/div/div[2]/div[6]/div[1]/table/tbody/tr'
-    HOME_HOME_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[5]/div[1]/table/tbody/tr'
-    AWAY_AWAY_XPATH_2 = '/html/body/div[2]/div[1]/div[4]/div[11]/div[2]/div[6]/div[1]/table/tbody/tr'
 
     def main(self):
         '''
-        Main controller. We can choose how to pass the input games, as we also can choose to gather them.
+        Main controller. We can choose how to pass the input games.
         :return:
         '''
         driver = self.driver_chrome()
 
         driver.get('https://www.flashscore.com/')
 
-        # all_games = self.gather_games(driver)
+        all_games = self.gather_games(driver, 'tomorrow')
 
-        all_games = ['g_1_t8sIvBLj', 'g_1_27DKJH59', 'g_1_f3ea75lf']
+        # all_games = ['g_1_t8sIvBLj', 'g_1_27DKJH59', 'g_1_f3ea75lf']
+
         #
         # all_games = []
         # with open('today_games.txt', 'r') as file:
@@ -85,16 +54,17 @@ class GameCollector:
         date_for_file = tokens_list[0]
 
         checked_today = []
-        with open(f'checked_today2021-06-18.txt', 'r') as file:
+        with open(f'checked_today2021-06-20.txt', 'r') as file:
             [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
-        print(checked_today)
+        # print(checked_today)
 
         # Entering the main loop for all games we have as an input.
         for game in all_games:
+            print('---------------------------------------------')
             print(f'84 -> {game}')
-            if game in checked_today:
-                print('CHECKED')
-                continue
+            # if f'{game} + ' in checked_today:
+            #     print('CHECKED')
+            #     continue
 
             BASE_URL = f"https://www.flashscore.com/match/{game.split('g_1_')[1]}/#match-summary"
             driver.get(BASE_URL)
@@ -109,41 +79,28 @@ class GameCollector:
             except:
                 pass
 
-            try:
-                home_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[2]/div[4]').text
-                away_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[4]/div[4]').text
-            except:
-                home_team = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[2]/div[4]/div[2]').text
-                away_team = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[4]/div[4]/div[1]').text
-
-            print('---------------------------------------------')
+            # Get both team names
+            home_team, away_team = self.get_team_names(driver)
             print(f'110 -> {home_team} vs {away_team}')
 
-            try:
-                print('PROBVA ZA DATATA')
-                date_time_token = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[1]').text.split(' ')
-            except:
-                print('EXCEPTVA DATATA')
-                date_time_token = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[1]').text.split(' ')
-            date, time = date_time_token[0], date_time_token[1]
+            # Get date and time for the game
+            date, time = self.get_date_time(driver)
             print(date, time)
             time += ':00'
-            my_datetime = datetime.datetime.strptime(time, "%H:%M:%S")
-            print(datetime.datetime.now())
-            tokens_list = str(datetime.datetime.now()).split(' ')
-            curr_time = datetime.datetime.strptime(tokens_list[1].split('.')[0], '%H:%M:%S')
+
+            # Get my time and compare, possible skip
+            # my_datetime = datetime.datetime.strptime(time, "%H:%M:%S")
+            # print(datetime.datetime.now())
+            # tokens_list = str(datetime.datetime.now()).split(' ')
+            # curr_time = datetime.datetime.strptime(tokens_list[1].split('.')[0], '%H:%M:%S')
             # if my_datetime < curr_time:
             #     print(f'Finished - {home_team} {away_team}')
             #     continue
 
-            try:
-                county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH).text.split(': ')
-            except:
-                county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH_2).text.split(': ')
-            country, league = county_league_token
+            # Get the country and the league for the game
+            country, league = self.get_country_league(driver)
 
-            print(f'137 -> {country}: {league}')
-
+            # Get the odds for the game, if there is no odds, skip continue with next game
             odds_token = self.extract_odds(driver)
             if odds_token == 'No odds.':
                 print('139 -> No odds, skipping this game.')
@@ -153,10 +110,9 @@ class GameCollector:
 
             # Getting the results for both teams.
             home_team_games, away_team_games, h2h_games, homehome_games, home_h2h_games, awayaway_games = self.get_results(driver)
-
             print(country, league, date, time, home_team, away_team, home_odd, draw_odd, away_odd)
 
-            # Making the calculations from past results.
+            # Getting the stats, number of draws, total games, etc.
             home_games_stats = self.get_stats(home_team_games, 'home_games')
             print(f'Home team games -> {home_games_stats}')
             away_games_stats = self.get_stats(away_team_games, 'away_games')
@@ -169,6 +125,8 @@ class GameCollector:
             print(f'Home H2H games -> {home_h2h_games_stats}')
             awayaway_games_stats = self.get_stats(awayaway_games, 'awayaway_games')
             print(f'Away_Away games -> {awayaway_games_stats}')
+
+            # The strategy. Here we create ways to calculate the value bet.
             total_games_checked = home_games_stats['total_games'] + away_games_stats['total_games'] + \
                                   h2h_games_stats['total_games'] + homehome_games_stats['total_games'] + \
                                   awayaway_games_stats['total_games']
@@ -206,11 +164,9 @@ class GameCollector:
         :param driver: Selenium webdriver
         :return: Six lists with webelements(football games)
         '''
-        print('215 -> VLEZNAHME V get_h2h')
         try:
             driver.find_element_by_link_text('H2H').click()
             sleep(3)
-            print('220 -> KLIKA NA H2H')
         except Exception:
             try:
                 driver.find_element_by_xpath(self.H2H_XPATH_2).click()
@@ -238,7 +194,7 @@ class GameCollector:
 
     def get_home_away_h2h_games(self, driver, option):
         '''
-        :param driver:
+        :param driver: Selenium webdriver
         :param option: a string, home team games, away team games or h2h games
         :return: a list with web elements containing the games
         '''
@@ -389,10 +345,50 @@ class GameCollector:
         sleep(1)
         self.click_show_more_buttons(driver)
 
-    def gather_games(self, driver):
+    def get_team_names(self, driver):
         '''
-        Get all games for the specific day(funcitonality will be added to choose from the calendar)
+        Get the names of both teams
+        :param driver:
+        :return:
+        '''
+        try:
+            home_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[2]/div[4]').text
+            away_team = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[4]/div[4]').text
+        except:
+            home_team = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[2]/div[4]/div[2]').text
+            away_team = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[4]/div[4]/div[1]').text
+        return home_team, away_team
+
+    def get_date_time(self, driver):
+        '''
+        Get the date and time for current game
+        :param driver:
+        :return:
+        '''
+        try:
+            date_time_token = driver.find_element_by_xpath('/html/body/div[1]/div[4]/div[1]').text.split(' ')
+        except:
+            date_time_token = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div[1]').text.split(' ')
+        date, time = date_time_token[0], date_time_token[1]
+        return date, time
+
+    def get_country_league(self, driver):
+        '''
+        Get the country and league for current game
+        :param driver:
+        :return:
+        '''
+        try:
+            county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH).text.split(': ')
+        except:
+            county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH_2).text.split(': ')
+        return county_league_token
+
+    def gather_games(self, driver, option):
+        '''
+        Get all games for the specific day(functionality will be added to choose from the calendar)
         :param driver: Selenium webdriver
+        :param option: Here we choose which games to take, tomorrow ot today
         :return: A file with all games for today(id's)
         '''
         try:
@@ -401,13 +397,14 @@ class GameCollector:
             sleep(3)
             WebDriverWait(driver, timeout=15).until(EC.visibility_of_element_located(
                 (By.XPATH, '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]')))
-            # driver.find_element_by_xpath(
-            #     '/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[3]').click()
         except:
             pass
+
+        if option == 'tomorrow':
+            self.click_next_day_button(driver)
+
         sleep(3)
         all_divs_token = driver.find_elements_by_xpath(self.GAME_DIV_XPATH)
-        print(len(all_divs_token))
         # asd
         all_games = []
 
@@ -415,13 +412,23 @@ class GameCollector:
             div_strings = div.get_attribute('outerHTML')
 
             if 'Click for match detail!' in div_strings:
-                # print(div.get_attribute('id'))
                 all_games.append(div.get_attribute('id'))
 
         with open('today_games.txt', 'w') as txt_file:
             [txt_file.write(game + '\n') for game in all_games]
         txt_file.close()
         return all_games
+
+    def click_next_day_button(self, driver):
+        '''
+        Click the arrow to show the games for tomorrow(Could add more functionality)
+        :param driver:
+        :return:
+        '''
+        main_div = driver.find_element_by_id('live-table')
+        calendar_main_div = main_div.find_element_by_class_name('calendar')
+        both_arrows = calendar_main_div.find_elements_by_class_name('calendar__nav')
+        both_arrows[1].click()
 
     @staticmethod
     def click_show_more_buttons(driver):
