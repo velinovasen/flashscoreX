@@ -1,0 +1,5 @@
+g_1_UoDLZA1q EUROPE Champions League - Preliminary - Semi-finals 22.06.2021 21:00:00 Folgore (San) Prishtina (Kos) 10.00 6.50 1.22 -> Value: 6.33, Valuebet2 %: 1.80
+g_1_Ime3QxXp SOUTH AMERICA Copa América - Round 3 22.06.2021 03:00:00 Argentina Paraguay 1.45 4.00 8.50 -> Value: 3.26, Valuebet2 %: 3.79
+g_1_rwgaHDB2 ARGENTINA Primera B - Apertura - Round 14 22.06.2021 21:30:00 Argentino de Quilmes Acassuso 2.30 2.85 3.10 -> Value: 0.01, Valuebet2 %: -6.45
+g_1_jq6DgAJe ARGENTINA Primera B - Apertura - Round 14 22.06.2021 21:30:00 Colegiales Flandria 2.30 2.95 3.00 -> Value: 2.75, Valuebet2 %: 2.77
+g_1_WtjCeWlq ARGENTINA Primera B - Apertura - Round 14 22.06.2021 21:30:00 Defensores Unidos San Miguel 2.30 2.75 3.25 -> Value: 5.77, Valuebet2 %: 7.61
