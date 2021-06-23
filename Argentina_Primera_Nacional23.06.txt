@@ -1,0 +1,4 @@
+g_1_2Tn1sCoh ARGENTINA Primera Nacional - Round 13 23.06.2021 01:00:00 Estudiantes Rio Cuarto Belgrano 2.37 2.90 3.10 -> Value: 0.39, Valuebet2 %: -6.73
+g_1_tKo5tW0b ARGENTINA Primera Nacional - Round 13 23.06.2021 03:10:00 Gimnasia Mendoza Dep. Riestra 1.85 3.10 4.33 -> Value: 0.64, Valuebet2 %: 13.34
+g_1_2ZZAtzeL ARGENTINA Primera Nacional - Round 13 23.06.2021 20:00:00 All Boys Ind. Rivadavia 2.40 3.00 2.75 -> Value: 1.06, Valuebet2 %: 3.22
+g_1_YHQtyEIr ARGENTINA Primera Nacional - Round 13 23.06.2021 21:00:00 Instituto Guillermo Brown 1.61 2.90 6.50 -> Value: 4.48, Valuebet2 %: 5.45

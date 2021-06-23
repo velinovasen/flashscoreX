@@ -21,26 +21,8 @@ class GameCollector:
     H2H_XPATH = '/html/body/div[1]/div[5]/div/a[3]'
     H2H_XPATH_2 = '/html/body/div[1]/div[6]/div/a[3]'
 
-    def get_games_input(self, driver, day, option):
-        '''
-        In development. Here we will handle the way and which games we will scan.
-        We will be able to choose from Leagues to which day to scan.
-        :param driver:
-        :param option:
-        :return:
-        '''
-        all_games = []
-        if day == 'tomorrow':
-            all_games = self.gather_games(driver, 'tomorrow')
-        elif day == 'today':
-            all_games = self.gather_games(driver, 'today')
-        if option == 'league':
-            pass
 
-
-        return all_games
-
-    def main(self):
+    def main(self, day, output_file_name, league_type=None, league_name=None,):
         '''
         Main controller. We can choose how to pass the input games.
         :return:
@@ -49,7 +31,7 @@ class GameCollector:
 
         driver.get('https://www.flashscore.com/')
 
-        all_games = self.gather_games(driver, 'tomorrow', 'EUROPE: Euro')
+        all_games = self.gather_games(driver, day, league_type, league_name)
 
         # all_games = ['g_1_t8sIvBLj', 'g_1_27DKJH59', 'g_1_f3ea75lf']
 
@@ -59,9 +41,9 @@ class GameCollector:
         #     for line in file.readlines():
         #         all_games.append(line)
 
-        self.scan_each_game(driver, all_games)
+        self.scan_each_game(driver, all_games, output_file_name)
 
-    def scan_each_game(self, driver, all_games):
+    def scan_each_game(self, driver, all_games, output_file_name):
         '''
         The main controller function for each game. Here we handle the behaviour for each separate game.
         :param driver: Selenium webdriver
@@ -74,7 +56,7 @@ class GameCollector:
 
         checked_today = []
         try:
-            with open(f'checked_today2021-06-21.txt', 'r') as file:
+            with open(f'checked_today2021-06-24.txt', 'r') as file:
                 [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         except FileNotFoundError:
             pass
@@ -172,7 +154,7 @@ class GameCollector:
             print(f'Average percent draws: {average_percent_draws:.2f}, Average percent draws 2 strat: {average_percentage_strat2:.2f},'
                   f' current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}, Valuebet2 %: {valuebet_second_strat:.2f}')
             if valuebet_abs:
-                with open(f'valuebets06.21.2021.txt', 'a') as file:
+                with open(f'{output_file_name}.txt', 'a') as file:
                     file.write(f'{game} {country} {league} {date} {time} {home_team} {away_team} {home_odd} {draw_odd} {away_odd} -> Value: {valuebet_percent:.2f}, Valuebet2 %: {valuebet_second_strat:.2f}\n')
                 file.close()
 
@@ -407,7 +389,7 @@ class GameCollector:
             county_league_token = driver.find_element_by_xpath(self.COUNTRY_TOURNAMENT_DIV_XPATH_2).text.split(': ')
         return county_league_token
 
-    def gather_games(self, driver, day, option):
+    def gather_games(self, driver, day, league_type=None, league_name=None):
         '''
         Get all games for the specific day(functionality will be added to choose from the calendar)
         :param day:
@@ -429,9 +411,9 @@ class GameCollector:
 
         all_games = []
 
-        if option:
-            all_games = self.get_games_for_specific_league(driver, option)
-            asd
+        if league_type:
+            all_games = self.get_games_for_specific_league(driver, league_type, league_name)
+            return all_games
         sleep(3)
         all_divs_token = driver.find_elements_by_xpath(self.GAME_DIV_XPATH)
         # asd
@@ -447,16 +429,35 @@ class GameCollector:
         txt_file.close()
         return all_games
 
-    def get_games_for_specific_league(self, driver, option):
-        print('VLIZA V SPECIFIC LEAGUE')
-        all_divs_raw_tokens = driver.find_elements_by_xpath('/html/body/div[6]/div[1]/div/div[1]/div[2]/div[4]/div[2]/section/div/div/div')
-        if len(all_divs_raw_tokens) == 0:
-            all_divs_raw_tokens = driver.find_elements_by_xpath('/html/body/div[6]/div[1]/div/div[1]/div[2]/div[5]/div[2]/section/div/div/div')
-        all_games_for_league = []
-        for div in all_divs_raw_tokens:
-            print(div.get_attribute('innerText'))
-            if ':' in div.get_attribute('innerText'):
-                print(div.get_attribute('innerText'))
+    def get_games_for_specific_league(self, driver, league_type, league_name):
+        '''
+        Get the games from the specified country and league
+        :param driver: Selenium webdriver
+        :param league_type: Country of the league
+        :param league_name: The name of the league
+        :return: a list with all games from this league.
+        '''
+        big_div = driver.find_element_by_id('live-table')
+        sleep(2)
+        all_divs_raw = big_div.find_elements_by_tag_name('div')
+        all_div_tokens = []
+
+        found = False
+        for big_tok in all_divs_raw:
+            if 'event__header' in big_tok.get_attribute('class') and not found:
+                el_type = big_tok.find_element_by_class_name('event__title--type').get_attribute('innerText')
+                el_name = big_tok.find_element_by_class_name('event__title--name').get_attribute('innerText')
+                if league_type == el_type and league_name == el_name:
+                    found = True
+            if found and 'event__match' in big_tok.get_attribute('class'):
+                all_div_tokens.append(big_tok)
+            if 'event__match--last' in big_tok.get_attribute('class') and found:
+                break
+        if len(all_div_tokens) == 0:
+            return []
+
+        ready_games = [id.get_attribute('id') for id in all_div_tokens]
+        return ready_games
 
     def click_next_day_button(self, driver):
         '''
@@ -468,6 +469,7 @@ class GameCollector:
         calendar_main_div = main_div.find_element_by_class_name('calendar')
         both_arrows = calendar_main_div.find_elements_by_class_name('calendar__nav')
         both_arrows[1].click()
+        sleep(1)
 
     @staticmethod
     def click_show_more_buttons(driver):
@@ -519,4 +521,4 @@ class GameCollector:
 
 if __name__ == '__main__':
     scanner = GameCollector()
-    scanner.main()
+    scanner.main(day='today', output_file_name='Argentina_Primera_Nacional23.06', league_type='ARGENTINA', league_name='Primera Nacional')
