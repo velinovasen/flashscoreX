@@ -1,0 +1,3 @@
+g_1_l07PR699 ARGENTINA Primera D - Apertura - Round 6 28.06.2021 21:00:00 Central Ballester CSR Espanol 2.30 2.75 3.20 -> Value: 3.26, Valuebet2 %: -0.58
+g_1_nyRU5Pnj ARGENTINA Primera D - Apertura - Round 6 28.06.2021 21:00:00 Puerto Nuevo Lugano 1.90 3.10 3.80 -> Value: -2.32, Valuebet2 %: 1.97
+g_1_hERQ65Xq ARGENTINA Primera D - Apertura - Round 6 28.06.2021 21:00:00 Sportivo Barracas Def. de Cambaceres 2.40 2.85 2.90 -> Value: -2.40, Valuebet2 %: 1.41

@@ -56,7 +56,7 @@ class GameCollector:
 
         checked_today = []
         try:
-            with open(f'checked_today2021-06-24.txt', 'r') as file:
+            with open(f'checked_today2021-06-28.txt', 'r') as file:
                 [checked_today.append(line.split('\n')[0]) for line in file.readlines()]
         except FileNotFoundError:
             pass
@@ -149,7 +149,7 @@ class GameCollector:
                 valuebet_percent = 0
                 valuebet_second_strat = 0
             valuebet_abs = False
-            if valuebet_percent > 0 and total_games_checked > 50:
+            if valuebet_percent > 0 and total_games_checked > 50 or valuebet_second_strat > 0 and total_games_checked > 50:
                 valuebet_abs = True
             print(f'Average percent draws: {average_percent_draws:.2f}, Average percent draws 2 strat: {average_percentage_strat2:.2f},'
                   f' current odds: {draw_odd}, Valuebet %: {valuebet_percent:.2f}, Valuebet2 %: {valuebet_second_strat:.2f}')
@@ -317,7 +317,7 @@ class GameCollector:
     def get_stats(self, games, trigger):
         '''
         Count how many draws they have.
-        :param games: ALl games that need to be calculated
+        :param games: All games that need to be calculated
         :param trigger: In case we want to add extra options for the calculations
         :return: A dictionary with total games, total draws and percent of draws
         '''
@@ -509,7 +509,7 @@ class GameCollector:
 
         chrome_options = ChromeOptions()
         chrome_options.binary_location = CHROME_PATH
-        chrome_options.headless = False  # IF YOU WANT TO SEE THE BROWSER -> FALSE
+        chrome_options.headless = True  # IF YOU WANT TO SEE THE BROWSER -> FALSE
 
         capa = DC.CHROME
         capa["pageLoadStrategy"] = "normal"
@@ -521,4 +521,4 @@ class GameCollector:
 
 if __name__ == '__main__':
     scanner = GameCollector()
-    scanner.main(day='today', output_file_name='Argentina_Primera_Nacional23.06', league_type='ARGENTINA', league_name='Primera Nacional')
+    scanner.main(day='tomorrow', output_file_name='USA_USL_League_Two_29.06.txt', league_type='USA', league_name='USL League Two')
